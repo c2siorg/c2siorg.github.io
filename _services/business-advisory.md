@@ -1,84 +1,157 @@
 ---
-title: "Business Advisory"
+title: "RayZed"
 date: 2018-12-28T15:14:39+10:00
 weight: 4
 ---
 
-Business advisory is the final tier of the accounting pyramid. Business advisory involves reporting on performance as well as advising on strategic plans, risk assessment, and succession plans.
+RayZed is a ray-based, distributed web vulnerability scanner designed on a ray queue. Moreover,
+RayZed is a cloud-native application built utilising the Terraform stack.
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
 
-# Objectives
+![image](https://user-images.githubusercontent.com/20130001/148359955-35ed4632-224f-47c6-90b6-1cdde48ec898.png)
 
-Financial accounting and financial reporting are often used as synonyms.
+## Abstract & Motivation
+Finding out web vulnerabilities for specific targets(URLs) is a critical task. For this OWASP ZAP-ZED
+helps by using its various scan functionalities like active, passive and spider scan. These scans
+scrutinize the target URL for different standard vulnerabilities and thus is an extensive process. The
+target(URLs) could be distributed among Ray cluster nodes deployed on the cloud-native platform
+where ZAP is running as a daemon. This architecture scales the process of finding vulnerabilities for
+targets. The purpose of this project is to create a parallelized tool that could fetch vulnerabilities of
+different websites in an efficient way such that the process could be scaled and automated for
+cybersecurity research.
 
-1. According to International Financial Reporting Standards: the objective of financial reporting is:
-2. To provide financial information that is useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the reporting entity.
-3. According to the European Accounting Association:
+## Technology stack
+1. Terraform: Cloud-native platform agnostic infrastructure as code to define and manage
+infrastructure
+2. Ray: Parallelize the remote scan function on the cloud-native platform to cater to multiple
+targets.
+3. ZAP-ZED: Provide active, passive and spyder scan functionality.
+4. Ansible: To automate the setup of local environments on virtual machines.
+5. NGINX: For reverse proxying
+6. GCP: Google Cloud Platform to provide service of the virtual machine and firewall.
 
-## Relevance
+## Zed Optimization Survey
+[Documentation Link](https://docs.google.com/document/d/1j10LrdNFHic8l0VE-8o0wIziROTtdShs2HFSZ6Xkcog/edit?usp=sharing)
 
-Relevance is the capacity of the financial information to influence the decision of its users. The ingredients of relevance are the predictive value and confirmatory value. Materiality is a sub-quality of relevance.
+## Folder Structure
+```
+.
+├── ansible.cfg
+├── main.tf
+├── misc
+│   ├── ray
+│   └── ray.service
+├── playbook.yaml
+├── queue-master.py
+├── README.md
+├── Scan.py
+├── terraform.tfvars
+├── variables.tf
+└── zedzap.service
 
-> The ingredients of relevance are the predictive value and confirmatory value.
+```
 
-Information is considered material if its omission or misstatement could influence the economic decisions of users taken on the basis of the financial statements.
+## Setup & Build
 
-## Faithful Representation
+### Prerequisites
+* GCP 
+    * [Reference video](https://youtu.be/e_8LZL2Th_4)
+    * [Google Cloud Platform Documentation](https://cloud.google.com/docs)
+* Terraform (Version used in this project : Terraform v1.4.6
+on linux_amd64
+)
+    * [Terraform Installation Documentation](https://developer.hashicorp.com/terraform/downloadsd)
 
-Faithful representation means that the actual effects of the transactions shall be properly accounted for and reported in the financial statements. The words and numbers must match what really happened in the transaction. The ingredients of faithful representation are completeness, neutrality and free from error.
+- Ansible
 
-## Enhancing Qualitative Characteristics
+### Installation
 
-### Verifiability
+1. Clone the repository
+```
+git clone https://github.com/c2siorg/RayZed.git
+```
+### Configuration
 
-Verifiability implies consensus between the different knowledgeable and independent users of financial information. Such information must be supported by sufficient evidence to follow the principle of objectivity.
+1. Move to RayZed
+```
+cd RayZed
+```
 
-### Comparability
+2. Make keys folder and store the service_account.json file fetched from GCP in this folder
 
-Comparability is the uniform application of accounting methods across entities in the same industry. The principle of consistency is under comparability. Consistency is the uniform application of accounting across points in time within an entity.
+```
+mkdir keys
 
-### Understandability
+'Store the service_account.json here'
+```
+3. Configure terraform.tfvars file
+```
+Change following variables
 
-Understandability means that accounting reports should be expressed as clearly as possible and should be understood by those to whom the information is relevant.
-Timeliness: Timeliness implies that financial information must be presented to the users before a decision is to be made.
+project = 'YOUR_GCP_PROJECT_NAME'
+ssh_user = "YOUR_SSH_USER_NAME"
+ssh_prv_key = "YOUR_SSH_PRIVATE_KEY_PATH"
+ssh_pub_key = "YOUR_SSH_PUBLIC_KEY_PATH"
 
----
+(Generate rsa key pair if not existing or different for this project)
+```
+4. Configure .env file
+```
+nano .env
 
-## Statement of cash flows
+Change following variables
 
-The statement of cash flows considers the inputs and outputs in concrete cash within a stated period. The general template of a cash flow statement is as follows: Cash Inflow - Cash Outflow + Opening Balance = Closing Balance
+ZAP_APIKEY=YOUR_API_KEY
+ZAP_PROXIES_HTTP=http://127.0.0.1:8080
+ZAP_PROXIES_HTTPS=http://127.0.0.1:8080
+FILEPATH=YOUR_PATH_TO_STORE_OUTPUT_ON_RAY_HEAD_NODE
+TIME_OUT=60
 
-| Cash Inflow | Outflow   | Opening Balance |
-| ----------- | --------- | --------------- |
-| _Monday_    | `Tuesday` | **Wednesday**   |
-| 1           | 2         | 3               |
+```
 
-**Example 1:** in the beginning of September, Ellen started out with $5 in her bank account. During that same month, Ellen borrowed $20 from Tom. At the end of the month, Ellen bought a pair of shoes for $7. Ellen's cash flow statement for the month of September looks like this:
+### Usage
 
-- Cash inflow: $20
-- Cash outflow:$7
-- Opening balance: $5
-- Closing balance: $20 – $7 + $5 = $18
+1. Terraform Commands (Builds the infrastructure and initial environment setup on the GCP VM instances)
+```
+terraform init
+terraform plan
+terraform apply
+```
 
-**Example 2:** in the beginning of June, WikiTables, a company that buys and resells tables, sold 2 tables. They'd originally bought the tables for $25 each, and sold them at a price of $50 per table. The first table was paid out in cash however the second one was bought in credit terms. WikiTables' cash flow statement for the month of June looks like this:
+2. ssh commands to check the vm instances
 
-> **Important:** the cash flow statement only considers the exchange of actual cash, and ignores what the person in question owes or is owed.
+```
+ssh 'RSA_USER'@'EXTERNAL_IPADDRESS_OF_HEAD_NODE'
+ssh 'RSA_USER'@'EXTERNAL_IPADDRESS_OF_WORKER_NODE'
+```
+3. To run ray commands once ssh established
 
-## Statement of financial position (balance sheet)
+On head node
+```
+ray start --head --port=6379 --include-dashboard=true
+```
+![ray_head](screenshots/ray-head.jpg)
 
-The balance sheet is the financial statement showing a firm's assets, liabilities and equity (capital) at a set point in time, usually the end of the fiscal year reported on the accompanying income statement.
+On worker node
+```
+ray start --address-'LOCAL_HEAD_NODE_IP:6379' --redis-password='52415900000000'
+```
+![ray_worker](screenshots/ray-worker.jpg)
 
-- **fixed assets**
-  - property
-  - building
-  - equipment (such as factory machinery)
-- **intangible assets**
-  - copyrights
-  - trademarks
-  - patents
-    - pending
-    - international
-- goodwill
+Note: If some of these commands did not run in ansible automation you could run them separately through ssh and achieve the same result.
 
-Owner's equity, sometimes referred to as net assets, is represented differently depending on the type of business ownership. Business ownership can be in the form of a sole proprietorship, partnership, or a corporation. For a corporation, the owner's equity portion usually shows common stock, and retained earnings (earnings kept in the company). Retained earnings come from the retained earnings statement, prepared prior to the balance sheet.
+4. To run zap service on different terminal: open zap downloaded location  and run
+```
+./zap.sh -daemon -config api.key=YOUR_API_KEY
+```
+Note: This needs to be done in case ansible automation could not run the service in all vm instances.
+
+5. To run the queue-master.py on the head instance node. 
+```
+python3 queue-master.py
+```
+![queue](screenshots/queue-master.jpg)
+
+Note:
+- One can edit the websites required by modifying the DATA list in queue-master.py 
+- The output json files are stored in the location mentioned in the .env file in the head vm

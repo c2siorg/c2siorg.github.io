@@ -1,87 +1,84 @@
 ---
-title: "Business Sales"
+title: "Survey6"
 date: 2019-01-28T15:15:26+10:00
 weight: 2
 ---
 
-Cyanee nec pedicis positi. Esse et diem forte quoque et ieiunia
-vixque dixit negari _ullis stamina_: trahit. Tanta rictus in mitia causa, Phoebo
-nisi mater acta serpens cacumen dapibus caeli umidus detegeret viri conlato
-cadet
+Ipv6 is the internet's future, and it necessitated a more scalable survey tool to comprehend how routing and DNS function. The purpose of this project is to create an IPv6 listener that will passively collect IPv6 traffic data as a passive data collection tool for cyber security research.
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+# survey6
 
-# Objectives
+[![Join the chat at https://gitter.im/web-telescope/survey6](https://badges.gitter.im/survey6/community.svg)](https://gitter.im/survey6/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Financial accounting and financial reporting are often used as synonyms.
+ipv6 survey Tool (survey6)
+# Brief explanation:  
+Ipv6 is the internet's future, and it necessitated a more scalable survey tool to comprehend how routing and DNS function. The purpose of this project is to create an IPv6 listener that will passively collect IPv6 traffic data as a passive data collection tool for cyber security research.
+## Goals: 
+* Develop a Linux network probe to intercept ipv6 traffic 
+* To centralize the data being intercepted by the probe, develop a geo-distributed grid application that integrated with the probe. 
 
-1. According to International Financial Reporting Standards: the objective of financial reporting is:
-2. To provide financial information that is useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the reporting entity.
-3. According to the European Accounting Association:
+## Survey6 tool has three main components, follow describes each component, its functionalities and setup.
+1. [Probe](#probe)
+2. [C&C Server](#cc-server)
+3. [Data Aggregator](#data-aggregator)
 
-## Relevance
+![chart2](https://user-images.githubusercontent.com/61967013/189522889-f7c20d8f-4796-4aaf-9777-f90852f91d26.png)
+You can find setup and installation guide for each of the modules in their respective module directories and they are linked below too. 
+***
+## Probe
 
-Relevance is the capacity of the financial information to influence the decision of its users. The ingredients of relevance are the predictive value and confirmatory value. Materiality is a sub-quality of relevance.
+Intercept and collect all the ipv6 traffic (regardless of the protocol) therefore libpcap is preferable. probe binaries must run as a service of the operating system (OS could be Linux host).  Moreover, the probe cast a heartbeat to the C&C server for its heath checks mechanisms. This must be implemented using gRPC.  Probe identifies ideal states of the host network interface and uses those time windows to send the collected ipv6 pcap. For this, data must be annotated with meta-information for aggregation purposes (meta information could be discussed)   
 
-> The ingredients of relevance are the predictive value and confirmatory value.
+### Probe CLI
+Probe CLI is a sub-component of Probe that allows starting (passing the registering string from C&C server, eg- How you add new nodes to Kubernetes), suspending the probe's execution in the host machine. 
 
-Information is considered material if its omission or misstatement could influence the economic decisions of users taken on the basis of the financial statements.
+### Stack
+Python, GRPC, Scapy
 
-## Faithful Representation
+### Module Info, Setup \& Installation Guide
+* [Probe](./Probe/README.md)
 
-Faithful representation means that the actual effects of the transactions shall be properly accounted for and reported in the financial statements. The words and numbers must match what really happened in the transaction. The ingredients of faithful representation are completeness, neutrality and free from error.
+### Demo
+* [Probe Video](https://drive.google.com/file/d/1fSBYXjHva7zfjUsIW2_bN7vebJO_SB8Q/view?usp=sharing)
+***
+## C\&C server
 
-## Enhancing Qualitative Characteristics
+C&C server should have the Probe registering mechanism. And it listens to registered Prob's heartbeats.  WebUI shows the active states of Probes in a list view. 
 
-### Verifiability
+### Stack
+Python, gRPC, Redis queue, SQLite, Flask
 
-Verifiability implies consensus between the different knowledgeable and independent users of financial information. Such information must be supported by sufficient evidence to follow the principle of objectivity.
+### Module Info, Setup \& Installation Guide
+* [C&C Server](./C%26C%20Server/README.md)
 
-### Comparability
+### Demo Video
+* [Running from package](https://drive.google.com/file/d/1kmxOZZXKXUTpBfkJcs1gcroiuIDU3tys/view?usp=sharing)
+* [Testing](https://drive.google.com/file/d/1mlhD5XWk1s7ELlx36w6s4_0fUfeKQu8D/view?usp=sharing)
 
-Comparability is the uniform application of accounting methods across entities in the same industry. The principle of consistency is under comparability. Consistency is the uniform application of accounting across points in time within an entity.
+***
+## Data Aggregator.
 
-### Understandability
+Data Aggregator is a series of scheduled Apache Airflow Dags
 
-Understandability means that accounting reports should be expressed as clearly as possible and should be understood by those to whom the information is relevant.
-Timeliness: Timeliness implies that financial information must be presented to the users before a decision is to be made.
+* DAG1 - Use dpkt or scapy to parse the pcap files along with metadata.
+* DAG2 - Spark Jobs to clean and aggregate the data and write to Parquet.
+* DAG3 - Error handling and cleansing temp data.
 
----
+### Stack
+Python, AirFlow, Spark, PySpark, scapy
 
-## Statement of cash flows
+* * *
 
-The statement of cash flows considers the inputs and outputs in concrete cash within a stated period. The general template of a cash flow statement is as follows: Cash Inflow - Cash Outflow + Opening Balance = Closing Balance
+# Contributing
+We are glad that you are willing to contribute. Tasks to be taken up next are:
+1. Fix issue that fails one testcase - *C&C Server*
+2. Heartbeat and health status check - *both modules : Probe and C&C Server*
+3. Sending packets from probe and receiving packets at server - *both modules : Probe and C&C Server*
+4. Create a debian package for the probe once it has significant development. [For this one could refer packaging procedure of C&C Server: [here](https://medium.com/scorelab/packaging-overview-74aaeead3655) and [here](https://medium.com/scorelab/debian-packaging-of-a-python-project-ca4dfac9ac98)] - *Probe*
+5. Display status of connected and registered probes - *C&C server*
 
-| Cash Inflow | Outflow   | Opening Balance |
-| ----------- | --------- | --------------- |
-| _Monday_    | `Tuesday` | **Wednesday**   |
-| 1           | 2         | 3               |
+Stretch goal:
+1. Hosting the debian packages
 
-**Example 1:** in the beginning of September, Ellen started out with $5 in her bank account. During that same month, Ellen borrowed $20 from Tom. At the end of the month, Ellen bought a pair of shoes for $7. Ellen's cash flow statement for the month of September looks like this:
 
-- Cash inflow: $20
-- Cash outflow:$7
-- Opening balance: $5
-- Closing balance: $20 – $7 + $5 = $18
-
-**Example 2:** in the beginning of June, WikiTables, a company that buys and resells tables, sold 2 tables. They'd originally bought the tables for $25 each, and sold them at a price of $50 per table. The first table was paid out in cash however the second one was bought in credit terms. WikiTables' cash flow statement for the month of June looks like this:
-
-> **Important:** the cash flow statement only considers the exchange of actual cash, and ignores what the person in question owes or is owed.
-
-## Statement of financial position (balance sheet)
-
-The balance sheet is the financial statement showing a firm's assets, liabilities and equity (capital) at a set point in time, usually the end of the fiscal year reported on the accompanying income statement.
-
-- **fixed assets**
-  - property
-  - building
-  - equipment (such as factory machinery)
-- **intangible assets**
-  - copyrights
-  - trademarks
-  - patents
-    - pending
-    - international
-- goodwill
-
-Owner's equity, sometimes referred to as net assets, is represented differently depending on the type of business ownership. Business ownership can be in the form of a sole proprietorship, partnership, or a corporation. For a corporation, the owner's equity portion usually shows common stock, and retained earnings (earnings kept in the company). Retained earnings come from the retained earnings statement, prepared prior to the balance sheet.
+Please do follow [contributing guidelines](./CONTRIBUTING.md) to help the maintainers. Thank you for your wonderful cooperation! 
