@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Susan Shelton</title>
+  <title>Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
   <!-- Google Fonts CDN -->
@@ -14,12 +14,12 @@
   <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
   <link href="/assets/css/style.css" rel="stylesheet">
   
-  
-  <meta property="og:title" content="Susan Shelton"/>
+  <meta name="description" content="C2SI Blog" />
+  <meta property="og:title" content="Blog"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content=""/>
-  <meta property="og:image" content="http://localhost:4000/images/team/cristian-newman-94319-unsplash.jpg"/>
   
+  <meta property="og:description" content="C2SI Blog"/>
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content=""/>
   <meta name="twitter:creator" content=""/>
@@ -43,7 +43,7 @@
       <a href="/opportunities/">Opportunities</a>
     </li>
     
-    <li class="">
+    <li class="active">
       <a href="/blog/">Blog</a>
     </li>
     
@@ -83,7 +83,7 @@
       <a href="/opportunities/">Opportunities</a>
     </li>
     
-    <li class="">
+    <li class="active">
       <a href="/blog/">Blog</a>
     </li>
     
@@ -110,14 +110,56 @@
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
       <div class="team team-single">
-        <h1 class="title">Susan Shelton</h1>
-        <div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.</p>
+        <h1 class="title">Blog</h1>
+        <div class="content">
+          <h1 id="c2si-blogs">C2SI Blogs</h1>
+
+        
+          <ul class="blogs" id="blogs" style="display: block; list-style: none; justify-content: space-around; margin-left:-18px;"></ul>
+        <!-- Javascript -->
+        <script>
+          const ul = document.getElementById('blogs');
+          const url = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@bugzero';
+
+          fetch(url)
+            .then((res) => res.json())
+            .then((data) => {
+              const res = data.items;
+              const posts = res.filter(item => item.categories.length > 0);
+              console.log(posts);
+
+              function toText(node) {
+                let tag = document.createElement('div')
+                tag.innerHTML = node;
+                node = tag.innerText;
+                return node;
+              }
+
+              let output = '';
+              posts.slice(0, 10).forEach((item) => {
+                output += `
+         <li class="post" style="padding-bottom: 4%; ">
+               <a href="${item.link}" style="text-decoration: none;
+  color: #222;">
+               <div class="content">
+                  <div class="preview">
+                     <h2 class="blog_title" style="font-size: 1.5em;">${item.title}</h2></a>
+                     <p>${item.pubDate}</p>
+                     <p>By ${item.author}</p>
+                     <a class="button" target="_blank" style="text-decoration:none" href="${item.link}">Read More</a>
+                  </div>                
+               </div>
+         </li>
+         <hr style="color: Black">`
+              });
+              ul.innerHTML = output;
+            });
+        </script>
 </div>
       </div>
     </div>
   </div>
 </div>
-
   </div>
   <div class="footer">
   <div class="container">

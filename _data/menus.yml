@@ -8,17 +8,20 @@ main:
   - name: "Opportunities"
     url: "/opportunities/"
     weight: 4
-  - name: "About"
-    url: "/about/"
+  - name: "Blog"
+    url: "/blog/"
     weight: 5
-  - name: "Contact"
-    url: "/contact/"
+  - name: "GitHub 🡥"
+    url: "https://github.com/c2siorg"
     weight: 6
+  - name: "GSoC 23"
+    url: "/gsoc23"
+    weight: 7
 
 footer:
   - name: "Home"
     url: "/"
     weight: 1
-  - name: "Contact"
-    url: "/contact/"
+  - name: "About"
+    url: "/about/"
     weight: 2
