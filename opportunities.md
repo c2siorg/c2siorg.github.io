@@ -3,6 +3,7 @@ title: Opportunities
 layout: opportunities
 description: Opportunities at C2SI
 permalink: "/opportunities/"
+intro_image: "https://img.freepik.com/free-vector/african-male-female-character-wearing-casual-clothes-different-hairstyles-gathered-black-people-crowd-demanding-equal-rights-every-person-flat-vector-illustration-black-community-concept_74855-22098.jpg?w=1380&t=st=1696925505~exp=1696926105~hmac=b82dd4a258d095f74378ea9801826b7e0087b26c0a6ba2f805a03f345cf3cba2"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
