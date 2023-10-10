@@ -1,0 +1,58 @@
+---
+layout: default
+bodyClass: "page-team"
+---
+
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="team team-single">
+        <h1 class="title">{{page.title}}</h1>
+        <div class="content">
+          {{content}}
+        
+          <ul class="blogs" id="blogs" style="display: block; list-style: none; justify-content: space-around; margin-left:-18px;"></ul>
+        <!-- Javascript -->
+        <script>
+          const ul = document.getElementById('blogs');
+          const url = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@bugzero';
+
+          fetch(url)
+            .then((res) => res.json())
+            .then((data) => {
+              const res = data.items;
+              const posts = res.filter(item => item.categories.length > 0);
+              console.log(posts);
+
+              function toText(node) {
+                let tag = document.createElement('div')
+                tag.innerHTML = node;
+                node = tag.innerText;
+                return node;
+              }
+
+              let output = '';
+              posts.slice(0, 10).forEach((item) => {
+                output += `
+         <li class="post" style="padding-bottom: 4%; ">
+               <a href="${item.link}" style="text-decoration: none;
+  color: #222;">
+               <div class="content">
+                  <div class="preview">
+                     <h2 class="blog_title" style="font-size: 1.5em;">${item.title}</h2></a>
+                     <p>${item.pubDate}</p>
+                     <p>By ${item.author}</p>
+                     <a class="button" target="_blank" style="text-decoration:none" href="${item.link}">Read More</a>
+                  </div>                
+               </div>
+         </li>
+         <hr style="color: Black">`
+              });
+              ul.innerHTML = output;
+            });
+        </script>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
