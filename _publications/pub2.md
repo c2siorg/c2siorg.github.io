@@ -1,7 +1,8 @@
 ---
-title: "RayZed"
-date: 2018-12-28T15:14:39+10:00
-weight: 4
+title: "Publication 2"
+authors: John Doe, John Lennon
+venue: ICTER 2020
+weight: 2
 ---
 
 RayZed is a ray-based, distributed web vulnerability scanner designed on a ray queue. Moreover,

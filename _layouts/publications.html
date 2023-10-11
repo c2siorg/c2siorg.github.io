@@ -20,14 +20,16 @@ bodyClass: "page-services"
 
 <div class="container pt-6 pb-6">
   <div class="row">
-    {% for service in site.services %}
+    {% for publication in site.publications %}
     <div class="col-12 col-md-6 mb-3">
       <div class="service service-summary">
         <div class="service-content">
           <h2 class="service-title">
-            <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
+            <a href="{{publication.link}}" target="blank">{{ publication.title }}</a>
           </h2>
-          <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
+          <h5>{{publication.venue}}</h5>
+          <p>{{publication.authors}}</p>
+          <p>{{ publication.content | markdownify | strip_html | truncate: 100 }}</p>
         </div>
       </div>
     </div>

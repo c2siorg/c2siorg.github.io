@@ -1,6 +1,7 @@
 ---
-title: "Geo DNS Scanner"
-date: 2019-02-28T15:15:34+10:00
+title: "Publication 3"
+authors: Dwight Shrute, Jon Snow
+venue: ICTER 2018
 weight: 3
 ---
 
