@@ -1,7 +1,8 @@
 ---
 title: Publications
-layout: services
-description: Services
+layout: publications
+description: publications
+permalink: "/publications/"
 intro_image: "images/illustrations/reading.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true

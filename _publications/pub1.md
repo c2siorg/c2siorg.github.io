@@ -1,7 +1,9 @@
 ---
 title: "Publication 1"
-date: 2018-11-18T12:33:46+10:00
+authors: Paul Simon, Kanye West
+venue: ICTER 2018
 weight: 1
+link: https://www.researchgate.net/
 ---
 
 Scan8 is a Kubernetes-based rapid URL/File scan system that allows to submit a list of URLs/files and take out the scan results.
