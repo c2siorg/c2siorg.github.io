@@ -9,4 +9,4 @@ intro_image_hide_on_mobile: false
 
 # Meet The Team
 
-Dedicated individuals who push the boundaries of technology
+Dedicated individuals who are pushing the boundaries of technology

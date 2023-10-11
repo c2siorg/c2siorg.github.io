@@ -1,7 +1,7 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients receive an obligation free consultation.",
+    "title": "Renowed Reseaches",
+    "description": "C2SI researches have published in major conferences, worldwide",
     "image": {
       "url": "images/features/noun_branding_1885335.svg",
       "width": 80,
@@ -9,8 +9,8 @@
     }
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
+    "title": "Dedicated Personnel",
+    "description": "Our talended research group is pushing boundaries everyday",
     "image": {
       "url": "images/features/noun_The Process_1885341.svg",
       "width": 80,
@@ -18,8 +18,8 @@
     }
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "Raising Millions",
+    "description": "Our pioneering reseach projects have secured grants worth over $100K",
     "image": {
       "url": "images/features/noun_3d modeling_1885342.svg",
       "width": 80,

@@ -12,9 +12,9 @@ This is the 6th time that we are participating in the GSoC, we will use this pag
 <br><br>
 You can also talk to us about possible project ideas and we are happy to improve or heip you with them. Please keep in mind that projects need to be realistically something that is able to be functionally completed by a student working full time for about eight weeks. Thanks!
 
-* Mailing List: (https://groups.google.com/forum/#!forum/score-community)
-* Gitter Channel: https://gitter.im/scorelab/
-* Proposal Template: https://goo.gl/KXcqAL
+* Mailing List: <https://groups.google.com/forum/#!forum/score-community>
+* Gitter Channel: <https://gitter.im/scorelab>
+* Proposal Template: <https://goo.gl/KXcqAL>
 
 ## Idea List for 2023
 The following is the idea list for Google Summer of Code 2023
