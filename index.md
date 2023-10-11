@@ -2,7 +2,7 @@
 title: C2SI
 layout: home
 description: Ceylon Computer Science Institute
-intro_image: "images/illustrations/community.png"
+intro_image: "images/illustrations/team3.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 show_call_box: true
