@@ -1,5 +1,5 @@
 ---
-title: Publications
+title: C2SI - Publications
 layout: publications
 description: publications
 permalink: "/publications/"
