@@ -7,6 +7,7 @@ bodyClass: "page-home"
   <div class="container">
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        <h1 style="font-family:Arial, sans-serif;">Welcome to C2SI</h1>
         {{ content }}
         {% if page.show_call_box %}
         {% include call.html show_button=true %}
@@ -86,7 +87,7 @@ bodyClass: "page-home"
             <h2 class="service-title">
               <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>
             </h2>
-            <p>{{ publication.content | markdownify | strip_html | truncate: 100 }}</p>
+            <p>{{ publication.venue | markdownify | strip_html | truncate: 100 }}</p>
           </div>
         </div>
       </div>
@@ -94,14 +95,14 @@ bodyClass: "page-home"
     </div>
     <div class="row justify-content-center">
       <div class="col-auto">
-        <a class="button button-primary" href="{{ " publications" | relative_url }}">View All Publications</a>
+        <a class="button button-primary" href="{{ "publications" | relative_url }}">View All Publications</a>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Contact -->
-<div class="strip strip-grey">
+<!-- <div class="strip strip-grey">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
     <h1>Connect with us</h1>
     <br>
@@ -109,12 +110,7 @@ bodyClass: "page-home"
 
       
       
-      <!-- <h2>Subscribe to our newsletter</h2>
-      <form action="#">
-        <input type="text" placeholder="Email (e.g. someone@host.com)" />
-        <input type="submit" value="Subscribe" />
-      </form> -->
-  
+      
   </div>
 </div>
-</div>
+</div> -->  

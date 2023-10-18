@@ -1,5 +1,5 @@
 ---
-title: Team
+title: C2SI - Team
 layout: teams
 description: Team
 permalink: "/team/"
