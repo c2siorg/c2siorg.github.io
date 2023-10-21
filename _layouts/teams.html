@@ -21,6 +21,7 @@ bodyClass: "page-teams"
 </div>
 
 <div class="container">
+    <!-- Researchers -->
     <div class="row">
         {% assign promoted_teams = site.team | where: "promoted", true | sort: "weight" %}
         {% for team in promoted_teams %}
@@ -34,17 +35,18 @@ bodyClass: "page-teams"
                 <div class="team-meta">
                     <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
                     <p class="team-description">{{ team.jobtitle }}</p>
-                    {% if team.linkedinurl %}
-                    <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
-                    {% endif %}
+                   
                 </div>
                 <!-- <div class="team-content">{{ team.content | truncate: 120 }}</div> -->
             </div>
         </div>
         {% endfor %}
     </div>
+    <h1>Researchers</h1>
+    <hr>
+    <!-- Researcherss -->
     <div class="row pt-6 pb-6">
-        {% assign teams = site.team | where: "promoted", empty | sort: "weight" %}
+        {% assign teams = site.team | where: "role", empty | sort: "weight" %}
         {% for team in teams %}
         <div class="col-12 col-md-4 mb-5">
             <div class="team team-summary">
@@ -54,9 +56,32 @@ bodyClass: "page-teams"
                 </div>
                 {% endif %}
                 <div class="team-meta">
-                    <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
+                    <!-- <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2> -->
+                    <h2 class="team-name">{{ team.title }}</a></h2>
                     <p class="team-description">{{ team.jobtitle }}</p>
-                    <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <h1>Alumni</h1>
+    <hr>
+    <!-- Researcherss -->
+    <div class="row pt-6 pb-6">
+        {% assign teams = site.team | where: "role", 2 | sort: "weight" %}
+        {% for team in teams %}
+        <div class="col-12 col-md-4 mb-5">
+            <div class="team team-summary">
+                {% if team.image %}
+                <div class="team-image">
+                    <img width="60" height="60" alt="{{ team.title }}" class="img-fluid mb-2" src="{{ team.image | relative_url }}" />
+                </div>
+                {% endif %}
+                <div class="team-meta">
+                    <!-- <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2> -->
+                    <h2 class="team-name">{{ team.title }}</a></h2>
+                    <p class="team-description">{{ team.jobtitle }}</p>
 
                 </div>
             </div>
