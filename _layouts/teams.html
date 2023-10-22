@@ -46,7 +46,7 @@ bodyClass: "page-teams"
     <hr>
     <!-- Researcherss -->
     <div class="row pt-6 pb-6">
-        {% assign teams = site.team | where: "role", empty | sort: "weight" %}
+        {% assign teams = site.team | where: "role", 1 | sort: "weight" %}
         {% for team in teams %}
         <div class="col-12 col-md-4 mb-5">
             <div class="team team-summary">
