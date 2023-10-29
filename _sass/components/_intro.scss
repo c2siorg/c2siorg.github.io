@@ -12,6 +12,7 @@
   h1 {
     color: $black;
     font-size: 42px;
+    font-family: $font-family-base;
     font-weight: bold;
     line-height: 1.2;
     @include media-breakpoint-up(md) {
@@ -20,6 +21,8 @@
     }
     @include media-breakpoint-up(lg) {
       font-size: 50px;
+      font-family: $font-family-base;
+
     }
   }
   h2 {

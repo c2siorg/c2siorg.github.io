@@ -1,3 +1,12 @@
+.title{
+  color: $black;
+  font-family: $font-family-base;
+  font-size: 48px;
+  line-height: 1.2;
+  @include media-breakpoint-up(lg) {
+    font-size: 50px;
+  }
+}
 p {
   line-height: 26px;
   color: $steel;
@@ -5,12 +14,12 @@ p {
   margin-bottom: 20px;
 }
 h1 {
-  font-size: 30px;
-  font-family: $font-family-heading;
+  font-size: 36px;
+  font-family: $font-family-base;
   line-height: 1.2;
   margin-bottom: 20px;
   @include media-breakpoint-up(md) {
-    font-size: 32px;
+    font-size: 36px;
     line-height: 1.2;
   }
 }

@@ -62,8 +62,9 @@
     color: $steel;
   }
   hr {
-    border: none;
+    // border: none;
     border-bottom: 1px solid $white-offset;
+    width: 97%;
   }
   table {
     width: 100%;

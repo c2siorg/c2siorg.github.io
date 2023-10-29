@@ -1,6 +1,6 @@
 ---
 layout: default
-bodyClass: "page-team"
+bodyClass: "page-teams"
 ---
 
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
@@ -10,9 +10,9 @@ bodyClass: "page-team"
         <center><h1 class="title">{{page.title}}</h1>
         <p>{{page.tagline}}</p>
         </center><br>
-        <div class="content">
+        <div class="content mt-5">
         
-          <ul class="blogs" id="blogs" style="display: block; list-style: none; justify-content: space-around; margin-left:-18px;"></ul>
+          <ul class="blogs mt-10 pt-2" id="blogs" style="display: block; list-style: none; justify-content: space-around; margin-left:-18px;"></ul>
         <!-- Javascript -->
         <script>
           const ul = document.getElementById('blogs');
@@ -35,7 +35,8 @@ bodyClass: "page-team"
               let output = '';
               posts.slice(0, 10).forEach((item) => {
                 output += `
-         <li class="post" style="padding-bottom: 4%; ">
+         <li style="padding-bottom: 3%;">
+          <div class="post">
                <a href="${item.link}" style="text-decoration: none;
   color: #222;">
                <div class="content">
@@ -43,15 +44,22 @@ bodyClass: "page-team"
                      <h2 class="blog_title" style="font-size: 1.5em;">${item.title}</h2></a>
                      <p>${item.pubDate} <br> By ${item.author}</p>
                      
-                     <a class="button" target="_blank" style="text-decoration:none" href="${item.link}">Read More 🡥</a>
+                     <a class="btn-link" target="_blank" style="text-decoration:none" href="${item.link}">Read More 🡥</a>
                   </div>                
                </div>
+               </div>
          </li>
-         <hr style="color: Black">`
+         <hr>`
               });
               ul.innerHTML = output;
             });
         </script>
+</div>
+<!-- View All -->
+<div class="row justify-content-center mt-5">
+  <div class="col-auto">
+    <a class="button button-primary" href="https://medium.com">View All Blog Posts</a>
+  </div>
 </div>
       </div>
     </div>

@@ -2,18 +2,18 @@
 ---
 
 // Colors
-$primary: #212121;
+$primary: #0077C0;
 // $primary: #212121;
 $primary-dark: #a01b16;
 // $primary-dark: #a01b16;
-$secondary: #f88379;
-$black: #2f2f41;
+$secondary: #79b4f8;
+$black: #1D242B;
 $white: #ffffff;
 $white-offset: #fff6f8;
 $steel: #5c5a5a;
 
 // Links
-$link-color: $primary;
+$link-color: $black;
 $link-decoration: none;
 $link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: underline;
@@ -25,7 +25,8 @@ $font-family-heading: "Playfair Display", serif, -apple-system;
 // Footer
 $footer-background-color: $primary;
 $footer-text-color: $white;
-$sub-footer-background-color: darken($primary, 10%);
+// $sub-footer-background-color: darken($primary, 10%);
+$sub-footer-background-color: $black;
 $sub-footer-text-color: $white;
 
 // Bootstrap

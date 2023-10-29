@@ -4,7 +4,7 @@
   height: 40px;
   line-height: 40px;
   padding: 0 14px;
-  //box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  // box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   background: $primary;
   border-radius: 4px;
   font-size: 14px;
@@ -19,6 +19,32 @@
     color: #ffffff;
     background-color: lighten($primary, 10%);
     transform: translateY(-1px);
+    //box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+  }
+}
+
+.button-outline {
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  line-height: 35px;
+  padding: 0 14px;
+  // box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  // border: 2px solid $primary;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #121212;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  &:hover {
+    color: $primary;
+    // background-color: lighten($primary, 10%);
+    // transform: translateY(-1px);
     //box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     text-decoration: none;
   }
