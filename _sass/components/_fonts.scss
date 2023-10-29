@@ -5,3 +5,17 @@
 	font-display: swap;
 	src: local(''), url('../fonts/playfair-display.woff2') format('woff2');
 }
+
+@font-face {
+	font-family: 'Gotham Book';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local(''), url('../fonts/gotham-book.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Gotham Bold';
+	font-display: swap;
+	src: local(''), url('../fonts/gotham-bold.woff2') format('woff2');
+}
