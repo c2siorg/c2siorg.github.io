@@ -6,7 +6,7 @@
       {% if item.url == '/gsoc23' %}
       <a href="/gsoc23" style="background-color: #0077C0; color: #f8f8f8; border-radius: 5px; padding: 8px; text-decoration: none; margin-left: 10px; padding-bottom: 6px;">GSoC 23</a>
       {% else %}
-      <a href="{{ item.url | relative_url }}" style="color: #1D242B;">{{ item.name }}</a>
+      <a href="{{ item.url | relative_url }}" >{{ item.name }}</a>
       {% endif %}
     </li>
     {% endfor %}
