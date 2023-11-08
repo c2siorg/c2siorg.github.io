@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>RayZed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="RayZed"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  <meta property="og:image" content="http://localhost:4000/images/logo/c2si-logo-mobile.png"/>
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/publications/">Publications</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/opportunities/">Opportunities</a>
+    </li>
+    
+    <li class="">
+      <a href="/blog/">Blog</a>
+    </li>
+    
+    <li class="">
+      <a href="https://github.com/c2siorg">GitHub 🡥</a>
+    </li>
+    
+    <li class="">
+      <a href="/gsoc23">GSoC 23</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="140px" height="37px" alt="C2SI" src="/images/logo/c2si-logo-main.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="C2SI" src="/images/logo/c2si-logo-mobile.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      
+      <a href="/" >Home</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/services/" >Projects</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/publications/" >Publications</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/team/" >Team</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/opportunities/" >Opportunities</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/blog/" >Blog</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="https://github.com/c2siorg" >GitHub 🡥</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/gsoc23" style="background-color: #0077C0; color: #f8f8f8; border-radius: 5px; padding: 8px; text-decoration: none; margin-left: 10px; padding-bottom: 6px;">GSoC 23</a>
+      
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">RayZed</h1>
+        <div class="content"><p>RayZed is a ray-based, distributed web vulnerability scanner designed on a ray queue. Moreover,
+RayZed is a cloud-native application built utilising the Terraform stack.</p>
+
+<p><img src="https://user-images.githubusercontent.com/20130001/148359955-35ed4632-224f-47c6-90b6-1cdde48ec898.png" alt="image" /></p>
+
+<h2 id="abstract--motivation">Abstract &amp; Motivation</h2>
+<p>Finding out web vulnerabilities for specific targets(URLs) is a critical task. For this OWASP ZAP-ZED
+helps by using its various scan functionalities like active, passive and spider scan. These scans
+scrutinize the target URL for different standard vulnerabilities and thus is an extensive process. The
+target(URLs) could be distributed among Ray cluster nodes deployed on the cloud-native platform
+where ZAP is running as a daemon. This architecture scales the process of finding vulnerabilities for
+targets. The purpose of this project is to create a parallelized tool that could fetch vulnerabilities of
+different websites in an efficient way such that the process could be scaled and automated for
+cybersecurity research.</p>
+
+<h2 id="technology-stack">Technology stack</h2>
+<ol>
+  <li>Terraform: Cloud-native platform agnostic infrastructure as code to define and manage
+infrastructure</li>
+  <li>Ray: Parallelize the remote scan function on the cloud-native platform to cater to multiple
+targets.</li>
+  <li>ZAP-ZED: Provide active, passive and spyder scan functionality.</li>
+  <li>Ansible: To automate the setup of local environments on virtual machines.</li>
+  <li>NGINX: For reverse proxying</li>
+  <li>GCP: Google Cloud Platform to provide service of the virtual machine and firewall.</li>
+</ol>
+
+<h2 id="zed-optimization-survey">Zed Optimization Survey</h2>
+<p><a href="https://docs.google.com/document/d/1j10LrdNFHic8l0VE-8o0wIziROTtdShs2HFSZ6Xkcog/edit?usp=sharing">Documentation Link</a></p>
+
+<h2 id="folder-structure">Folder Structure</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
+├── ansible.cfg
+├── main.tf
+├── misc
+│   ├── ray
+│   └── ray.service
+├── playbook.yaml
+├── queue-master.py
+├── README.md
+├── Scan.py
+├── terraform.tfvars
+├── variables.tf
+└── zedzap.service
+
+</code></pre></div></div>
+
+<h2 id="setup--build">Setup &amp; Build</h2>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>GCP
+    <ul>
+      <li><a href="https://youtu.be/e_8LZL2Th_4">Reference video</a></li>
+      <li><a href="https://cloud.google.com/docs">Google Cloud Platform Documentation</a></li>
+    </ul>
+  </li>
+  <li>Terraform (Version used in this project : Terraform v1.4.6
+on linux_amd64
+)
+    <ul>
+      <li><a href="https://developer.hashicorp.com/terraform/downloadsd">Terraform Installation Documentation</a></li>
+    </ul>
+  </li>
+  <li>Ansible</li>
+</ul>
+
+<h3 id="installation">Installation</h3>
+
+<ol>
+  <li>Clone the repository
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/c2siorg/RayZed.git
+</code></pre></div>    </div>
+    <h3 id="configuration">Configuration</h3>
+  </li>
+  <li>Move to RayZed
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd RayZed
+</code></pre></div>    </div>
+  </li>
+  <li>Make keys folder and store the service_account.json file fetched from GCP in this folder</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir keys
+
+'Store the service_account.json here'
+</code></pre></div></div>
+<ol>
+  <li>Configure terraform.tfvars file
+```
+Change following variables</li>
+</ol>
+
+<p>project = ‘YOUR_GCP_PROJECT_NAME’
+ssh_user = “YOUR_SSH_USER_NAME”
+ssh_prv_key = “YOUR_SSH_PRIVATE_KEY_PATH”
+ssh_pub_key = “YOUR_SSH_PUBLIC_KEY_PATH”</p>
+
+<p>(Generate rsa key pair if not existing or different for this project)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4. Configure .env file
+</code></pre></div></div>
+<p>nano .env</p>
+
+<p>Change following variables</p>
+
+<p>ZAP_APIKEY=YOUR_API_KEY
+ZAP_PROXIES_HTTP=http://127.0.0.1:8080
+ZAP_PROXIES_HTTPS=http://127.0.0.1:8080
+FILEPATH=YOUR_PATH_TO_STORE_OUTPUT_ON_RAY_HEAD_NODE
+TIME_OUT=60</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### Usage
+
+1. Terraform Commands (Builds the infrastructure and initial environment setup on the GCP VM instances)
+</code></pre></div></div>
+<p>terraform init
+terraform plan
+terraform apply</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+2. ssh commands to check the vm instances
+
+</code></pre></div></div>
+<p>ssh ‘RSA_USER’@’EXTERNAL_IPADDRESS_OF_HEAD_NODE’
+ssh ‘RSA_USER’@’EXTERNAL_IPADDRESS_OF_WORKER_NODE’</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3. To run ray commands once ssh established
+
+On head node
+</code></pre></div></div>
+<p>ray start –head –port=6379 –include-dashboard=true</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![ray_head](screenshots/ray-head.jpg)
+
+On worker node
+</code></pre></div></div>
+<p>ray start –address-‘LOCAL_HEAD_NODE_IP:6379’ –redis-password=’52415900000000’</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![ray_worker](screenshots/ray-worker.jpg)
+
+Note: If some of these commands did not run in ansible automation you could run them separately through ssh and achieve the same result.
+
+4. To run zap service on different terminal: open zap downloaded location  and run
+</code></pre></div></div>
+<p>./zap.sh -daemon -config api.key=YOUR_API_KEY</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Note: This needs to be done in case ansible automation could not run the service in all vm instances.
+
+5. To run the queue-master.py on the head instance node. 
+</code></pre></div></div>
+<p>python3 queue-master.py
+```
+<img src="screenshots/queue-master.jpg" alt="queue" /></p>
+
+<p>Note:</p>
+<ul>
+  <li>One can edit the websites required by modifying the DATA list in queue-master.py</li>
+  <li>The output json files are stored in the location mentioned in the .env file in the head vm</li>
+</ul>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">C2SI</h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/about/">About</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/c2siorg" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://twitter.com/bugzero_io" target="blank"><img src="/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">©2023 Ceylon Computer Science Institute. All rights reserved.</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Geo DNS Scanner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="Geo DNS Scanner"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  <meta property="og:image" content="http://localhost:4000/images/logo/c2si-logo-mobile.png"/>
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/publications/">Publications</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/opportunities/">Opportunities</a>
+    </li>
+    
+    <li class="">
+      <a href="/blog/">Blog</a>
+    </li>
+    
+    <li class="">
+      <a href="https://github.com/c2siorg">GitHub 🡥</a>
+    </li>
+    
+    <li class="">
+      <a href="/gsoc23">GSoC 23</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="140px" height="37px" alt="C2SI" src="/images/logo/c2si-logo-main.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="C2SI" src="/images/logo/c2si-logo-mobile.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      
+      <a href="/" >Home</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/services/" >Projects</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/publications/" >Publications</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/team/" >Team</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/opportunities/" >Opportunities</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/blog/" >Blog</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="https://github.com/c2siorg" >GitHub 🡥</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/gsoc23" style="background-color: #0077C0; color: #f8f8f8; border-radius: 5px; padding: 8px; text-decoration: none; margin-left: 10px; padding-bottom: 6px;">GSoC 23</a>
+      
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">Geo DNS Scanner</h1>
+        <div class="content"><p>Distributed zdns implementation</p>
+
+<h3 id="set-up-instructions">Set Up Instructions</h3>
+
+<ol>
+  <li>Create a Service Account and Give Owner Role to the Account OR Just Give the Minimum Roles Required to Function
+    <ul>
+      <li>Compute Admin</li>
+      <li>Compute Instance Admin (beta)</li>
+      <li>Compute Instance Admin (v1)</li>
+      <li>Compute Network Admin</li>
+      <li>Compute Network User</li>
+      <li>Compute OS Admin Login</li>
+      <li>Compute OS Login</li>
+      <li>Service Account Admin</li>
+      <li>Service Account User</li>
+      <li>Owner</li>
+      <li>Storage Admin</li>
+    </ul>
+  </li>
+  <li>Download the Service Account JSON Key File to the Control Node and Add it to the Required Directory
+    <ul>
+      <li>Keys Directory</li>
+    </ul>
+  </li>
+  <li>Link the Service Account to all the Projects of Interest by adding Service Account’s Email to Projects IAM By Giving Owner Role  OR Just Give the Minimum Roles Required to Function (As above mentioned)
+    <ul>
+      <li>This Works Accross Multiple Projects Belongs to Different GCP Accounts as well</li>
+    </ul>
+  </li>
+  <li>Add all the Projects Details to the Relavent Config Varibale
+    <ul>
+      <li>terraform.tfvars -&gt; projects variable</li>
+    </ul>
+  </li>
+  <li>
+    <p>Add provider blocks for each project of Interest Manually - Terraform does not support for_each in provider block</p>
+  </li>
+  <li>
+    <p>Set Environment Variable of the Local Machine - Control Node</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">export </span><span class="nv">ANSIBLE_HOST_KEY_CHECKING</span><span class="o">=</span>False
+ <span class="nb">export </span><span class="nv">GOOGLE_APPLICATION_CREDENTIALS</span><span class="o">=</span>/home/&lt;path to GCP Service Account Key JSON file&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create A Private / Public Key Pair for SSH Authentication</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-f</span> ~/.ssh/ssh_key <span class="nt">-C</span> ssh_user
+</code></pre></div>    </div>
+  </li>
+  <li>Add the File Paths to the Private / Public Key Files to the
+    <ul>
+      <li>terraform.tfvars -&gt; ssh_key_public</li>
+      <li>terraform.tfvars -&gt; ssh_key_private</li>
+    </ul>
+  </li>
+  <li>
+    <p>Create a GCP Storage Bucket From the Root Project - Where you create the GCP Service Account JSON Key</p>
+  </li>
+  <li>Add or change the configurations in both Terraform (main.tf) and Ansible (ansible.cfg)
+    <ul>
+      <li>GCP Locations - vm_nodes</li>
+      <li>Projects Details - projects and provider.tf</li>
+      <li>VM Settings - specs</li>
+      <li>Seed File Name to Downloaded from GC Storage Bucket</li>
+      <li>Output File Directories and Naming / Annotating</li>
+    </ul>
+  </li>
+  <li>
+    <p>Run the System By Entering Following Commands</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>terraform init
+
+terraform apply
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Destroy the Created Infrastructure</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>terraform destroy
+</code></pre></div>    </div>
+  </li>
+</ol>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">C2SI</h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/about/">About</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/c2siorg" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://twitter.com/bugzero_io" target="blank"><img src="/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">©2023 Ceylon Computer Science Institute. All rights reserved.</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

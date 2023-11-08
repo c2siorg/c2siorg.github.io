@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SCAN8</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="SCAN8"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  <meta property="og:image" content="http://localhost:4000/images/logo/c2si-logo-mobile.png"/>
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/publications/">Publications</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/opportunities/">Opportunities</a>
+    </li>
+    
+    <li class="">
+      <a href="/blog/">Blog</a>
+    </li>
+    
+    <li class="">
+      <a href="https://github.com/c2siorg">GitHub 🡥</a>
+    </li>
+    
+    <li class="">
+      <a href="/gsoc23">GSoC 23</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="140px" height="37px" alt="C2SI" src="/images/logo/c2si-logo-main.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="C2SI" src="/images/logo/c2si-logo-mobile.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      
+      <a href="/" >Home</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/services/" >Projects</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/publications/" >Publications</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/team/" >Team</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/opportunities/" >Opportunities</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/blog/" >Blog</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="https://github.com/c2siorg" >GitHub 🡥</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/gsoc23" style="background-color: #0077C0; color: #f8f8f8; border-radius: 5px; padding: 8px; text-decoration: none; margin-left: 10px; padding-bottom: 6px;">GSoC 23</a>
+      
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">SCAN8</h1>
+        <div class="content"><p>Scan8 is a Kubernetes-based rapid URL/File scan system that allows to submit a list of URLs/files and take out the scan results.</p>
+
+<p>Scan8 is a distributed scanning system for detecting trojans, viruses, malware, and other malicious threats embedded in files. The system will allow one to submit a list of URLs or files and get the scan results in return.</p>
+
+<p>The project is divided into various modules namely <code class="language-plaintext highlighter-rouge">Dashboard</code>, <code class="language-plaintext highlighter-rouge">Coordinator Node</code>, <code class="language-plaintext highlighter-rouge">Worker Node</code>, and <code class="language-plaintext highlighter-rouge">Testing</code>.<br />
+The <code class="language-plaintext highlighter-rouge">Dashboard</code> provides a responsive web interface for uploading files for new scans and tracking the status of all the submitted scans.<br />
+The <code class="language-plaintext highlighter-rouge">Coordinator Node</code> listens to updates for new scans, subsequently creating and adding scan jobs to the Redis Queue.<br />
+The <code class="language-plaintext highlighter-rouge">Worker Node</code> listens to updates for new jobs in Redis Queue and executes them.<br />
+The <code class="language-plaintext highlighter-rouge">Testing</code> module helps in maintaining the application and facilitating the CI/CD process for the same.</p>
+
+<h2 id="application-architecture">Application Architecture</h2>
+<p><img src="https://user-images.githubusercontent.com/54113320/129327795-bd8da18e-484a-428a-aa90-7cc063e11b7f.png" alt="Scan8 application architecture" /></p>
+
+<h2 id="dependencies">Dependencies</h2>
+<ul>
+  <li>Language: <code class="language-plaintext highlighter-rouge">Python 3.8.10</code></li>
+  <li>Database: <code class="language-plaintext highlighter-rouge">MongoDB</code></li>
+  <li>Tools: <code class="language-plaintext highlighter-rouge">redis-server clamav clamav-daemon</code></li>
+</ul>
+
+<blockquote>
+  <p>Specific dependencies for the <code class="language-plaintext highlighter-rouge">Dashboard</code>, <code class="language-plaintext highlighter-rouge">Coordinator</code> and <code class="language-plaintext highlighter-rouge">Worker</code> can be found in the respective directories in <code class="language-plaintext highlighter-rouge">requirements.txt</code> file.</p>
+</blockquote>
+
+<h2 id="local-setup-guide">Local Setup Guide</h2>
+<ol>
+  <li>Clone the current repository to your local machine using <code class="language-plaintext highlighter-rouge">git clone</code>.</li>
+  <li>Install the dependencies as specified in <code class="language-plaintext highlighter-rouge">Dependencies</code> section.</li>
+  <li>Make sure the <code class="language-plaintext highlighter-rouge">mongod</code> and <code class="language-plaintext highlighter-rouge">clamav-daemon</code> services are running in the background.</li>
+  <li>Check the <code class="language-plaintext highlighter-rouge">.env</code> file to have the appropriate MongoDB and Redis host and port (variables are set to defaults).</li>
+  <li>Access the terminal and move to the <code class="language-plaintext highlighter-rouge">Dashboard</code> directory.</li>
+  <li>Run the flask application using <code class="language-plaintext highlighter-rouge">export FLASK_APP=app.py</code> followed by <code class="language-plaintext highlighter-rouge">flask run</code>.</li>
+  <li>Access another terminal and move to the <code class="language-plaintext highlighter-rouge">Coordinator</code> directory.</li>
+  <li>Run the coordinator node application using <code class="language-plaintext highlighter-rouge">python3 app.py</code>.</li>
+  <li>Access another terminal and move to the <code class="language-plaintext highlighter-rouge">Worker</code> directory.</li>
+  <li>Run the worker node application using <code class="language-plaintext highlighter-rouge">python3 app.py</code>.</li>
+  <li>Create <code class="language-plaintext highlighter-rouge">Uploads</code> and <code class="language-plaintext highlighter-rouge">Results</code> directories in the project directory.</li>
+</ol>
+
+<h2 id="usage">Usage</h2>
+<ol>
+  <li>After following the <code class="language-plaintext highlighter-rouge">Local setup guide</code>, use any web browser to access the IP address mentioned in the terminal after running <code class="language-plaintext highlighter-rouge">flask run</code> (by default it is <code class="language-plaintext highlighter-rouge">http://127.0.0.1:5000/</code>).</li>
+  <li>Submit new scans using the <code class="language-plaintext highlighter-rouge">New Scan</code> button and track their progress on the dashboard.</li>
+  <li>The results for the submitted scans can be found in the <code class="language-plaintext highlighter-rouge">Results</code> directory as <code class="language-plaintext highlighter-rouge">&lt;scan id&gt;_&lt;file_name&gt;.json</code>.</li>
+</ol>
+
+<h2 id="testing">Testing</h2>
+<p>The application comes with a test suite to help users ensure correct installation and help developers verify any updates.</p>
+<ol>
+  <li>Ensure the Results and Uploads directories are empty.</li>
+  <li>Ensure the MongoDB collections are empty.</li>
+  <li>Ensure the scan8 application is up and running.</li>
+  <li>Access a terminal and move to the <code class="language-plaintext highlighter-rouge">Testing</code> directory.</li>
+  <li>Run the test suite using <code class="language-plaintext highlighter-rouge">python3 app.py -v</code>.</li>
+  <li>Run a single scan using the Scan8 dashboard and wait till completion.</li>
+  <li>Run the test suite again using <code class="language-plaintext highlighter-rouge">python3 app.py -v</code>.</li>
+</ol>
+
+<h2 id="demo-videos">Demo videos</h2>
+<ul>
+  <li><a href="https://drive.google.com/file/d/16oXRxPhDIK1QnPnjoJig_SXpZj8Lj-mq/view?usp=sharing">Introduction</a></li>
+  <li><a href="https://drive.google.com/file/d/1TblQdpIAS4VybZzgb2ORfmJiXs_McVrO/view?usp=sharing">Application Demo</a></li>
+  <li><a href="https://drive.google.com/file/d/1CTvLrD_fSdq6xxXabgkLGOPs3jDLwPrT/view?usp=sharing">Testing Demo</a></li>
+</ul>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h2 class="footer-title">C2SI</h2>
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/about/">About</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/c2siorg" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://twitter.com/bugzero_io" target="blank"><img src="/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">©2023 Ceylon Computer Science Institute. All rights reserved.</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
