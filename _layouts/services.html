@@ -1,6 +1,6 @@
 ---
 layout: default
-bodyClass: "page-services"
+bodyClass: "page-teams"
 ---
 
 <div class="intro">
@@ -14,6 +14,7 @@ bodyClass: "page-services"
       {% if page.intro_image %}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-1 position-relative">
         <img alt={{ page.title }} class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
+        
       </div>
       {% endif %}
     </div>
@@ -23,7 +24,20 @@ bodyClass: "page-services"
 <div class="container pt-6 pb-6">
   <div class="row">
     {% for service in site.services %}
-    <div class="col-12 col-md-4 mb-3">
+    <div class="col-12 col-md-6 mb-3">
+      <div class="team team-summary team-summary-large">
+          {% if service.image %}
+          <div class="team-image">
+              <img width="90" height="90" alt="Alt text" src="{{ service.image | relative_url }}" />
+          </div>
+          {% endif %}
+          <div class="team-meta">
+              <h2><a href="{{ service.url | relative_url }}">{{ service.title }}</a></h2>
+              <p>{{ service.content | markdownify | strip_html | truncate: 90 }}</p>
+          </div>
+      </div>
+  </div>
+    <!-- <div class="col-12 col-md-4 mb-3">
       <div class="service service-summary">
         <div class="service-content">
           <h2 class="service-title">
@@ -32,7 +46,7 @@ bodyClass: "page-services"
           <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
         </div>
       </div>
-    </div>
+    </div> -->
     {% endfor %}
   </div>
 </div>
