@@ -2,7 +2,7 @@
 title: GSoC 2023
 layout: gsoc
 description: Services
-intro_image: "https://media.licdn.com/dms/image/D5612AQEk1jE242PKRg/article-cover_image-shrink_720_1280/0/1684139669009?e=2147483647&v=beta&t=_7b_tvuP9P-gXEt-rGuEvyP4nILPoovZdiZIhDvc1WA"
+intro_image: "/images/logo/gsoc1.png"
 intro_image_absolute: false
 intro_image_hide_on_mobile: false
 tagline: Welcome to the C2SI Google Summer of Code (GSoC) 2023 project ideas page. 

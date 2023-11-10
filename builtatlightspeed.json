@@ -1,11 +1,11 @@
 {
-    "title": "C2SI",
-    "description": "Serif is a multi page business theme for Jekyll.",
-    "categories": {
-      "ssg": ["jekyll"],
-      "css": ["bootstrap", "scss"],
-      "archetype": ["business"],
-      "features": ["netlify", "github-pages"],
-      "blueprint": ["theme"]
-    }
+  "title": "C2SI",
+  "description": "Ceylon Computer Science Institute",
+  "categories": {
+    "ssg": ["jekyll"],
+    "css": ["bootstrap", "scss"],
+    "archetype": ["business"],
+    "features": ["netlify", "github-pages"],
+    "blueprint": ["theme"]
+  }
 }

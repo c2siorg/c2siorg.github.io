@@ -1,10 +1,14 @@
+<i class="fa-brands fa-github"></i>
+
 <div id="main-menu" class="main-menu">
   {% assign mainmenu = site.data.menus.main | sort: 'weight'  %}
   <ul>
     {% for item in mainmenu %}
     <li class="{% if item.url == page.url %}active{% endif %}">
       {% if item.url == '/gsoc23' %}
-      <a href="/gsoc23" style="background-color: #0077C0; color: #f8f8f8; border-radius: 5px; padding: 8px; text-decoration: none; margin-left: 10px; padding-bottom: 6px;">GSoC 23</a>
+      <a href="/gsoc23" id="gsocBtn" style="color: #f8f8f8; border-radius: 5px; padding: 8px; text-decoration: none; margin-left: 10px; padding-bottom: 6px;">GSoC 23</a>
+      {% elsif item.url == 'https://github.com/c2siorg' %}
+      <a href="https://github.com/c2siorg" target = "_blank" id="githubBtn" style="width: 7em; height: 1.6em; padding-bottom: 1.7em; padding-left: 1em; padding-top: 0.3em;"><img src="/images/logo/github-long.png" width="75px"></a>
       {% else %}
       <a href="{{ item.url | relative_url }}" >{{ item.name }}</a>
       {% endif %}
