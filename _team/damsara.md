@@ -1,6 +1,6 @@
 ---
 title: "Damsara Ranasinghe"
-jobtitle: "C2SI Member"
+jobtitle: "C2SI Contributor"
 role: 3
 ---
 

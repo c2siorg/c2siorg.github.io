@@ -1,6 +1,6 @@
 ---
 title: "Mahendra Laxaman"
-jobtitle: "Associate Infrastructure Architect, LSEG Technology"
+jobtitle: "C2SI Contributor"
 weight: 7
-role: 2
+role: 3
 ---

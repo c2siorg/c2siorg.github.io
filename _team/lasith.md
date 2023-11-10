@@ -1,7 +1,7 @@
 ---
 title: "Lasith Niroshan"
-jobtitle: "PhD Student, Technological University Dublin"
+jobtitle: "C2SI Contributor"
 weight: 29
-role: 2
+role: 3
 ---
 
