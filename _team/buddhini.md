@@ -1,6 +1,6 @@
 ---
 title: "Buddhini Abeyratne"
-jobtitle: "C2SI Member"
+jobtitle: "C2SI Contributor"
 role: 3
 ---
 

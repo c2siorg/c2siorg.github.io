@@ -1,6 +1,6 @@
 ---
 title: "Akila Maithripala"
-jobtitle: "University of Colombo School of Computing"
+jobtitle: "C2SI Contributor"
 role: 3
 ---
 

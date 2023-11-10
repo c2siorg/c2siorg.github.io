@@ -1,7 +1,7 @@
 ---
 title: "Namal Jayasuriya"
-jobtitle: "PhD Student, University of Western Sydney"
+jobtitle: "C2SI Contributor"
 weight: 27
-role: 2
+role: 3
 ---
 
