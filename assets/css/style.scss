@@ -4,12 +4,12 @@
 // Colors
 $primary: #0077C0;
 // $primary: #212121;
-$primary-dark: #a01b16;
+$primary-dark: #0077ff;
 // $primary-dark: #a01b16;
 $secondary: #79b4f8;
 $black: #1D242B;
 $white: #ffffff;
-$white-offset: #eff8ff;
+$white-offset: #f1f9ff;
 $steel: #5c5a5a;
 
 // Links
@@ -92,4 +92,10 @@ body {
   opacity: 1;
 }
 
+#maintitle{
+  color: $primary;
+}
 
+#mainSubTitle{
+  color: #1D242B;
+}
