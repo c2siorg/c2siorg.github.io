@@ -30,14 +30,14 @@
     font-size: 1.2rem;
     line-height: 1.4;
     margin-bottom: 30px;
-    color: $black;
+    color: $primary;
     font-family: $font-family-base;
   }
   p {
     font-size: 1.2rem;
     font-weight: light;
     line-height: 1.5;
-    color: $steel;
+    color: $primary;
     @include media-breakpoint-up(md) {
       width: 80%;
     }
