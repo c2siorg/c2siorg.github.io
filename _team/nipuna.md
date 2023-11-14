@@ -1,6 +1,6 @@
 ---
 title: "Nipuna Weerasekara"
-jobtitle: "BIs(University of Colombo)"
+jobtitle: "C2SI Contributor"
 weight: 5
 role: 1
 image: "images/team/nipuna.jpg"

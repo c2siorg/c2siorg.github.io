@@ -1,6 +1,6 @@
 ---
-title: "Dr. Sameera Horawalavithana"
-jobtitle: "PhD(University of South Florida)"
+title: "Sameera Horawalavithana"
+jobtitle: "C2SI Contributor"
 weight: 8
 role: 2
 ---
