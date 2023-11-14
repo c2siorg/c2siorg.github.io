@@ -1,6 +1,6 @@
 ---
 title: "Kenneth Thilakarathna"
-jobtitle: "MPhil(University of Colombo)"
+jobtitle: "C2SI Contributor"
 weight: 2
 role: 1
 image: "images/team/kenneth.jpg"
