@@ -1,7 +1,7 @@
 ---
-title: "Pasindu Marasinghe"
+title: "Tharindu Ranathunga"
 jobtitle: "C2SI Contributor"
-weight: 67
 role: 3
+weight: 100
 ---
 
