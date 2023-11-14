@@ -37,7 +37,7 @@ bodyClass: "page-teams"
                     <p class="team-description">{{ team.jobtitle }}</p>
                    
                 </div>
-                <!-- <div class="team-content">{{ team.content | truncate: 120 }}</div> -->
+                <div class="team-content">{{ team.content | truncate: 120 }}</div>
             </div>
         </div>
         {% endfor %}
@@ -45,18 +45,18 @@ bodyClass: "page-teams"
     <!-- <h1>Researchers</h1> -->
     <!-- <hr> -->
     <!-- Researcherss -->
-    <div class="row pt-4 pb-6">
+    <!-- <div class="row pt-4 pb-6">
         {% assign teams = site.team | sort: "weight" %}
         {% for team in teams %}
         <div class="col-12 col-md-4 mb-5">
             <div class="team team-summary">
-                <!-- {% if team.image %}
+                {% if team.image %}
                 <div class="team-image">
                     <img width="60" height="60" alt="{{ team.title }}" class="img-fluid mb-2" src="{{ team.image | relative_url }}" />
                 </div>
-                {% endif %} -->
+                {% endif %}
                 <div class="team-meta">
-                    <!-- <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2> -->
+                    <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
                     <h2 class="team-name">{{ team.title }}</a></h2>
                     <p class="team-description">{{ team.jobtitle }}</p>
 
@@ -64,7 +64,30 @@ bodyClass: "page-teams"
             </div>
         </div>
         {% endfor %}
+    </div> -->
+    <!-- Looping Code Begins Here -->
+    <div class="row pt-4 pb-6" id="team-container">
+        {% assign teams = site.team | sort: "weight" %}
+        {% for team in teams %}
+            <div class="col-12 col-md-4 mb-5 team team-summary">
+                <div class="team-meta">
+                    <h2 class="team-name">{{ team.title }}</h2>
+                    <p class="team-description">{{ team.jobtitle }}</p>
+                </div>
+            </div>
+        {% endfor %}
     </div>
+    
+    <script>
+        // JavaScript to shuffle the team elements on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var teamContainer = document.getElementById('team-container');
+            for (var i = teamContainer.children.length; i >= 0; i--) {
+                teamContainer.appendChild(teamContainer.children[Math.random() * i | 0]);
+            }
+        });
+    </script>
+    <!-- Looping Code Ends Here -->
     <!-- <h1>Contribtuors</h1> -->
     <!-- <hr> -->
     <!-- Contribtuors -->
