@@ -1,6 +1,7 @@
 ---
 title: "Priya Pappachan"
 jobtitle: "C2SI Contributor"
-role: 85
+weight: 85
+role: 3
 ---
 
