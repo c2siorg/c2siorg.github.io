@@ -1,6 +1,7 @@
 ---
 title: "Damitha Ranasinghe"
 jobtitle: "C2SI Contributor"
-role: 88
+role: 2
+weight: 100
 ---
 

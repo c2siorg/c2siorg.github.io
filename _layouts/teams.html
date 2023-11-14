@@ -22,7 +22,7 @@ bodyClass: "page-teams"
 
 <div class="container">
     <!-- Researchers -->
-    <div class="row">
+    <!-- <div class="row">
         {% assign promoted_teams = site.team | where: "promoted", true | sort: "weight" %}
         {% for team in promoted_teams %}
         <div class="col-12 col-md-6 mb-2">
@@ -41,20 +41,20 @@ bodyClass: "page-teams"
             </div>
         </div>
         {% endfor %}
-    </div>
-    <h1>Researchers</h1>
-    <hr>
+    </div> -->
+    <!-- <h1>Researchers</h1> -->
+    <!-- <hr> -->
     <!-- Researcherss -->
-    <div class="row pt-6 pb-6">
-        {% assign teams = site.team | where: "role", 1 | sort: "weight" %}
+    <div class="row pt-3 pb-6">
+        {% assign teams = site.team | sort: "weight" %}
         {% for team in teams %}
-        <div class="col-12 col-md-6 mb-5">
+        <div class="col-12 col-md-4 mb-5">
             <div class="team team-summary">
-                {% if team.image %}
+                <!-- {% if team.image %}
                 <div class="team-image">
                     <img width="60" height="60" alt="{{ team.title }}" class="img-fluid mb-2" src="{{ team.image | relative_url }}" />
                 </div>
-                {% endif %}
+                {% endif %} -->
                 <div class="team-meta">
                     <!-- <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2> -->
                     <h2 class="team-name">{{ team.title }}</a></h2>
@@ -65,10 +65,10 @@ bodyClass: "page-teams"
         </div>
         {% endfor %}
     </div>
-    <h1>Contribtuors</h1>
-    <hr>
+    <!-- <h1>Contribtuors</h1> -->
+    <!-- <hr> -->
     <!-- Contribtuors -->
-    <div class="row pt-6 pb-6">
+    <!-- <div class="row pt-6 pb-6">
         {% assign teams = site.team | where: "role", 3 | sort: "weight" %}
         {% for team in teams %}
         <div class="col-12 col-md-3 mb-5">
@@ -79,7 +79,7 @@ bodyClass: "page-teams"
                 </div>
                 {% endif %}
                 <div class="team-meta">
-                    <!-- <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2> -->
+                    <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
                     <h3 class="team-name" style="opacity: 0.9;">{{ team.title }}</h3>
                     <p class="team-description">{{ team.jobtitle }}</p>
 
@@ -87,5 +87,5 @@ bodyClass: "page-teams"
             </div>
         </div>
         {% endfor %}
-    </div>
+    </div> -->
 </div>

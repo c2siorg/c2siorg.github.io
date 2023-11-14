@@ -1,6 +1,7 @@
 ---
 title: "Saisankar Gochhayat"
 jobtitle: "C2SI Contributor"
-role: 93
+weight: 93
+role: 3
 ---
 

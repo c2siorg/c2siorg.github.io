@@ -1,6 +1,7 @@
 ---
 title: "Pasan Madara"
 jobtitle: "C2SI Contributor"
-role: 83
+weight: 83
+role: 3
 ---
 
