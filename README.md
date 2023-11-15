@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Installation
 
 ### Installing Ruby & Jekyll
@@ -52,3 +53,7 @@ I've been building open source themes for all the main static site generators fo
 - [Jekyll Curate (Premium)](https://www.zerostatic.io/theme/jekyll-curate/)
 
 🇦🇺 **Made in Australia** by Robert Austin
+=======
+# c2siorg.github.io
+c2siorg.github.io
+>>>>>>> b5105c435ced614a039d91f67a9b971da3a19dd9
