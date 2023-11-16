@@ -80,17 +80,21 @@ bodyClass: "page-home"
     <h1 class="mt-1 mb-4">Publications</h1>
     <div class="row justify-content-start">
       {% assign limit = site.home.limit_publications | default: 4 %}
-      {% for publication in site.publications limit: limit %}
-      <div class="col-12 col-md-6 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{publication.link}}" target="_blank">{{ publication.title }}</a>
-            </h2>
-            <p>{{ publication.venue | markdownify | strip_html | truncate: 100 }}</p>
+      {% assign sorted_publications = site.publications | sort: "year" | reverse %}
+
+      {% for publication in sorted_publications %}
+        {% if forloop.index <= limit %}
+          <div class="col-12 col-md-6 mb-1">
+            <div class="service service-summary">
+              <div class="service-content">
+                <h2 class="service-title">
+                  <a href="{{publication.link}}" target="_blank">{{ publication.title }}</a>
+                </h2>
+                <p>{{ publication.venue | markdownify | strip_html | truncate: 100 }}</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        {% endif %}
       {% endfor %}
     </div>
     <div class="row justify-content-center">
