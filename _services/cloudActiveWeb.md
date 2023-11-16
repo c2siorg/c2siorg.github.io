@@ -1,7 +1,7 @@
 ---
 title: "CloudActive Web"
 date: 2019-04-18T12:33:46+10:00
-weight: 17
+weight: 5
 image: "/images/logo/c2si-logo-mobile.png"
 ---
 
@@ -14,6 +14,7 @@ Welcome to CloudActive, your gateway to seamless cloud resource management and o
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Features](#features)
 - [Getting Started](#getting-started)

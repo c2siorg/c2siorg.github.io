@@ -22,7 +22,7 @@ collections:
     output: true
   publications:
     output: true
-    sort_by: weight
+    # sort_by: year
 
 defaults:
   - scope:
@@ -37,7 +37,7 @@ defaults:
       layout: "team"
   - scope:
       path: ""
-      type: "publications"
+      type: "publication"
     values:
       layout: "publication"
 
