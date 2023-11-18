@@ -29,22 +29,32 @@ bodyClass: "page-home"
     <h1 class="mt-1 mb-4">Projects</h1>
     <div class="row justify-content-start">
       {% assign limit = site.home.limit_services | default: 6 %}
-      {% for service in site.services limit: 6 %}
-      <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-            </h2>
-            <p>{{ service.content | markdownify | strip_html | truncate: 89 }}</p>
+      {% assign sorted_services = site.services | sort: "weight" %}
+      
+      {% for service in sorted_services %}
+        {% if forloop.index <= limit %}
+          <div class="col-12 col-md-4 mb-1">
+            <div class="service service-summary">
+              <div class="service-content">
+                <h2 class="service-title">
+                  <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
+                </h2>
+                <p>{{ service.content | markdownify | strip_html | truncate: 89 }}</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        {% else %}
+          {% break %}
+        {% endif %}
       {% endfor %}
+      
+
+      
+
     </div>
     <div class="row justify-content-center">
       <div class="col-auto mt-2">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Projects</a>
+        <a class="button-text" href="{{ "services" | relative_url }}">View All Projects ➔</a>
       </div>
     </div>
   </div>
@@ -76,7 +86,7 @@ bodyClass: "page-home"
 
 <!-- Publications -->
 <div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
+  <div class="container pt-1 pb-6 pb-md-10">
     <h1 class="mt-1 mb-4">Publications</h1>
     <div class="row justify-content-start">
       {% assign limit = site.home.limit_publications | default: 4 %}
@@ -99,7 +109,7 @@ bodyClass: "page-home"
     </div>
     <div class="row justify-content-center">
       <div class="col-auto mt-2">
-        <a class="button button-primary" href="{{ "publications" | relative_url }}">View All Publications</a>
+        <a class="button-text" href="{{ "publications" | relative_url }}">View All Publications ➔</a>
       </div>
     </div>
   </div>
