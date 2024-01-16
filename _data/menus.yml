@@ -20,8 +20,8 @@ main:
   - name: "GitHub"
     url: "https://github.com/c2siorg"
     weight: 6
-  - name: "GSoC 23"
-    url: "/gsoc23"
+  - name: "GSoC 24"
+    url: "/gsoc24"
     weight: 7
 
 footer:
