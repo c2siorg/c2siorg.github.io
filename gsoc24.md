@@ -32,7 +32,6 @@ You can also talk to us about possible project ideas and we are happy to improve
 # Idea List for 2024
 *The following is the idea list for Google Summer of Code 2023*
 
-## Example Project
 
 Project 1
 : Complete the tasks in Road Map of Dunner up to v1.0
