@@ -8,13 +8,16 @@ intro_image_hide_on_mobile: false
 tagline: Welcome to the C2SI Google Summer of Code (GSoC) 2024 project ideas page. 
 ---
 
-This is the 6th time that we are participating in the GSoC, we will use this page to develop possible project ideas that have on the above mentioned areas. Please note that anyone who is interested can participate in this process. You do not have to be a GSoC student or mentor to suggest possible project ideas.
+This is the 7th time that we are participating in the GSoC, we will use this page to develop possible project ideas that have on the above mentioned areas. Please note that anyone who is interested can participate in this process. You do not have to be a GSoC student or mentor to suggest possible project ideas.
 <br><br>
 You can also talk to us about possible project ideas and we are happy to improve or heip you with them. Please keep in mind that projects need to be realistically something that is able to be functionally completed by a student working full time for about eight weeks. Thanks!
 
-* Mailing List: <https://groups.google.com/forum/#!forum/score-community>
-* Proposal Template: <https://goo.gl/KXcqAL>
+* Mailing List
+: <https://groups.google.com/forum/#!forum/score-community>
+* Proposal Template
+: <a href="https://shorturl.at/dtR23" target="_blank">https://shorturl.at/dtR23</a>
 <br><br>
+
 
 ## Important Guidelines on Submitting Ideas
 
