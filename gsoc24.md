@@ -29,16 +29,17 @@ You can also talk to us about possible project ideas and we are happy to improve
 4. Lets Talk! The best way to solve problems that you might have is to contact our mentors and also our community.
 5. We encourage you to do documentation so that we can keep track of your progress and also help you if things are not going according to plan. Although not compulsory we have a strong belief that this method can cut down your time to code and also the workload of the mentors drastically.
 6. Please send your new project ideas to gsoc[at]c2si.com
+<br><br>
 
----
+---------------------------
+
+<br>
 
 # Idea List for 2024
 *The following is the idea list for Google Summer of Code 2023*
 
 
-Project 1
-: Complete the tasks in Road Map of Dunner up to v1.0
-<br><br>
+## 1: Complete the tasks in Road Map of Dunner up to v1.0
 
 Brief explanation
 : Dunner is a task runner tool like Grunt but used Docker images as CircleCI does. You can define tasks and steps of the tasks in your `.dunner.yaml` file and then run these steps with `Dunner do taskname`.
