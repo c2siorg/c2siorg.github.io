@@ -39,7 +39,7 @@ You can also talk to us about possible project ideas and we are happy to improve
 *The following is the idea list for Google Summer of Code 2023*
 
 
-## 1: Complete the tasks in Road Map of Dunner up to v1.0
+## Example Project: Complete the tasks in Road Map of Dunner up to v1.0
 
 Brief explanation
 : Dunner is a task runner tool like Grunt but used Docker images as CircleCI does. You can define tasks and steps of the tasks in your `.dunner.yaml` file and then run these steps with `Dunner do taskname`.
@@ -59,9 +59,18 @@ Mentor
 : Milindu Kumarage, Pratik Dhanave
 <br><br>
 
+Estimate Project Length
+: 350hr
+<br><br>
+
+Difficulty
+:  Medium
+<br><br>
+
+
 ---------------------------
 
-## 2: ProjectExplainer: Add knowledge graph based retrieval and explanation APIs for code and text modalities in documentation.
+## ProjectExplainer: Add knowledge graph based retrieval and explanation APIs for code and text modalities in documentation.
 
 Brief explanation
 : ProjectExplainer project is a set of tools to help with explaining code repositories using large language models.
@@ -83,5 +92,243 @@ Possible Mentors
 : Mehant Kammakomati
 <br><br>
 
+Estimate Project Length
+: 350hr
+<br><br>
+
+Difficulty
+:  Medium
+<br><br>
+
+Slack channel
+: project-explainer
+<br><br>
+
+
 ----------
+
+##  WebiU 2.0 :- c2siorg/SCoRe Lab website
+
+Brief explanation
+: The proposed project aims to create a dynamic organization website that automatically fetches project information from GitHub repositories. This eliminates the need for manual data entry, ensuring real-time updates on the organization's website whenever a new repository is created or existing is updated. The website will also feature a configurable project template that provides essential details such as project title, description, technology stack, live demo availability, and more.
+
++ Admin Controls: Create an admin control panel to manage the display of projects on the website. This includes the ability to show/hide specific projects and modify their display settings.
+Backend Integration: Choose a backend solution (e.g., AWS, MongoDB) to store and manage additional data, such as admin configurations and website settings.
+
++ Documentation: Improve and maintain documentation related to the development areas, ensuring clarity for future contributors.
+<br><br>
+
+Expected Results
+: By the end of the project, the dynamic organization website should seamlessly integrate with GitHub repositories, displaying accurate and up-to-date information. The website's configurable project template will allow administrators to control which projects are showcased on the site, providing flexibility and customization options
+<br><br>
+
+Knowledge Prerequisites
+: Proficiency in Angular, TypeScript, and JavaScript is essential for this project. Familiarity with backend technologies like AWS or MongoDB is beneficial. Additionally, understanding GitHub API and web development concepts will be advantageous.
+<br><br>
+
+Mentor
+: Mahender Goud Thanda (Maahi10001)
+<br><br>
+
+Estimate Project Length
+: 350hr
+<br><br>
+
+Difficulty
+:  Medium
+<br><br>
+
+Slack channel
+: WebiU
+<br><br>
+
+----------
+
+## RustCloud 
+
+Brief explanation 
+: RustCloud  is a rust library which hides the difference between different APIs provided by varied cloud providers (AWS, GCP, Azure etc.) and allows you to manage different cloud resources through a unified and easy to use API.
+<br><br>
+
+Documentation
+: Improve and maintain documentation related to the development areas, ensuring clarity for future contributors.
+<br><br>
+
+Knowledge Prerequisites
+:  Rust, Google Cloud Platform 
+<br><br>
+
+Expected Results
+: By the end of the project, API for BigQuery, Vertex AI, GenAI 
+<br><br>
+
+Mentor
+: Pratik Dhanave
+<br><br>
+
+Estimate Project Length
+: 350hr
+<br><br>
+
+Difficulty
+:  Medium
+<br><br>
+
+Slack channel
+: rust-cloud
+<br><br>
+
+----------
+
+## Bug connector
+
+Brief explanation 
+: The idea of this project is to create a public dataset based on openly available CVE information, the key goal is to create fully functional scapers set to gather CVE information from different sources augment comprehensive data points, and make it public
+
++ Data Sources and data structures will be announced
+
+Estimate Project Length
+: 350hr
+<br><br>
+
+Difficulty
+:  Medium
+<br><br>
+
+Slack channel
+: bug-connector
+<br><br>
+
+----------
+
+## GDB UI
+
+Brief explanation 
+: GDB stands for GNU Debugger. It's a powerful and popular debugger for various programming languages, including C, C++, Ada, and others. It allows developers to observe what a program is doing while it's running. This is particularly useful when debugging to find and fix problems in the code.
+
+: GDB consists of rich and powerful features like 
+* ⁠ Start and stop the execution of the program., Examine the state of the program (variables, registers, memory, etc.), etc. 
+
+: GDB (GNU Debugger) is operational within the terminal. Our goal of this project involves crafting a user interface (UI) using React, designed specifically to communicate with the GDB Python API. This UI aims to construct a dashboard facilitating interaction via the GDB Python API interface. to serve as a user-friendly platform enabling the execution of commands and operations through the GDB Python UI.
+
+
+Estimate Project Length
+: 350hr
+<br><br>
+
+Difficulty
+:  Medium
+<br><br>
+
+Slack channel
+: gdb-ui
+<br><br>
+
+----------
+
+## CodeLabz: Deploy the first working Version of the site.
+
+Brief Explanation
+: CodeLabz is a platform where the users can engage with online tutorials and the organizations can create tutorials for the users. Currently, the project is lacking some features. 
+<br><br>
++ Completing the following will ensure the deployment of the first live working version of codelabz.
+
+1. Like/Dislike Feature Implementation:
+Implement database interactions for user likes and dislikes.
+Ensure the feature aligns with the existing database design.
+2. Completing The Tutorial Page:
+Resolve minor bugs affecting the tutorial page, including issues with comments and author data.
+Implement recommendations for users on the tutorial page.
+3. Notification System:
+Develop backend logic for a notification system.
+Ensure seamless integration with the existing platform for real-time updates.
+4. Recommender System for Feed Tutorials:
+Implement algorithms for generating recommended tutorials based on user preferences.
+Integrate the recommender system into the platform's feed functionality.Displaying Tutorials on Profile Pages: displaying tutorials on user profile pages.
+6. Rebuilding CI/CD Pipeline:
+Evaluate and update the existing CI/CD pipeline for the Codelabz site.
+7. Managing Org-Setting Including Roles:
+Develop functionalities for managing organization settings.
+Implement role-based access control to ensure secure and controlled access.
+8. Searching Tutorials through Tags and Titles:
+Implement a robust search mechanism for tutorials based on tags and titles.
+Optimize search algorithms for quick and accurate results.
+9. Tutorials Creation By Individual Users
+10. Rendering Dynamic Data - Sidebar for Contributors and Who to Follow on home page.
+11. Verification on Signup: Implement a secure verification process during user signup.
+Ensure user accounts are validated and authenticated for enhanced security.
+12. Updating Minor dependencies and migration to Typescript.
+<br><br>
+
+Expected results
+: At the end of this summer we expect that All the listed tasks will be implemented, And the first version of codelabz website will be live.
+<br><br>
+
+Knowledge Prerequisite
+: Javascript, React.JS, Node.JS, Firebase
+<br><br>
+
+Mentor
+: Abhishek Pandey, Shiva Nanda Reddy.
+<br><br>
+
+Estimate Project Length
+: 350hr
+<br><br>
+
+Difficulty
+:  Medium
+<br><br>
+
+Slack channel
+: codelabz
+<br><br>
+
+----------
+
+## NFT-TOOLBOX
+
+Description
+: An npm package for seamless integration of all NFT related functionalities in Web2 projects. This project helps web2 developers seamlessly integrate web3 functionality.
+<br><br>
+
+Expected Results
+: Currently we are able to mint NFT on Ethereum chain and upload metadata to multiple storage services. The current task is to improve the existing stuff with multi-chain support like Solana, Tezos and EVM compatible chains, add more ERC’s support, make different types of on-chain and off-chain algorithms for super fast batch minting of NFT and add support for Soulbound NFTs, dynamic NFT and nested NFT. A website with all these functionalities needs to be created along with required smart contracts.
+: Features we would like to implement in NFT-ToolBox Project:
+: 
+* You need to refactor code 
+* Add onchain and offchain Batch Minting Support
+* Add Multiple ERC support related to nfts in easy and feasible manner
+* Add support for Solana NFT’s
+* Add Support for Tezos NFT’s
+* Add support for Flow Blockchian NFT’s
+* Add support for Aptos Blockchian NFT’s
+* Add Support for Cross Chain NFT’s
+* Build An UI to mint NFT’s on any chain 
+* Make UI to deploy different kinds of NFT standards (Something like Thirdweb)
+   
+: Note- You don’t need to implement all these features this year. You have to come up with proposal of what things can be implemented in the GSoC timeline and How.
+
+Required Knowledge
+: Solidity, NFT, Blockchain, Rust, Nodejs, Rust, ReactJs, Typescript, Cadence, Move
+<br><br>
+
+Mentors
+: Mohit Bhat
+<br><br>
+
+Github Url
+: https://github.com/scorelab/NFT-Toolbox
+<br><br>
+
+Estimate Project Length
+: 350hr
+<br><br>
+
+Difficulty
+: Medium
+<br><br>
+
+Slack channel
+: nft-toolbox
 
