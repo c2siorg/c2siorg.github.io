@@ -39,38 +39,8 @@ You can also talk to us about possible project ideas and we are happy to improve
 *The following is the idea list for Google Summer of Code 2023*
 
 
-## Example Project: Complete the tasks in Road Map of Dunner up to v1.0
 
-Brief explanation
-: Dunner is a task runner tool like Grunt but used Docker images as CircleCI does. You can define tasks and steps of the tasks in your `.dunner.yaml` file and then run these steps with `Dunner do taskname`.
-<br><br>
-
-We have several features planned in our road map, we need you to complete them one issue by one. See the list of features planned for v0.1 and v1.0 below.
-* v0.1: <https://github.com/leopardslab/Dunner/milestone/2>
-* V1.0: <https://github.com/leopardslab/Dunner/milestone/1>
-<br><br>
-
-Expected results
-: At the end of your summer, we expect that you will complete all the features planned up to v1.0. Also, you have to improve the wikis which are related to your development areas. Come up with a plan of what features you are gonna do when as a timeline. Consider improving the wikis also in your timeline.
-Knowledge Prerequisite: Go Programming Language, Docker, some idea about Task Runners, Linux
-<br><br>
-
-Mentor
-: Milindu Kumarage, Pratik Dhanave
-<br><br>
-
-Estimate Project Length
-: 350hr
-<br><br>
-
-Difficulty
-:  Medium
-<br><br>
-
-
----------------------------
-
-## ProjectExplainer: Add knowledge graph based retrieval and explanation APIs for code and text modalities in documentation.
+## 1: ProjectExplainer: Add knowledge graph based retrieval and explanation APIs for code and text modalities in documentation.
 
 Brief explanation
 : ProjectExplainer project is a set of tools to help with explaining code repositories using large language models.
@@ -107,7 +77,7 @@ Slack channel
 
 ----------
 
-##  WebiU 2.0 :- c2siorg/SCoRe Lab website
+##  2: WebiU 2.0 :- c2siorg/SCoRe Lab website
 
 Brief explanation
 : The proposed project aims to create a dynamic organization website that automatically fetches project information from GitHub repositories. This eliminates the need for manual data entry, ensuring real-time updates on the organization's website whenever a new repository is created or existing is updated. The website will also feature a configurable project template that provides essential details such as project title, description, technology stack, live demo availability, and more.
@@ -144,7 +114,7 @@ Slack channel
 
 ----------
 
-## RustCloud 
+## 3: RustCloud 
 
 Brief explanation 
 : RustCloud  is a rust library which hides the difference between different APIs provided by varied cloud providers (AWS, GCP, Azure etc.) and allows you to manage different cloud resources through a unified and easy to use API.
@@ -166,6 +136,10 @@ Mentor
 : Pratik Dhanave
 <br><br>
 
+Github Url
+:
+<br><br>
+
 Estimate Project Length
 : 350hr
 <br><br>
@@ -180,12 +154,16 @@ Slack channel
 
 ----------
 
-## Bug connector
+## 4: Bug connector
 
 Brief explanation 
 : The idea of this project is to create a public dataset based on openly available CVE information, the key goal is to create fully functional scapers set to gather CVE information from different sources augment comprehensive data points, and make it public
 
 + Data Sources and data structures will be announced
+
+Github Url
+:
+<br><br>
 
 Estimate Project Length
 : 350hr
@@ -201,7 +179,7 @@ Slack channel
 
 ----------
 
-## GDB UI
+## 5: GDB UI
 
 Brief explanation 
 : GDB stands for GNU Debugger. It's a powerful and popular debugger for various programming languages, including C, C++, Ada, and others. It allows developers to observe what a program is doing while it's running. This is particularly useful when debugging to find and fix problems in the code.
@@ -211,6 +189,9 @@ Brief explanation
 
 : GDB (GNU Debugger) is operational within the terminal. Our goal of this project involves crafting a user interface (UI) using React, designed specifically to communicate with the GDB Python API. This UI aims to construct a dashboard facilitating interaction via the GDB Python API interface. to serve as a user-friendly platform enabling the execution of commands and operations through the GDB Python UI.
 
+Github Url
+:
+<br><br>
 
 Estimate Project Length
 : 350hr
@@ -226,7 +207,7 @@ Slack channel
 
 ----------
 
-## CodeLabz: Deploy the first working Version of the site.
+## 6: CodeLabz: Deploy the first working Version of the site.
 
 Brief Explanation
 : CodeLabz is a platform where the users can engage with online tutorials and the organizations can create tutorials for the users. Currently, the project is lacking some features. 
@@ -272,6 +253,10 @@ Mentor
 : Abhishek Pandey, Shiva Nanda Reddy.
 <br><br>
 
+Github Url
+:
+<br><br>
+
 Estimate Project Length
 : 350hr
 <br><br>
@@ -286,7 +271,7 @@ Slack channel
 
 ----------
 
-## NFT-TOOLBOX
+## 7: NFT-TOOLBOX
 
 Description
 : An npm package for seamless integration of all NFT related functionalities in Web2 projects. This project helps web2 developers seamlessly integrate web3 functionality.
