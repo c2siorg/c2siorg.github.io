@@ -85,10 +85,9 @@
   font-size: 18px;
   font-weight: bold;
   transition: 0.4s;
-
 }
 
-.active, .accordion:hover {
+.accordion:hover {
   background-color: #ccc;
 }
 
@@ -98,10 +97,6 @@
   font-weight: bold;
   float: right;
   margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
 }
 
 .panel {
