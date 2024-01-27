@@ -84,8 +84,8 @@
   outline: none;
   font-size: 18px;
   font-weight: bold;
-  transition: 0.4s;
-}
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.5s ease;}
 
 .accordion:hover {
   background-color: #ccc;
@@ -96,15 +96,17 @@
   color: #777;
   font-weight: bold;
   float: right;
-  margin-left: 5px;
+  margin-left: 5 px;
 }
 
 .panel {
   padding: 0 18px;
+  padding-left: 50px;
+  padding-right: 50px;
   background-color: #fdfdfd;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  border: 1px solid #1212121e;
+  transition: max-height 0.3s ease-out;
+  border: 1px solid #c2c2c265;
 
 }

@@ -33,7 +33,7 @@ Mentors
 <br><br>
 
 Github Url
-: https://github.com/scorelab/NFT-Toolbox
+: <https://github.com/scorelab/NFT-Toolbox>
 <br><br>
 
 Estimate Project Length
