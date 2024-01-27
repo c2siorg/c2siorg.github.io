@@ -36,7 +36,8 @@ You can also talk to us about possible project ideas and we are happy to improve
 <br>
 
 # Idea List for 2024
-*The following is the idea list for Google Summer of Code 2023*
+*The following is the idea list for Google Summer of Code 2024*
+
 
 
 
