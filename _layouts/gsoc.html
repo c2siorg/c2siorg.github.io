@@ -19,6 +19,7 @@ bodyClass: "page-team"
           <p>{{page.tagline}}</p>
         </center>
       </div>
+      
 
     </div>
   </div>
@@ -28,6 +29,18 @@ bodyClass: "page-team"
   <div class="row">
     <div class="col-12 col-md-12 mb-3 mt-0">
       <div class="content">{{content}}</div>
+
+      <!-- testing -->
+      {% assign projects = site.gsocprojects | sort: "num" %}
+      {% for project in projects %}
+        <div class="accordion">{{project.num}}. {{project.title}}</div>
+        <div class="panel">
+          <p>{{project.content}}</p>
+        </div>
+      {% endfor %}
+      <!-- testing ends -->
+    
+      <br>
     </div>
   </div>
 </div>

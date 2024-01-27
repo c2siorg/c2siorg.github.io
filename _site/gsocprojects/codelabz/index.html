@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CodeLabz - Deploy the first working Version of the site.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="CodeLabz - Deploy the first working Version of the site."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      <a href="/">Home</a>
+    </li>
+    
+    <li class="">
+      <a href="/services/">Projects</a>
+    </li>
+    
+    <li class="">
+      <a href="/publications/">Publications</a>
+    </li>
+    
+    <li class="">
+      <a href="/team/">Team</a>
+    </li>
+    
+    <li class="">
+      <a href="/opportunities/">Opportunities</a>
+    </li>
+    
+    <li class="">
+      <a href="/blog/">Blog</a>
+    </li>
+    
+    <li class="">
+      <a href="https://github.com/c2siorg">GitHub</a>
+    </li>
+    
+    <li class="">
+      <a href="/gsoc24">GSoC 24</a>
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="140px" height="37px" alt="C2SI" src="/images/logo/c2si-logo-main.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="C2SI" src="/images/logo/c2si-logo-mobile.png" /></a>
+    </div>
+    <i class="fa-brands fa-github"></i>
+
+<div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      
+      <a href="/" >Home</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/services/" >Projects</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/publications/" >Publications</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/team/" >Team</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/opportunities/" >Opportunities</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/blog/" >Blog</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="https://github.com/c2siorg" target = "_blank" id="githubBtn" style="width: 7em; height: 1.6em; padding-bottom: 1.7em; padding-left: 1em; padding-top: 0.3em;"><img src="/images/logo/github-long.png" width="75px" id="githubimg"></a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/gsoc" id="gsocBtn" style="color: #f8f8f8; border-radius: 5px; padding: 8px; text-decoration: none; margin-left: 10px; padding-bottom: 6px;">GSoC 24</a>
+      
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">CodeLabz - Deploy the first working Version of the site.</h1>
+        <div class="content"><dl>
+  <dt>Brief Explanation</dt>
+  <dd>CodeLabz is a platform where the users can engage with online tutorials and the organizations can create tutorials for the users. Currently, the project is lacking some features. 
+<br /><br />
+    <ul>
+      <li>Completing the following will ensure the deployment of the first live working version of codelabz.</li>
+    </ul>
+  </dd>
+</dl>
+
+<ol>
+  <li>Like/Dislike Feature Implementation:
+Implement database interactions for user likes and dislikes.
+Ensure the feature aligns with the existing database design.</li>
+  <li>Completing The Tutorial Page:
+Resolve minor bugs affecting the tutorial page, including issues with comments and author data.
+Implement recommendations for users on the tutorial page.</li>
+  <li>Notification System:
+Develop backend logic for a notification system.
+Ensure seamless integration with the existing platform for real-time updates.</li>
+  <li>Recommender System for Feed Tutorials:
+Implement algorithms for generating recommended tutorials based on user preferences.
+Integrate the recommender system into the platform’s feed functionality.Displaying Tutorials on Profile Pages: displaying tutorials on user profile pages.</li>
+  <li>Rebuilding CI/CD Pipeline:
+Evaluate and update the existing CI/CD pipeline for the Codelabz site.</li>
+  <li>Managing Org-Setting Including Roles:
+Develop functionalities for managing organization settings.
+Implement role-based access control to ensure secure and controlled access.</li>
+  <li>Searching Tutorials through Tags and Titles:
+Implement a robust search mechanism for tutorials based on tags and titles.
+Optimize search algorithms for quick and accurate results.</li>
+  <li>Tutorials Creation By Individual Users</li>
+  <li>Rendering Dynamic Data - Sidebar for Contributors and Who to Follow on home page.</li>
+  <li>Verification on Signup: Implement a secure verification process during user signup.
+Ensure user accounts are validated and authenticated for enhanced security.</li>
+  <li>Updating Minor dependencies and migration to Typescript.
+<br /><br /></li>
+</ol>
+
+<dl>
+  <dt>Expected results</dt>
+  <dd>At the end of this summer we expect that All the listed tasks will be implemented, And the first version of codelabz website will be live.
+<br /><br /></dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Javascript, React.JS, Node.JS, Firebase
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Abhishek Pandey, Shiva Nanda Reddy.
+<br /><br /></dd>
+</dl>
+
+<p>Github Url
+:Coming Soon
+<br /><br /></p>
+
+<dl>
+  <dt>Estimate Project Length</dt>
+  <dd>350hr
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>codelabz
+<br /><br /></dd>
+</dl>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/about/">About</a>
+            </li>
+            
+          </ul>
+          <h2 class="footer-title"><img src="/images/logo/footer-logo.png" alt="C2SI Logo" width="100"></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/c2siorg" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://twitter.com/bugzero_io" target="blank"><img src="/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">©2023 Ceylon Computer Science Institute. All rights reserved.</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
