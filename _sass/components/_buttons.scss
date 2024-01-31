@@ -75,7 +75,7 @@
 }
 
 .accordion {
-  background-color: #eee;
+  background-color: #fcfcfc;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -84,11 +84,12 @@
   outline: none;
   font-size: 18px;
   font-weight: bold;
+  border: 1px solid #c2c2c265;
   -webkit-transition: all 0.15s ease;
   transition: all 0.5s ease;}
 
 .accordion:hover {
-  background-color: #ccc;
+  background-color: #f7f7f7;
 }
 
 .accordion:after {
@@ -103,10 +104,15 @@
   padding: 0 18px;
   padding-left: 50px;
   padding-right: 50px;
-  background-color: #fdfdfd;
+  background-color: #ffffff;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
-  border: 1px solid #c2c2c265;
+  border-left: 1px solid #c2c2c265;
+  border-right: 1px solid #c2c2c265;
 
+}
+
+.last-panel {
+  border-bottom: 1px solid #c2c2c265;
 }
