@@ -20,6 +20,7 @@ $link-hover-decoration: underline;
 
 // Fonts
 $font-family-base: Helvetica, Arial, sans-serif, -apple-system;
+// $font-family-base: "Gotham Book", sans-serif, -apple-system;
 $font-family-heading: "Playfair Display", serif, -apple-system;
 
 // Footer
@@ -93,8 +94,25 @@ body {
 
 #maintitle{
   color: $primary;
+  font-family: "Gotham Bold" !important;
+}
+
+#gothamBold{
+  font-family: "Gotham Bold" !important;
+}
+
+#maintitleblack{
+  font-family: "Gotham Medium" !important;
+  font-weight: bolder;
 }
 
 #mainSubTitle{
+  padding-top: 1em;
   color: #1D242B;
+  font-family: "Gotham Light" !important;
+  font-size: 1em;
+}
+
+#description{
+  font-family: "Gotham Book" !important;
 }

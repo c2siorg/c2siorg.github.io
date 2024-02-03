@@ -7,7 +7,9 @@ bodyClass: "page-home"
   <div class="container">
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-7 order-2 order-md-1">
-        <h1 id="maintitle">Welcome to C2SI</h1>
+        <!-- <h1 id="maintitle">Welcome to C2SI</h1> -->
+        <h1 style="display:inline;" id="maintitleblack">Welcome to </h1> 
+        <h1 style="display:inline;" id="maintitle">C2SI</h1> 
         <p id="mainSubTitle">{{ page.description }}</p>
         {% if page.show_call_box %}
         {% include call.html show_button=true %}
@@ -39,7 +41,7 @@ bodyClass: "page-home"
                 <h2 class="service-title">
                   <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
                 </h2>
-                <p>{{ service.content | markdownify | strip_html | truncate: 89 }}</p>
+                <p id="description">{{ service.content | markdownify | strip_html | truncate: 89 }}</p>
               </div>
             </div>
           </div>
@@ -100,7 +102,7 @@ bodyClass: "page-home"
                 <h2 class="service-title">
                   <a href="{{publication.link}}" target="_blank">{{ publication.title }}</a>
                 </h2>
-                <p>{{ publication.venue | markdownify | strip_html | truncate: 100 }}</p>
+                <p id="description">{{ publication.venue | markdownify | strip_html | truncate: 100 }}</p>
               </div>
             </div>
           </div>
