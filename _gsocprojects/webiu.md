@@ -5,10 +5,11 @@ title: WebiU 2.0 :- c2siorg/SCoRe Lab website
 Brief explanation
 : The proposed project aims to create a dynamic organization website that automatically fetches project information from GitHub repositories. This eliminates the need for manual data entry, ensuring real-time updates on the organization's website whenever a new repository is created or existing is updated. The website will also feature a configurable project template that provides essential details such as project title, description, technology stack, live demo availability, and more.
 <br><br>
-Admin Controls: Create an admin control panel to manage the display of projects on the website. This includes the ability to show/hide specific projects and modify their display settings.
-Backend Integration: Choose a backend solution (e.g., AWS, MongoDB) to store and manage additional data, such as admin configurations and website settings.
+-- Admin Controls: Create an admin control panel to manage the display of projects on the website. This includes the ability to show/hide specific projects and modify their display settings.
 <br><br>
-Documentation: Improve and maintain documentation related to the development areas, ensuring clarity for future contributors.
+-- Backend Integration: Choose a backend solution (e.g., AWS, MongoDB) to store and manage additional data, such as admin configurations and website settings.
+<br><br>
+-- Documentation: Improve and maintain documentation related to the development areas, ensuring clarity for future contributors.
 <br><br>
 
 Expected Results

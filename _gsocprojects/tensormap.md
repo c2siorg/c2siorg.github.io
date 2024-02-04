@@ -8,19 +8,25 @@ Brief explanation
 <br><br>
 
 Expected results
-: TBA 
+: -- Dockerize the backend.
+: -- Fix the current issues.
+: -- Fix the workflow including the neural architecture design.
+: -- Add more nodes.
+: -- Write and publish documentation on how to extend and add new nodes.
+<br>
+Please contact the mentor with a draft of the proposal before submitting the application.
 <br><br>
 
 Knowledge Prerequisite
-: Javascript / Typescript, OpenCV
+: Tensorflow, Javascript
 <br><br>
 
 Mentor
-: Oshan Mudannayake 
+: Oshan Mudannayake (oshan.ivantha@gmail.com)
 <br><br>
 
 GitHub URL
-: https://github.com/c2siorg/tensormap
+: <https://github.com/c2siorg/tensormap>
 <br><br>
 
 Estimate Project Length
@@ -28,4 +34,4 @@ Estimate Project Length
 <br><br>
 
 Difficulty
-:  Medium
+:  Hard
