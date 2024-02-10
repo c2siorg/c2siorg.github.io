@@ -5,8 +5,18 @@
     "image": "images/social/github.svg"
   },
   {
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/company/c2siorg",
+    "image": "images/social/linkedin.svg"
+  },
+  {
     "name": "Twitter",
-    "link": "https://twitter.com/bugzero_io",
+    "link": "https://twitter.com/c2si_org",
     "image": "images/social/twitter.svg"
+  },
+  {
+    "name": "Facebook",
+    "link": "https://www.facebook.com/c2si.org",
+    "image": "images/social/facebook.svg"
   }
 ]
