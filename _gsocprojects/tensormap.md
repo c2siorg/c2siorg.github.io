@@ -22,7 +22,7 @@ Knowledge Prerequisite
 <br><br>
 
 Mentor
-: Oshan Mudannayake (oshan.ivantha@gmail.com)
+: Oshan Mudannayake (oshan.ivantha@gmail.com), Udesh
 <br><br>
 
 GitHub URL
