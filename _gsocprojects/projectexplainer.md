@@ -27,7 +27,7 @@ Estimate Project Length
 <br><br>
 
 Github Url
-: <https://github.com/c2siorg/Project-Explainer>
+: <a href="https://github.com/c2siorg/Project-Explainer" target="_blank">https://github.com/c2siorg/Project-Explainer</a>
 <br><br>
 
 Difficulty

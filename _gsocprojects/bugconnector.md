@@ -27,7 +27,7 @@ Mentors
 <br><br>
 
 Github Url
-: <https://github.com/c2siorg/bug-connector>
+: <a href="https://github.com/c2siorg/bug-connector" target="_blank">https://github.com/c2siorg/bug-connector</a>
 <br><br>
 
 Estimate Project Length

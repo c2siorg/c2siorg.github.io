@@ -26,7 +26,7 @@ Estimate Project Length
 <br><br>
 
 Github Url
-: <https://github.com/c2siorg/b0bot>
+: <a href="https://github.com/c2siorg/b0bot" target="_blank">https://github.com/c2siorg/b0bot</a>
 <br><br>
 
 Difficulty

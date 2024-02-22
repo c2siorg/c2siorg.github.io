@@ -49,7 +49,7 @@ Mentor
 <br><br>
 
 Github Url
-: <https://github.com/c2siorg/Codelabz>
+: <a href="https://github.com/c2siorg/Codelabz" target="_blank">https://github.com/c2siorg/Codelabz</a>
 <br><br>
 
 Estimate Project Length

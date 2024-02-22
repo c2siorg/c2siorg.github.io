@@ -26,7 +26,8 @@ Mentor
 <br><br>
 
 GitHub URL
-: <https://github.com/c2siorg/tensormap>
+: <>
+: <a href="https://github.com/c2siorg/tensormap" target="_blank">https://github.com/c2siorg/tensormap</a>
 <br><br>
 
 Estimate Project Length

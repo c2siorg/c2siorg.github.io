@@ -29,7 +29,7 @@ Estimate Project Length
 <br><br>
 
 Github URL
-: <https://github.com/c2siorg/Webiu>
+: <a href="https://github.com/c2siorg/Webiu" target="_blank">https://github.com/c2siorg/Webiu</a>
 <br><br>
 
 Difficulty
