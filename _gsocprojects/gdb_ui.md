@@ -26,7 +26,7 @@ Expected Results
 <br><br>
 
 Mentors
-: Ravindu, shehan
+: Ravindu
 <br><br>
 
 Github Url

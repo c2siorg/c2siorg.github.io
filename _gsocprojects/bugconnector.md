@@ -23,7 +23,7 @@ Expected Results
 <br><br>
 
 Mentors
-: Ravindu, Asitha
+: Ravindu
 <br><br>
 
 Github Url
