@@ -30,7 +30,8 @@ Mentors
 <br><br>
 
 Github Url
-: <https://github.com/c2siorg/GDB-UI>
+: <>
+: <a href="https://github.com/c2siorg/GDB-UI" target="_blank">https://github.com/c2siorg/GDB-UI</a>
 <br><br>
 
 Estimate Project Length

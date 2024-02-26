@@ -24,7 +24,7 @@ Mentor
 <br><br>
 
 Github Url
-: <https://github.com/c2siorg/RustCloud>
+: <a href="https://github.com/c2siorg/RustCloud" target="_blank">https://github.com/c2siorg/RustCloud</a>
 <br><br>
 
 Estimate Project Length

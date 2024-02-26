@@ -33,7 +33,7 @@ Mentor
 <br><br>
 
 Github Url
-: <https://github.com/c2siorg/DataLoom>
+: <a href="https://github.com/c2siorg/DataLoom" target="_blank">https://github.com/c2siorg/DataLoom</a>
 <br><br>
 
 Estimate Project Length

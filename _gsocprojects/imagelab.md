@@ -31,7 +31,7 @@ Mentor
 <br><br>
 
 GitHub URL
-: <https://github.com/c2siorg/imagelab>
+: <a href="https://github.com/c2siorg/imagelab" target="_blank">https://github.com/c2siorg/imagelab</a>
 <br><br>
 
 Estimate Project Length
