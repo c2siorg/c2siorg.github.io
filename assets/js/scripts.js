@@ -35,3 +35,16 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 
+var backToTopBtn = document.querySelector("#back-to-top");
+
+window.addEventListener("scroll", showArrowBtn);
+
+function showArrowBtn() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+}
+
+backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: 'smooth' }));

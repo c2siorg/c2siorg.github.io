@@ -1,0 +1,15 @@
+#back-to-top {
+  display: none;
+  position: sticky;
+  bottom: 30px; 
+  margin-bottom: 10px;
+  margin-right: 10px; 
+  place-self: end;
+  padding: 10px;
+  z-index: 999;
+}
+
+#back-to-top img{
+  width: 3em;
+  height: 3em;
+}
