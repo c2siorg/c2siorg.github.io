@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CodeLabz - Deploy the first working Version of the site.</title>
+  <title>GDB UI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
   <!-- Google Fonts CDN -->
@@ -15,7 +15,7 @@
   <link href="/assets/css/style.css" rel="stylesheet">
   
   
-  <meta property="og:title" content="CodeLabz - Deploy the first working Version of the site."/>
+  <meta property="og:title" content="GDB UI"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content=""/>
   
@@ -60,7 +60,7 @@
     </li>
     
     <li class="">
-      <a href="/gsoc24">GSoC 24</a>
+      <a href="/gsoc24">GSoC 25</a>
     </li>
     
   </ul>
@@ -125,7 +125,7 @@
     
     <li class="">
       
-      <a href="/gsoc" id="gsocBtn" style="color: #f8f8f8; border-radius: 5px; padding: 8px; text-decoration: none; margin-left: 10px; padding-bottom: 6px;">GSoC 24</a>
+      <a href="/gsoc" id="gsocBtn" style="color: #f8f8f8; border-radius: 5px; padding: 8px; text-decoration: none; margin-left: 10px; padding-bottom: 6px;">GSoC 25</a>
       
     </li>
     
@@ -144,50 +144,56 @@
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
       <div class="service service-single">
-        <h1 class="title">CodeLabz - Deploy the first working Version of the site.</h1>
+        <h1 class="title">GDB UI</h1>
         <div class="content"><dl>
-  <dt>Brief Explanation</dt>
-  <dd>CodeLabz is a platform where the users can engage with online tutorials and the organizations can create tutorials for the users. Currently, the project is lacking some features.</dd>
-  <dd>Completing the following will ensure the deployment of the first live working version of codelabz.</dd>
-  <dd>– Like/Dislike Feature Implementation:
-<br />Implement database interactions for user likes and dislikes.
-<br />Ensure the feature aligns with the existing database design.</dd>
-  <dd>– Completing The Tutorial Page:
-<br />Resolve minor bugs affecting the tutorial page, including issues with comments and author data.
-<br />Implement recommendations for users on the tutorial page.</dd>
-  <dd>– Notification System:
-<br />Develop backend logic for a notification system.
-<br />Ensure seamless integration with the existing platform for real-time updates.</dd>
-  <dd>– Recommender System for Feed Tutorials:
-<br />Implement algorithms for generating recommended tutorials based on user preferences.
-<br />Integrate the recommender system into the platform’s feed functionality.Displaying Tutorials on Profile Pages: displaying tutorials on user profile pages.</dd>
-  <dd>– Rebuilding CI/CD Pipeline:
-<br />Evaluate and update the existing CI/CD pipeline for the Codelabz site.</dd>
-  <dd>– Managing Org-Setting Including Roles:
-<br />Develop functionalities for managing organization settings.
-<br />Implement role-based access control to ensure secure and controlled access.</dd>
-  <dd>– Searching Tutorials through Tags and Titles:
-<br />Implement a robust search mechanism for tutorials based on tags and titles.
-<br />Optimize search algorithms for quick and accurate results.</dd>
-  <dd>– Tutorials Creation By Individual Users</dd>
-  <dd>– Rendering Dynamic Data: 
-<br />Sidebar for Contributors and Who to Follow on home page.</dd>
-  <dd>– Verification on Signup: 
-<br />Implement a secure verification process during user signup.
-<br />Ensure user accounts are validated and authenticated for enhanced security.</dd>
-  <dd>– Updating Minor dependencies and migration to Typescript.
+  <dt>Brief explanation</dt>
+  <dd>GDB-UI is a modern, web-based interface for the GNU Debugger (GDB), designed to simplify the debugging process for developers working with C, and C++. It provides real-time interaction with GDB, enabling features like monitoring program execution, inspecting variables, setting breakpoints, and more, all through an intuitive web application.
+<br /><br />
+GDB-UI enhances the debugging workflow by offering a sleek, user-friendly UI, replacing the traditional command-line experience with a visual and accessible alternative. It supports both Docker-based and manual setups, allowing seamless integration into various development environments.
 <br /><br /></dd>
-  <dt>Expected results</dt>
-  <dd>At the end of this summer we expect that All the listed tasks will be implemented, And the first version of codelabz website will be live.
-<br /><br /></dd>
-  <dt>Knowledge Prerequisite</dt>
-  <dd>Javascript, React.JS, Node.JS, Firebase
+</dl>
+
+<p><strong>Key Objectives</strong></p>
+<ol>
+  <li><em>First Deployment:</em>
+    <ul>
+      <li>Deploy the project for initial use, ensuring the application is accessible and functional for all users.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>CI/CD Integration:</em>
+    <ul>
+      <li>Automate the testing, building, and deployment processes using tools like GitHub Actions.</li>
+      <li>Ensure smooth deployment pipelines with robust rollback mechanisms and proper error handling.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Session Management for Multiuser Support:</em>
+    <ul>
+      <li>Implement a system to store debugging sessions uniquely for each user to enable multiuser functionality.</li>
+      <li>Ensure session persistence and isolation to prevent interference between users.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Real-Time Debugging Results:</em>
+    <ul>
+      <li>Design the application to display debugger results in real time without requiring page refreshes.</li>
+      <li>Use WebSockets or similar technologies to handle live updates efficiently.
+<br /><br /></li>
+    </ul>
+  </li>
+</ol>
+
+<dl>
+  <dt>Expected Results</dt>
+  <dd>By the completion of the project, the application will be fully deployed with multiuser support, persistent session management, real-time debugging results, and a robust CI/CD pipeline. These enhancements will provide a seamless debugging experience, improve scalability, and simplify the development workflow for contributors.
+<!-- : -- By the end of the project, the following outcomes are anticipated: -->
 <br /><br /></dd>
   <dt>Mentor</dt>
-  <dd>Abhishek Pandey, Shiva Nanda Reddy.
+  <dd>Shubh Mehta (Shubh942)
 <br /><br /></dd>
   <dt>Github Url</dt>
-  <dd><a href="https://github.com/c2siorg/Codelabz">https://github.com/c2siorg/Codelabz</a>
+  <dd><a href="https://github.com/c2siorg/GDB-UI">https://github.com/c2siorg/GDB-UI</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350hr
@@ -196,7 +202,7 @@
   <dd>Medium
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>codelabz
+  <dd>gdb-ui
 <br /><br /></dd>
 </dl>
 </div>

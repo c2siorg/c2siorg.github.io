@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>GSoC 2024</title>
+  <title>GSoC 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
   <!-- Google Fonts CDN -->
@@ -15,7 +15,7 @@
   <link href="/assets/css/style.css" rel="stylesheet">
   
   <meta name="description" content="Services" />
-  <meta property="og:title" content="GSoC 2024"/>
+  <meta property="og:title" content="GSoC 2025"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content=""/>
   
@@ -60,7 +60,7 @@
     </li>
     
     <li class="">
-      <a href="/gsoc24">GSoC 24</a>
+      <a href="/gsoc24">GSoC 25</a>
     </li>
     
   </ul>
@@ -125,7 +125,7 @@
     
     <li class="">
       
-      <a href="/gsoc" id="gsocBtn" style="color: #f8f8f8; border-radius: 5px; padding: 8px; text-decoration: none; margin-left: 10px; padding-bottom: 6px;">GSoC 24</a>
+      <a href="/gsoc" id="gsocBtn" style="color: #f8f8f8; border-radius: 5px; padding: 8px; text-decoration: none; margin-left: 10px; padding-bottom: 6px;">GSoC 25</a>
       
     </li>
     
@@ -144,7 +144,7 @@
   <div class="container">
     
     <center><div class="col-12 col-md-6 col-lg-4 order-1 order-md-1">
-      <img alt=GSoC 2024
+      <img alt=GSoC 2025
         class="intro-image"
         src="/images/logo/gsoc1.png" />
     </div></center>
@@ -152,8 +152,8 @@
     <div class="row">
       <div class="col-12 col-md-12 col-lg-12 order-2 order-md-2 pt-2 pb-0">
         <center>
-          <h1 class="title">GSoC 2024</h1>
-          <p>Welcome to the C2SI Google Summer of Code (GSoC) 2024 project ideas page.</p>
+          <h1 class="title">GSoC 2025</h1>
+          <p>Welcome to the C2SI Google Summer of Code (GSoC) 2025 project ideas page.</p>
         </center>
       </div>
       
@@ -165,7 +165,7 @@
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-12 mb-3 mt-0">
-      <div class="content"><p>This is the 7th time that we are participating in the GSoC, we will use this page to develop possible project ideas that have on the above mentioned areas. Please note that anyone who is interested can participate in this process. You do not have to be a GSoC student or mentor to suggest possible project ideas.
+      <div class="content"><p>This is the 8th time that we are participating in the GSoC, we will use this page to develop possible project ideas that have on the above mentioned areas. Please note that anyone who is interested can participate in this process. You do not have to be a GSoC student or mentor to suggest possible project ideas.
 <br /><br />
 You can also talk to us about possible project ideas and we are happy to improve or heip you with them. Please keep in mind that projects need to be realistically something that is able to be functionally completed by a student working full time for about eight weeks. Thanks!</p>
 
@@ -203,66 +203,102 @@ You can also talk to us about possible project ideas and we are happy to improve
 
 <p><br /></p>
 
-<h1 id="idea-list-for-2024">Idea List for 2024</h1>
-<p><em>The following is the idea list for Google Summer of Code 2024</em></p>
+<h1 id="idea-list-for-2025">Idea List for 2025</h1>
+<p><em>The following is the idea list for Google Summer of Code 2025</em></p>
 
 </div>
 
       <!-- testing -->
       
       
-        <div class="accordion">1. ProjectExplainer - Add knowledge graph based retrieval and explanation APIs for code and text modalities in documentation.</div>
+        <div class="accordion">1. B0Bot</div>
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
-  <dd>ProjectExplainer project is a set of tools to help with explaining code repositories using large language models.
-<br /><br />
-At this point, ProjectExplainer supports a small set of API’s to provide summarization or explanation capabilities over GitHub based code repositories by parsing through readme’s and pulling important pieces of information which is then provided as prompt to an LLM to produce summarization.
-<br /><br />
-With this GSoC project, we wish to include knowledge graphs to embed GitHub repository code and text  modalities to use that as a retrieval interface for the LLM to perform summarization/explanation task.
+  <dd>B0Bot is a CyberSecurity News API tailored for automated bots on social media platforms. It is a cutting-edge Flask-based API that grants seamless access to the latest cybersecurity and hacker news. Users can effortlessly retrieve news articles either through specific keywords or without, streamlining the information acquisition process. Once a user requests our API, it retrieves news data from our knowledge base and feeds it to the LLM. After the LLM processes the data, the API obtains the response and returns it in JSON format. The API is powered by LangChain and a Huggingface endpoint, ensuring that users receive accurate and up-to-date information.
 <br /><br /></dd>
-  <dt>Expected Results</dt>
-  <dd>At the end of the GSoC term, we expect integration of knowledge graphs for both text and code modalities and expose another set of API’s for summarization or explanation tasks.
+  <dt>Expected results</dt>
+  <dd>This year, we are planning to integrate the following features into b0bot:<br /><br />
+    <ul>
+      <li>Implement CDC via RSS feed readers or debezium connectors with kafka bus.</li>
+      <li>Implement caching mechanisms (e.g. Redis) to reduce response time for frequent requests.</li>
+      <li>Add a subscription feature for users to receive daily or weekly summaries, over email.</li>
+      <li>Create an agentic AI framework using Langchain/LangGraph to create planner and executor agents. Example of possible agents can be scraper agent, responder agent, notification agent, analyzer agent. Thorough research is expected from the contributor before deciding the agentic framework.</li>
+      <li>Extend the LLM to support multi-turn dialogue, allowing users to engage in conversational interactions with the API.</li>
+      <li>Extend data sources to various social media websites by using their APIs.</li>
+      <li>Creating tests for the API and proper error handling.</li>
+      <li>Improved UI, possibly creating a dashboard.
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Python, Large Language Models, Hugging Face, Pytorch, API development (Flask), NLP, Database Management, MongoDB, LangChain, Prompt Designing
 <br /><br /></dd>
-  <dt>Required Knowledge</dt>
-  <dd>Python, Neo4j, Large Language Models, Hugging Face, Pytorch, Knowledge Graphs.
-<br /><br /></dd>
-  <dt>Possible Mentors</dt>
-  <dd>Mehant Kammakomati
+  <dt>Mentors</dt>
+  <dd>Nipuna Weerasekara, Tingyuan
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350hr
 <br /><br /></dd>
   <dt>Github Url</dt>
-  <dd><a href="https://github.com/c2siorg/Project-Explainer">https://github.com/c2siorg/Project-Explainer</a>
+  <dd><a href="https://github.com/c2siorg/b0bot">https://github.com/c2siorg/b0bot</a>
 <br /><br /></dd>
   <dt>Difficulty</dt>
   <dd>Medium
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>project-explainer
-<br /><br /></dd>
+  <dd>b0bot</dd>
 </dl>
 </p>
         </div>
       
-        <div class="accordion">2. WebiU 2.0 :- c2siorg/SCoRe Lab website</div>
+        <div class="accordion">2. WebiU</div>
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
-  <dd>The proposed project aims to create a dynamic organization website that automatically fetches project information from GitHub repositories. This eliminates the need for manual data entry, ensuring real-time updates on the organization’s website whenever a new repository is created or existing is updated. The website will also feature a configurable project template that provides essential details such as project title, description, technology stack, live demo availability, and more.
+  <dd>WebiU is a dynamic organization website which uses reusable components concept that fetches project data in real-time from GitHub repositories, ensuring live updates without manual intervention. It provides configurable templates to showcase project details such as title, description, technology stack, and demo links and organisation updates.
 <br /><br />
-– Admin Controls: Create an admin control panel to manage the display of projects on the website. This includes the ability to show/hide specific projects and modify their display settings.
-<br /><br />
-– Backend Integration: Choose a backend solution (e.g., AWS, MongoDB) to store and manage additional data, such as admin configurations and website settings.
-<br /><br />
-– Documentation: Improve and maintain documentation related to the development areas, ensuring clarity for future contributors.
+WebiU aims to improve the system by optimizing APIs for faster and lighter responses, exploring serverless backend solutions for real-time data handling, and integrating CI/CD workflows to streamline development and deployment.
 <br /><br /></dd>
+</dl>
+
+<p><strong>Key Objectives</strong></p>
+<ol>
+  <li><em>API Optimization</em>
+    <ul>
+      <li>Refactor APIs to reduce response times and payload sizes.</li>
+      <li>Implement in-memory caching and compression (e.g., GZIP).</li>
+      <li>Explore modern API solutions like GraphQL for efficient data fetching.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Alternative Backend Strategies</em>
+    <ul>
+      <li>Leverage serverless architectures to handle real-time data effectively and scale dynamically.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>CI/CD Integration</em>
+    <ul>
+      <li>Automate testing, building, and deployment with tools like GitHub Actions.</li>
+      <li>Ensure smooth rollback mechanisms and error handling for deployments.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Admin Features</em>
+    <ul>
+      <li>Expand admin controls with project analytics and manual API refresh options.
+<br /><br /></li>
+    </ul>
+  </li>
+</ol>
+
+<dl>
   <dt>Expected Results</dt>
-  <dd>By the end of the project, the dynamic organization website should seamlessly integrate with GitHub repositories, displaying accurate and up-to-date information. The website’s configurable project template will allow administrators to control which projects are showcased on the site, providing flexibility and customization options
+  <dd>By the end of the summer We are planning to make the project live by completing it end to end integrations and will deliver faster, lightweight APIs, a robust real-time data architecture, and automated CI/CD workflows. These improvements will enhance user experience, scalability, and developer productivity.
 <br /><br /></dd>
-  <dt>Knowledge Prerequisites</dt>
-  <dd>Proficiency in Angular, TypeScript, and JavaScript is essential for this project. Familiarity with backend technologies like AWS or MongoDB is beneficial. Additionally, understanding GitHub API and web development concepts will be advantageous.
+  <dt>Skills Required:</dt>
+  <dd>Proficiency in REST/GraphQL, Node.js, serverless technologies, Angular, and CI/CD tools.
 <br /><br /></dd>
   <dt>Mentor</dt>
   <dd>Mahender Goud Thanda (Maahi10001)
@@ -283,102 +319,54 @@ With this GSoC project, we wish to include knowledge graphs to embed GitHub repo
 </p>
         </div>
       
-        <div class="accordion">3. Rust Cloud</div>
+        <div class="accordion">3. GDB UI</div>
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
-  <dd>RustCloud  is a rust library which hides the difference between different APIs provided by varied cloud providers (AWS, GCP, Azure etc.) and allows you to manage different cloud resources through a unified and easy to use API.
+  <dd>GDB-UI is a modern, web-based interface for the GNU Debugger (GDB), designed to simplify the debugging process for developers working with C, and C++. It provides real-time interaction with GDB, enabling features like monitoring program execution, inspecting variables, setting breakpoints, and more, all through an intuitive web application.
+<br /><br />
+GDB-UI enhances the debugging workflow by offering a sleek, user-friendly UI, replacing the traditional command-line experience with a visual and accessible alternative. It supports both Docker-based and manual setups, allowing seamless integration into various development environments.
 <br /><br /></dd>
-  <dt>Documentation</dt>
-  <dd>Improve and maintain documentation related to the development areas, ensuring clarity for future contributors.
-<br /><br /></dd>
-  <dt>Knowledge Prerequisites</dt>
-  <dd>Rust, Google Cloud Platform 
-<br /><br /></dd>
+</dl>
+
+<p><strong>Key Objectives</strong></p>
+<ol>
+  <li><em>First Deployment:</em>
+    <ul>
+      <li>Deploy the project for initial use, ensuring the application is accessible and functional for all users.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>CI/CD Integration:</em>
+    <ul>
+      <li>Automate the testing, building, and deployment processes using tools like GitHub Actions.</li>
+      <li>Ensure smooth deployment pipelines with robust rollback mechanisms and proper error handling.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Session Management for Multiuser Support:</em>
+    <ul>
+      <li>Implement a system to store debugging sessions uniquely for each user to enable multiuser functionality.</li>
+      <li>Ensure session persistence and isolation to prevent interference between users.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Real-Time Debugging Results:</em>
+    <ul>
+      <li>Design the application to display debugger results in real time without requiring page refreshes.</li>
+      <li>Use WebSockets or similar technologies to handle live updates efficiently.
+<br /><br /></li>
+    </ul>
+  </li>
+</ol>
+
+<dl>
   <dt>Expected Results</dt>
-  <dd>By the end of the project, API for BigQuery, Vertex AI, GenAI 
+  <dd>By the completion of the project, the application will be fully deployed with multiuser support, persistent session management, real-time debugging results, and a robust CI/CD pipeline. These enhancements will provide a seamless debugging experience, improve scalability, and simplify the development workflow for contributors.
+<!-- : -- By the end of the project, the following outcomes are anticipated: -->
 <br /><br /></dd>
   <dt>Mentor</dt>
-  <dd>Pratik Dhanave
-<br /><br /></dd>
-  <dt>Github Url</dt>
-  <dd><a href="https://github.com/c2siorg/RustCloud">https://github.com/c2siorg/RustCloud</a>
-<br /><br /></dd>
-  <dt>Estimate Project Length</dt>
-  <dd>350hr
-<br /><br /></dd>
-  <dt>Difficulty</dt>
-  <dd>Medium
-<br /><br /></dd>
-  <dt>Slack channel</dt>
-  <dd>rust-cloud
-<br /><br /></dd>
-</dl>
-</p>
-        </div>
-      
-        <div class="accordion">4. Bug Connector</div>
-        <div class="panel">
-          <p><dl>
-  <dt>Brief explanation</dt>
-  <dd>The objective of this project is to develop a public dataset derived from openly available Common Vulnerabilities and Exposures (CVE) information. The primary goal is to create a set of fully functional scrapers designed to collect CVE data from various sources, augment this data with comprehensive data points, and make it publicly available.
-Data sources and data structures will be announced in due course.
-<br /><br /></dd>
-  <dt>Knowledge Prerequisites</dt>
-  <dd>– Basic understanding of cybersecurity concepts, especially related to vulnerabilities and exposures.</dd>
-  <dd>– Proficiency in programming languages used for web scraping (e.g., Python).</dd>
-  <dd>– Familiarity with data manipulation and storage techniques.</dd>
-  <dd>– Knowledge of web technologies and protocols.
-<br /><br /></dd>
-  <dt>Expected Results</dt>
-  <dd>– Development of a reliable and efficient web scraping framework capable of collecting CVE data from specified sources.</dd>
-  <dd>– A comprehensive dataset that includes detailed information on vulnerabilities, such as descriptions, severity ratings, impacted systems, and mitigation measures.</dd>
-  <dd>– Regular updates to the dataset as new CVE information becomes available.</dd>
-  <dd>– Documentation on the data collection process, data structure, and usage guidelines for the dataset.
-<br /><br /></dd>
-  <dt>Mentors</dt>
-  <dd>Ravindu
-<br /><br /></dd>
-  <dt>Github Url</dt>
-  <dd><a href="https://github.com/c2siorg/bug-connector">https://github.com/c2siorg/bug-connector</a>
-<br /><br /></dd>
-  <dt>Estimate Project Length</dt>
-  <dd>350hr
-<br /><br /></dd>
-  <dt>Difficulty</dt>
-  <dd>Medium
-<br /><br /></dd>
-  <dt>Slack channel</dt>
-  <dd>bug-connector
-<br /><br /></dd>
-</dl>
-</p>
-        </div>
-      
-        <div class="accordion">5. GDB UI</div>
-        <div class="panel">
-          <p><dl>
-  <dt>Brief explanation</dt>
-  <dd>GDB, the GNU Debugger, is a versatile and widely used debugger for several programming languages such as C, C++, and Ada. It enables developers to see what is happening inside a program as it runs, which is invaluable for debugging and fixing code issues. GDB boasts a variety of features, including the ability to start and stop program execution, examine the state of the program (variables, registers, memory, etc.), among others.
-<br /><br />
-Although GDB operates within a terminal, this project’s mission is to develop a user interface (UI) utilizing React. This UI will specifically interact with the GDB Python API, creating a dashboard that eases the use of GDB’s features through a graphical interface. This initiative strives to provide a more intuitive and accessible way for developers to execute commands and control operations using the GDB Python API.
-<br /><br /></dd>
-  <dt>Knowledge Prerequisites</dt>
-  <dd>– Proficiency in React and modern web development practices.</dd>
-  <dd>– Familiarity with the Python programming language and creating Python bindings or interfaces.</dd>
-  <dd>– Basic understanding of debugging concepts and experience with GDB or similar debugging tools.</dd>
-  <dd>– Knowledge of software development principles and version control (e.g., Git).
-<br /><br /></dd>
-  <dt>Expected Results</dt>
-  <dd>– By the end of the project, the following outcomes are anticipated:</dd>
-  <dd>– A fully functional React-based UI for GDB that allows users to perform debugging tasks graphically.</dd>
-  <dd>– Integration with the GDB Python API for executing commands and retrieving program states.</dd>
-  <dd>– User-friendly documentation on how to set up, use, and extend the UI.</dd>
-  <dd>– A set of features including, but not limited to, starting/stopping program execution, inspecting variables, registers, and memory, and a log or console view for command output and error messages.</dd>
-  <dd>– Contribution guidelines for the open-source community to further enhance and develop the UI.
-<br /><br /></dd>
-  <dt>Mentors</dt>
-  <dd>Ravindu
+  <dd>Shubh Mehta (Shubh942)
 <br /><br /></dd>
   <dt>Github Url</dt>
   <dd><a href="https://github.com/c2siorg/GDB-UI">https://github.com/c2siorg/GDB-UI</a>
@@ -396,51 +384,79 @@ Although GDB operates within a terminal, this project’s mission is to develop 
 </p>
         </div>
       
-        <div class="accordion">6. CodeLabz - Deploy the first working Version of the site.</div>
+        <div class="accordion">4. CodeLabz</div>
         <div class="panel">
           <p><dl>
   <dt>Brief Explanation</dt>
-  <dd>CodeLabz is a platform where the users can engage with online tutorials and the organizations can create tutorials for the users. Currently, the project is lacking some features.</dd>
-  <dd>Completing the following will ensure the deployment of the first live working version of codelabz.</dd>
-  <dd>– Like/Dislike Feature Implementation:
-<br />Implement database interactions for user likes and dislikes.
-<br />Ensure the feature aligns with the existing database design.</dd>
-  <dd>– Completing The Tutorial Page:
-<br />Resolve minor bugs affecting the tutorial page, including issues with comments and author data.
-<br />Implement recommendations for users on the tutorial page.</dd>
-  <dd>– Notification System:
-<br />Develop backend logic for a notification system.
-<br />Ensure seamless integration with the existing platform for real-time updates.</dd>
-  <dd>– Recommender System for Feed Tutorials:
-<br />Implement algorithms for generating recommended tutorials based on user preferences.
-<br />Integrate the recommender system into the platform’s feed functionality.Displaying Tutorials on Profile Pages: displaying tutorials on user profile pages.</dd>
-  <dd>– Rebuilding CI/CD Pipeline:
-<br />Evaluate and update the existing CI/CD pipeline for the Codelabz site.</dd>
-  <dd>– Managing Org-Setting Including Roles:
-<br />Develop functionalities for managing organization settings.
-<br />Implement role-based access control to ensure secure and controlled access.</dd>
-  <dd>– Searching Tutorials through Tags and Titles:
-<br />Implement a robust search mechanism for tutorials based on tags and titles.
-<br />Optimize search algorithms for quick and accurate results.</dd>
-  <dd>– Tutorials Creation By Individual Users</dd>
-  <dd>– Rendering Dynamic Data: 
-<br />Sidebar for Contributors and Who to Follow on home page.</dd>
-  <dd>– Verification on Signup: 
-<br />Implement a secure verification process during user signup.
-<br />Ensure user accounts are validated and authenticated for enhanced security.</dd>
-  <dd>– Updating Minor dependencies and migration to Typescript.
+  <dd>CodeLabz is an interactive, cloud-based learning platform designed to facilitate engagement with online tutorials. It enables organizations to create, manage, and share structured learning resources with users. The platform is built with a ReactJS frontend, complemented by a scalable backend powered by Google Cloud Firestore and Firebase Realtime Database, ensuring seamless real-time data synchronization and an intuitive user experience.
+<br /><br />
+This project focuses on optimizing learning workflows by integrating an enhanced UI, efficient data management, and dynamic real-time updates. CodeLabz serves as a centralized solution for tutorial creation, consumption, and collaboration, ensuring an effective and scalable educational experience.
 <br /><br /></dd>
+</dl>
+
+<p><strong>Key Objectives</strong></p>
+<ol>
+  <li><em>Deployment:</em>
+    <ul>
+      <li>Deploy the platform in a production-ready environment with cloud-based hosting(or github pages).
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>UI/UX Refinement:</em>
+    <ul>
+      <li>Refine the UI/UX of the website with proper design principles.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Alternative Backend Strategies:</em>
+    <ul>
+      <li>Utilize serverless computing for auto-scaling and cost efficiency.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Containerization &amp; Dockerization:</em>
+    <ul>
+      <li>Implement Docker for consistent development and production environments.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>CI/CD Integration:</em>
+    <ul>
+      <li>Automate testing and deployment using GitHub Actions.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Admin Features:</em>
+    <ul>
+      <li>Enhance the admin dashboard with real-time API refresh and analytics..
+<br /><br /></li>
+    </ul>
+  </li>
+</ol>
+
+<dl>
   <dt>Expected results</dt>
-  <dd>At the end of this summer we expect that All the listed tasks will be implemented, And the first version of codelabz website will be live.
-<br /><br /></dd>
+  <dd>By the completion of this project, CodeLabz will achieve:</dd>
+</dl>
+
+<ul>
+  <li><strong>Optimized API performance:</strong> Reduced response times through efficient query handling and caching.</li>
+  <li><strong>Better looking UI/UX:</strong> Better looking UI/UX for users.</li>
+  <li><strong>Scalable real-time backend:</strong> Enhanced Firestore/Firebase implementations with serverless optimizations.</li>
+  <li><strong>Automated CI/CD pipelines:</strong> Fully integrated build, test, and deployment workflows.</li>
+  <li><strong>Improved admin functionality:</strong> Advanced analytics, data monitoring, and administrative control tools.
+<br /><br /></li>
+</ul>
+
+<dl>
   <dt>Knowledge Prerequisite</dt>
-  <dd>Javascript, React.JS, Node.JS, Firebase
+  <dd>Proficiency in ReactJS, Redux, Material-UI, TypeScript, Node.js, Express.js, Firebase Functions, Firestore, REST/GraphQL API design, Docker, Kubernetes, CI/CD (GitHub Actions), cloud hosting (Firebase), Figma, NoSQL design patterns, query optimization, caching strategies, OAuth, JWT, Firebase Authentication, and Role-Based Access Control (RBAC).
 <br /><br /></dd>
   <dt>Mentor</dt>
-  <dd>Abhishek Pandey, Shiva Nanda Reddy.
+  <dd>Mallepally Lokeshwar Reddy (lokeshwar777), Utkarsh Raj (rajutkarsh07)
 <br /><br /></dd>
   <dt>Github Url</dt>
-  <dd><a href="https://github.com/c2siorg/Codelabz">https://github.com/c2siorg/Codelabz</a>
+  <dd><a href="https://github.com/c2siorg/codelabz">https://github.com/c2siorg/codelabz</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350hr
@@ -455,84 +471,207 @@ Although GDB operates within a terminal, this project’s mission is to develop 
 </p>
         </div>
       
-        <div class="accordion">7. NFT-TOOLBOX</div>
+        <div class="accordion">5. Data storing and querying engine for Hyperledger Fabric</div>
         <div class="panel">
           <p><dl>
-  <dt>Description</dt>
-  <dd>An npm package for seamless integration of all NFT related functionalities in Web2 projects. This project helps web2 developers seamlessly integrate web3 functionality.
+  <dt>Brief explanation</dt>
+  <dd>This project aims to develop a data storing and querying engine for Hyperledger Fabric that leverages the SmartQC transaction model proposed in the paper <a href="https://arxiv.org/abs/2402.17868">arxiv.org</a>. The goal is to enable efficient storage and retrieval of complex data transactions while ensuring immutability, auditability, and efficient query execution on Distributed Ledger Technology (DLT). This system will enable users to perform complex queries on the ledger with minimum complexity.
 <br /><br /></dd>
   <dt>Expected Results</dt>
-  <dd>Currently we are able to mint NFT on Ethereum chain and upload metadata to multiple storage services. The current task is to improve the existing stuff with multi-chain support like Solana, Tezos and EVM compatible chains, add more ERC’s support, make different types of on-chain and off-chain algorithms for super fast batch minting of NFT and add support for Soulbound NFTs, dynamic NFT and nested NFT. A website with all these functionalities needs to be created along with required smart contracts.</dd>
-  <dd>Features we would like to implement in NFT-ToolBox Project:</dd>
-  <dd></dd>
-  <dd>– You need to refactor code</dd>
-  <dd>– Add onchain and offchain Batch Minting Support</dd>
-  <dd>– Add Multiple ERC support related to nfts in easy and feasible manner</dd>
-  <dd>– Add support for Solana NFT’s</dd>
-  <dd>– Add Support for Tezos NFT’s</dd>
-  <dd>– Add support for Flow Blockchian NFT’s</dd>
-  <dd>– Add support for Aptos Blockchian NFT’s</dd>
-  <dd>– Add Support for Cross Chain NFT’s</dd>
-  <dd>– Build An UI to mint NFT’s on any chain</dd>
-  <dd>– Make UI to deploy different kinds of NFT standards (Something like Thirdweb)
-<br /></dd>
-  <dd>Note: You don’t need to implement all these features this year. You have to come up with proposal of what things can be implemented in the GSoC timeline and How.
+  <dd>
+    <ul>
+      <li>Implementation of the transaction model validator node in GoLang</li>
+      <li>An architecture for the querying engine that facilitates faster and more complex queries (using an : Off-chain DB that keeps a ledger copy or indexing mechanism before putting it into the ledger)</li>
+      <li>Performance analysis
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Go Programming Language, Docker, Blockchain &amp; Distributed Ledger, Hyperledger Fabric, SmartQC Transaction Model
 <br /><br /></dd>
-  <dt>Required Knowledge</dt>
-  <dd>Solidity, NFT, Blockchain, Rust, Nodejs, Rust, ReactJs, Typescript, Cadence, Move
-<br /><br /></dd>
-  <dt>Mentors</dt>
-  <dd>Mohit Bhat
+  <dt>Mentor</dt>
+  <dd>Tharindu Ranathunga
 <br /><br /></dd>
   <dt>Github Url</dt>
-  <dd><a href="https://github.com/scorelab/NFT-Toolbox">https://github.com/scorelab/NFT-Toolbox</a>
+  <dd>TBA
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
-  <dd>350hr
+  <dd>TBA
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Intermediate
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>TBA
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">6. Fact-bounty</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>FactBounty is a crowdsourced fact-checking platform designed to enhance the security, privacy, and trustworthiness of social media ecosystems. With the rise of misinformation, FactBounty leverages the power of intelligent crowds and AI-driven analytics to verify the authenticity of content. The platform features an intuitive user interface, real-time analytics, and seamless integration with various social media channels.
+<br /><br />
+This project focuses on optimizing fact-checking workflows by incorporating AI-powered fake news detection, a refined UI/UX, and scalable backend architecture. FactBounty serves as a centralized solution for fact verification, ensuring a reliable and transparent digital experience.
+<br /><br /></dd>
+  <dt>Key Objectives</dt>
+  <dd>
+    <ul>
+      <li><strong>UI/UX Design:</strong> Create the app’s user interface and experience by following proper design principles.</li>
+      <li><strong>AI-Powered Analytics:</strong> Integrate NLP-based analytics to detect and classify fake news efficiently.</li>
+      <li><strong>React Native Implementation:</strong> Expand the platform by developing a React Native app for cross-platform accessibility.</li>
+      <li><strong>Backend Migration:</strong> Transition the backend to FastAPI for improved performance, scalability, and maintainability,convert all Flask routes to <strong>FastAPI async routes</strong>, fastAPI provides <strong>Swagger &amp; ReDoc</strong> out-of-the-box.</li>
+      <li><strong>CI/CD Integration:</strong> Automate testing and deployment using GitHub Actions with docker-conternarizations to ensure seamless updates.
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Expected Results</dt>
+  <dd>By the completion of this project, FactBounty will achieve:
+    <ul>
+      <li>Overall migration to more efficient frameworks and dependencies in Flask and Elasticsearch.</li>
+      <li>AI-Driven Fact Checking: Improved misinformation detection through NLP-based analytics,semantic similarity matching for detecting duplicate fact-checks.</li>
+      <li>Scalable and Efficient Backend: A FastAPI-based backend for enhanced speed and reliability.</li>
+      <li>Cross-Platform Accessibility: A React Native app ensuring a seamless mobile experience.</li>
+      <li>Automated CI/CD Pipelines: Fully integrated build, test, and deployment workflows with Github actions.</li>
+      <li>Modernize the Frontend:Upgrade React dependencies and remove unnecessary Chrome-only restrictions,consider replacing Redux Devtools dependency if not required.
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Proficiency in ReactJS, React Native, TypeScript, Material-UI, FastAPI, Python (NLP), REST API design, Docker, Kubernetes, CI/CD (GitHub Actions), Figma, NoSQL/SQL design patterns, caching strategies, OAuth2, JWT
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Utkarsh Raj (rajutkarsh07)
+<br /><br /></dd>
+  <dt>Github Url</dt>
+  <dd><a href="https://github.com/c2siorg/fact-bounty">https://github.com/c2siorg/fact-bounty</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Hard
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>fact-bounty-
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">7. WebGPU - New feature for the WebGPU framework</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>WebGPU is a novel framework for Federated Learning (FL) that supports machine learning model training over web browsers. The idea is to develop a comprehensive framework around web browsers with the support of the WebGPU access via the web browser. Users can deploy the server in a single machine and connect clients via browser using server url and strat the federated learning process on the client side. The server should  handle the management process of the FL network.
+<br /><br />
+Current implementation on WebGPU does not support advanced features such as differential privacy, personalization, client selection algorithms and asynchronization on FL etc. This project aims to fix the current implementation to support at least above 3 implementations + asynchronization.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd>At the end of your summer, we expect that you will complete at least the mentioned 3 implementations along with the issues on the current implementation. This includes but is not limited to fixing broken features, enhancing the UI on the browser and performance improvement on the server implementation and the client implementation. Also, you have to improve the wikis which are related to your development areas. Come up with a plan of what features you are gonna do when as a timeline. Consider improving the wikis also in your timeline.
+<br /><br /></dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>The implementation requires basic understanding of Python and React(JavaScrip) and deep knowledge on machine learning along with federated learning.
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Tushar N
+<br /><br /></dd>
+  <dt>Github Url</dt>
+  <dd><a href="https://github.com/c2siorg/WebFL">https://github.com/c2siorg/WebFL</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Hard
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>webfl
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">8. ImageLab - Improve user experience</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>ImageLab is a standalone tool designed to help users learn and experiment with image processing techniques interactively. It provides an intuitive environment for beginners to understand image processing concepts without deep programming knowledge. Advanced users can use ImageLab as a test environment before implementing actual image processing applications.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd>The goal of this year is to improve the ImageLab experience for the users and the developers alike.
+<br /><br />
+    <ul>
+      <li>Make the UI responsive.</li>
+      <li>Fix the UI/UX issues in the current project such as tooltips not being displayed correctly.</li>
+      <li>Increase the library of the blocks / parameters of operations.</li>
+      <li>Come up with a deployment/release strategy.</li>
+      <li>Complete the documentation on the project to support both users and developers, making it easier to understand, contribute to, and maintain the project.</li>
+      <li>Transition the application’s architecture from an experiment-centric to a project-based approach.</li>
+      <li>Develop a project library for easy management and retrieval of user projects.</li>
+      <li>Implement features to collect user analytics and feedback within the application.</li>
+      <li>(Optional) Build features necessary for creating object detection pipelines.
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Javascript / Typescript, OpenCV, Electron (Optional)
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Sahan Dissanayake, Oshan Mudannayake
+<br /><br /></dd>
+  <dt>Github Url</dt>
+  <dd>TBA
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
 <br /><br /></dd>
   <dt>Difficulty</dt>
   <dd>Medium
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>nft-toolbox</dd>
+  <dd><a href="https://c2si-org.slack.com/archives/C06BYELUG05">https://c2si-org.slack.com/archives/C06BYELUG05</a>
+<br /><br /></dd>
 </dl>
 </p>
         </div>
       
-        <div class="accordion">8. ImageLab</div>
+        <div class="accordion">8. DataLoom</div>
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
-  <dd>ImageLab is a standalone tool that supports anyone to get started with image processing-related concepts and techniques in an interactive, less logical way. So, this tool enables and also motivates fresh users to understand how image processing concepts work by interacting with ImageLab. The upcoming enhancements for ImageLab in this year’s Google Summer of Code aim to significantly augment its user experience and broaden its applicability across various use cases.
+  <dd>DataLoom is a web-based graphical interface designed to simplify data wrangling and transformation tasks for tabular datasets. It serves as an intuitive front-end for the pandas library, enabling users to perform complex data manipulation operations without requiring advanced programming expertise. By bridging the gap between data analysis and usability, DataLoom empowers users to streamline their data workflows efficiently.
 <br /><br /></dd>
-  <dt>Expected results</dt>
-  <dd>Our goal is to transform ImageLab into a more versatile and user-engaging platform. The enhancements are targeted towards facilitating real-world applications and improving user interaction.
-<br /></dd>
-  <dd>– Integrate real-time video processing capability.</dd>
-  <dd>– Transition the application’s architecture from an experiment-centric to a project-based approach.</dd>
-  <dd>– Develop a project library for easy management and retrieval of user projects.</dd>
-  <dd>– Implement user profile functionality for personalized experiences</dd>
-  <dd>– Allow users to save their work on the cloud for easy access and collaboration.</dd>
-  <dd>– Implement features to collect user analytics and feedback within the application.</dd>
-  <dd>– To make ImageLab globally accessible, add support for multiple languages in the user interface.</dd>
-  <dd>– Incorporate interactive tutorials, guides, and educational content within the tool to help users learn image processing concepts as they use ImageLab.
-<br />
-Please contact the mentor with a draft of the proposal before submitting the application.
-<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd>
+    <ul>
+      <li>Redesign and modernize the UI to be more responsive, professional, and user-friendly.</li>
+      <li>Introduce additional data transformation operations.</li>
+      <li>Restructure the project to enhance readability, maintainability, and ease of contribution for new developers.
+<br /><br /></li>
+    </ul>
+  </dd>
   <dt>Knowledge Prerequisite</dt>
-  <dd>Javascript / Typescript, OpenCV
+  <dd>Backend: Python, Pandas, FastAPI (recommended)
+Frontend: HTML, CSS, JavaScript, React (recommended)
 <br /><br /></dd>
   <dt>Mentor</dt>
-  <dd>Oshan Mudannayake (oshan.ivantha@gmail.com), Shan
+  <dd>Oshan Mudannayake
 <br /><br /></dd>
-  <dt>GitHub URL</dt>
-  <dd><a href="https://github.com/c2siorg/imagelab">https://github.com/c2siorg/imagelab</a>
+  <dt>Github Url</dt>
+  <dd>TBA
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
-  <dd>350hr
+  <dd>350 hours
 <br /><br /></dd>
   <dt>Difficulty</dt>
-  <dd>Medium</dd>
+  <dd>Easy
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd><a href="https://c2si-org.slack.com/archives/C06Q2TM4AKF">https://c2si-org.slack.com/archives/C06Q2TM4AKF</a>
+<br /><br /></dd>
 </dl>
 </p>
         </div>
@@ -541,140 +680,38 @@ Please contact the mentor with a draft of the proposal before submitting the app
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
-  <dd>TensorMap is a web application that will allow the users to create machine learning algorithms visually. TensorMap supports reverse engineering of the visual layout to a Tensorflow implementation in preferred languages. The goal of the project is to let the beginners play with machine learning algorithms in Tensorflow without less background knowledge about the library. 
-<br /><br /></dd>
-  <dt>Expected results</dt>
-  <dd>– Dockerize the backend.</dd>
-  <dd>– Fix the current issues.</dd>
-  <dd>– Fix the workflow including the neural architecture design.</dd>
-  <dd>– Add more nodes.</dd>
-  <dd>– Write and publish documentation on how to extend and add new nodes.
-<br />
-Please contact the mentor with a draft of the proposal before submitting the application.
-<br /><br /></dd>
-  <dt>Knowledge Prerequisite</dt>
-  <dd>Tensorflow, Javascript
-<br /><br /></dd>
-  <dt>Mentor</dt>
-  <dd>Oshan Mudannayake (oshan.ivantha@gmail.com), Udesh
-<br /><br /></dd>
-  <dt>GitHub URL</dt>
-  <dd><a href="https://github.com/c2siorg/tensormap">https://github.com/c2siorg/tensormap</a>
-<br /><br /></dd>
-  <dt>Estimate Project Length</dt>
-  <dd>350hr
-<br /><br /></dd>
-  <dt>Difficulty</dt>
-  <dd>Hard</dd>
-</dl>
-</p>
-        </div>
-      
-        <div class="accordion">10. DataLoom</div>
-        <div class="panel">
-          <p><dl>
-  <dt>Brief explanation</dt>
-  <dd>The goal of this project is to design and implement a web-based GUI for data wrangling, aimed at simplifying the process of managing and transforming tabular datasets. This application will serve as a graphical interface for the powerful Python library, pandas, allowing users to perform complex data manipulation tasks without the need for in-depth programming knowledge. Users will be able to log in, upload their datasets, apply various transformations, and export their results, all through an intuitive and user-friendly interface.
-<br /><br /></dd>
-  <dt>Expected results</dt>
-  <dd>– A web application that allows users to securely log in and manage their tabular datasets.
-<br /></dd>
-  <dd>– The ability to upload, view, and download datasets in various formats (CSV, Excel, etc.).
-<br /></dd>
-  <dd>– A GUI that provides intuitive access to common data transformation tasks (filtering, sorting, joining, etc.) using pandas functionalities.
-<br /></dd>
-  <dd>– Real-time preview of data transformations to facilitate immediate feedback.
-<br /></dd>
-  <dd>– User-specific workspaces where transformations can be saved and revisited.
-Comprehensive documentation on how to use the application, along with examples of common data wrangling tasks.
-<br /></dd>
-  <dd>– A scalable and secure backend architecture using FastAPI to handle requests and perform data transformations.
-<br /><br />
-Please contact the mentor with a draft of the proposal before submitting the application.
-<br /><br /></dd>
-  <dt>Knowledge Prerequisite</dt>
-  <dd>Python, Pandas library, Frontend technologies like HTML, CSS, and JavaScript frameworks (React recommended), FastAPI (preferable
-<br /><br /></dd>
-  <dt>Mentor</dt>
-  <dd>Oshan Mudannayake (oshan.ivantha@gmail.com)
-<br /><br /></dd>
-  <dt>Github Url</dt>
-  <dd><a href="https://github.com/c2siorg/DataLoom">https://github.com/c2siorg/DataLoom</a>
-<br /><br /></dd>
-  <dt>Estimate Project Length</dt>
-  <dd>350hr
-<br /><br /></dd>
-  <dt>Difficulty</dt>
-  <dd>Medium
-<br /><br /></dd>
-</dl>
-
-</p>
-        </div>
-      
-        <div class="accordion">11. ProjectExplainer - Validating project explanations</div>
-        <div class="panel">
-          <p><dl>
-  <dt>Brief explanation</dt>
-  <dd>ProjectExplainer project is a set of tools to help with explaining code repositories using large language models.
-<br /><br />
-At this point, ProjectExplainer supports a small set of API’s to provide summarization or explanation capabilities over GitHub based code repositories by parsing through readme’s and pulling important pieces of information which is then provided as prompt to an LLM to produce summarization.
-<br /><br />
-With this GSoC project, we wish to include knowledge graphs to embed GitHub repository code and text  modalities to use that as a retrieval interface for the LLM to perform summarization/explanation task.
+  <dd>TensorMap is a web application that will allow the users to create machine learning algorithms visually. TensorMap supports reverse engineering of the visual layout to a Tensorflow implementation in preferred languages. The goal of the project is to let the beginners play with machine learning algorithms in Tensorflow without less background knowledge about the library.
 <br /><br /></dd>
   <dt>Expected Results</dt>
-  <dd>At the end of the GSoC term, we expect the validation stage is setup right in order validate the project explanations.
-<br /><br /></dd>
-  <dt>Required Knowledge</dt>
-  <dd>Python, Language Models, Hugging Face, Pytorch, Evaluation Metrics, Summarization.
-<br /><br /></dd>
-  <dt>Possible Mentors</dt>
-  <dd>Mehant Kammakomati
-<br /><br /></dd>
-  <dt>Estimate Project Length</dt>
-  <dd>350hr
-<br /><br /></dd>
-  <dt>Github Url</dt>
-  <dd><a href="https://github.com/c2siorg/Project-Explainer">https://github.com/c2siorg/Project-Explainer</a>
-<br /><br /></dd>
-  <dt>Difficulty</dt>
-  <dd>Medium
-<br /><br /></dd>
-  <dt>Slack channel</dt>
-  <dd>project-explainer
-<br /><br /></dd>
-</dl>
-</p>
-        </div>
-      
-        <div class="accordion">12. B0Bot</div>
-        <div class="panel">
-          <p><dl>
-  <dt>Brief explanation</dt>
-  <dd>In this project, our objective is to develop a CyberSecurity News API tailored for automated bots on social media platforms. It is a cutting-edge Flask-based API that grants seamless access to the latest cybersecurity and hacker news. Users can effortlessly retrieve news articles either through specific keywords or without, streamlining the information acquisition process.
-<br /><br />
-Once a user requests our API, it retrieves news data from our knowledge base and feeds it to an LLM. After the LLM processes the data, the API obtains the response and returns it in JSON format..
-<br /><br /></dd>
-  <dt>Expected results</dt>
-  <dd>At the end of the GSoC term, we expect integration of an LLM to the B0Bot.
-<br /><br /></dd>
+  <dd>
+    <ul>
+      <li>Clean up the project structure.</li>
+      <li>Completely switch to poetry for dependency management.</li>
+      <li>Complete the project Wiki.</li>
+      <li>Implement additional visualizations such as 3D plots, heatmaps, and interactive graphs.</li>
+      <li>Add built-in functions for common data augmentation techniques.</li>
+      <li>Add more functionality to the application (open-ended).
+<br /><br /></li>
+    </ul>
+  </dd>
   <dt>Knowledge Prerequisite</dt>
-  <dd>Python, Large Language Models, Hugging Face, Pytorch, API development (Flask), NLP, Database Management, MongoDB, LangChain, Prompt Designing
+  <dd>Tensorflow, Python, Javascript
 <br /><br /></dd>
-  <dt>Mentors</dt>
-  <dd>Nipuna Weerasekara, Tingyuan
-<br /><br /></dd>
-  <dt>Estimate Project Length</dt>
-  <dd>350hr
+  <dt>Mentor</dt>
+  <dd>Oshan Mudannayake
 <br /><br /></dd>
   <dt>Github Url</dt>
-  <dd><a href="https://github.com/c2siorg/b0bot">https://github.com/c2siorg/b0bot</a>
+  <dd>TBA
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
 <br /><br /></dd>
   <dt>Difficulty</dt>
-  <dd>Medium
+  <dd>Hard
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>b0bot</dd>
+  <dd><a href="https://c2si-org.slack.com/archives/C06CE1SSC9F">https://c2si-org.slack.com/archives/C06CE1SSC9F</a>
+<br /><br /></dd>
 </dl>
 </p>
         </div>

@@ -1,14 +1,14 @@
 ---
-title: GSoC 2024
+title: GSoC 2025
 layout: gsoc
 description: Services
 intro_image: "/images/logo/gsoc1.png"
 intro_image_absolute: false
 intro_image_hide_on_mobile: false
-tagline: Welcome to the C2SI Google Summer of Code (GSoC) 2024 project ideas page. 
+tagline: Welcome to the C2SI Google Summer of Code (GSoC) 2025 project ideas page. 
 ---
 
-This is the 7th time that we are participating in the GSoC, we will use this page to develop possible project ideas that have on the above mentioned areas. Please note that anyone who is interested can participate in this process. You do not have to be a GSoC student or mentor to suggest possible project ideas.
+This is the 8th time that we are participating in the GSoC, we will use this page to develop possible project ideas that have on the above mentioned areas. Please note that anyone who is interested can participate in this process. You do not have to be a GSoC student or mentor to suggest possible project ideas.
 <br><br>
 You can also talk to us about possible project ideas and we are happy to improve or heip you with them. Please keep in mind that projects need to be realistically something that is able to be functionally completed by a student working full time for about eight weeks. Thanks!
 
@@ -35,8 +35,8 @@ You can also talk to us about possible project ideas and we are happy to improve
 
 <br>
 
-# Idea List for 2024
-*The following is the idea list for Google Summer of Code 2024*
+# Idea List for 2025
+*The following is the idea list for Google Summer of Code 2025*
 
 
 
