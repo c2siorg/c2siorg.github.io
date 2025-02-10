@@ -23,7 +23,7 @@ Mentor
 : Pratik Dhanave
 <br><br>
 
-Github Url
+Github URL
 : <https://github.com/c2siorg/RustCloud>
 <br><br>
 

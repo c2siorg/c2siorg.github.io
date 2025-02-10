@@ -29,7 +29,7 @@ Mentors
 : Ravindu
 <br><br>
 
-Github Url
+Github URL
 : <https://github.com/c2siorg/GDB-UI>
 <br><br>
 

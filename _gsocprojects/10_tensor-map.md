@@ -1,5 +1,5 @@
 ---
-num: 9
+num: 10
 title: TensorMap
 ---
 
@@ -22,10 +22,10 @@ Knowledge Prerequisite
 <br><br>
 
 Mentor
-: Oshan Mudannayake
+: Oshan Mudannayake, Utkarsh Raj(rajutkarsh07), UdeshUK
 <br><br>
 
-Github Url
+Github URL
 : TBA
 <br><br>
 

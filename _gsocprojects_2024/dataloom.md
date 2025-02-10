@@ -32,7 +32,7 @@ Mentor
 : Oshan Mudannayake (oshan.ivantha@gmail.com)
 <br><br>
 
-Github Url
+Github URL
 : <https://github.com/c2siorg/DataLoom>
 <br><br>
 

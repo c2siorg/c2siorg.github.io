@@ -30,7 +30,7 @@ Mentor
 : Oshan Mudannayake (oshan.ivantha@gmail.com), Shan
 <br><br>
 
-GitHub URL
+Github URL
 : <https://github.com/c2siorg/imagelab>
 <br><br>
 

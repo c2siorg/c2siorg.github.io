@@ -24,19 +24,19 @@ Knowledge Prerequisite
 <br><br>
 
 Mentors
-: Nipuna Weerasekara, Tingyuan
+:  Hardik Jindal (hardik1408), Nipuna
 <br><br>
 
 Estimate Project Length
-: 350hr
+: 350 hours
 <br><br>
 
-Github Url
+Github URL
 : <https://github.com/c2siorg/b0bot>
 <br><br>
 
 Difficulty
-:  Medium
+:  Hard
 <br><br>
 
 Slack channel

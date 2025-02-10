@@ -33,7 +33,7 @@ Mentors
 : Mohit Bhat
 <br><br>
 
-Github Url
+Github URL
 : <https://github.com/scorelab/NFT-Toolbox>
 <br><br>
 

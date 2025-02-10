@@ -48,7 +48,7 @@ Mentor
 : Abhishek Pandey, Shiva Nanda Reddy.
 <br><br>
 
-Github Url
+Github URL
 : <https://github.com/c2siorg/Codelabz>
 <br><br>
 

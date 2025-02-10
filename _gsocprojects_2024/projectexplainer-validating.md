@@ -26,7 +26,7 @@ Estimate Project Length
 : 350hr
 <br><br>
 
-Github Url
+Github URL
 : <https://github.com/c2siorg/Project-Explainer>
 <br><br>
 

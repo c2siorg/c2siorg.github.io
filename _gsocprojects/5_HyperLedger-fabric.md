@@ -1,6 +1,6 @@
 ---
 num: 5
-title: Data storing and querying engine for Hyperledger Fabric  
+title: Querying engine for Hyperledger Fabric 
 ---
 
 Brief explanation 
@@ -11,6 +11,7 @@ Expected Results
 : 
  * Implementation of the transaction model validator node in GoLang
  * An architecture for the querying engine that facilitates faster and more complex queries (using an : Off-chain DB that keeps a ledger copy or indexing mechanism before putting it into the ledger)
+ * Visualisation of transactions on a graph based DB
  * Performance analysis
 <br><br>
 
@@ -19,15 +20,15 @@ Knowledge Prerequisite
 <br><br>
 
 Mentor
-: Tharindu Ranathunga
+: Tharindu Ranathunga, Raveen
 <br><br>
 
-Github Url
+Github URL
 : TBA
 <br><br>
 
 Estimate Project Length
-: TBA
+: 350 Hours
 <br><br>
 
 Difficulty

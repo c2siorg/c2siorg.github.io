@@ -18,10 +18,10 @@ Knowledge Prerequisite
 <br><br>
 
 Mentor
-: Tushar N
+: Tushar N, Shivak
 <br><br>
 
-Github Url
+Github URL
 : <https://github.com/c2siorg/WebFL>
 <br><br>
 

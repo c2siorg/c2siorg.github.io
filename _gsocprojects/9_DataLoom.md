@@ -23,7 +23,7 @@ Mentor
 : Oshan Mudannayake
 <br><br>
 
-Github Url
+Github URL
 : TBA
 <br><br>
 

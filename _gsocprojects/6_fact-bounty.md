@@ -14,7 +14,7 @@ Key Objectives
  * **UI/UX Design:** Create the app’s user interface and experience by following proper design principles.
  * **AI-Powered Analytics:** Integrate NLP-based analytics to detect and classify fake news efficiently.
  * **React Native Implementation:** Expand the platform by developing a React Native app for cross-platform accessibility.
- * **Backend Migration:** Transition the backend to FastAPI for improved performance, scalability, and maintainability,convert all Flask routes to **FastAPI async routes**, fastAPI provides **Swagger & ReDoc** out-of-the-box.
+ * **Backend Migration:** Transition the backend to Go (using Gin or Echo) for improved performance, scalability, and maintainability. Use Go-based async routes. Go provides built-in Swagger support for API documentation.
  * **CI/CD Integration:** Automate testing and deployment using GitHub Actions with docker-conternarizations to ensure seamless updates.
 <br><br>
 
@@ -25,18 +25,18 @@ Expected Results
  * Scalable and Efficient Backend: A FastAPI-based backend for enhanced speed and reliability.
  * Cross-Platform Accessibility: A React Native app ensuring a seamless mobile experience.
  * Automated CI/CD Pipelines: Fully integrated build, test, and deployment workflows with Github actions.
- * Modernize the Frontend:Upgrade React dependencies and remove unnecessary Chrome-only restrictions,consider replacing Redux Devtools dependency if not required.
+ * Modernize the Frontend: Upgrade React dependencies and remove unnecessary Chrome-only restrictions,consider replacing Redux Devtools dependency if not required.
 <br><br>
 
 Knowledge Prerequisite
-: Proficiency in ReactJS, React Native, TypeScript, Material-UI, FastAPI, Python (NLP), REST API design, Docker, Kubernetes, CI/CD (GitHub Actions), Figma, NoSQL/SQL design patterns, caching strategies, OAuth2, JWT
+: Proficiency in ReactJS, React Native, TypeScript, Material-UI, Go (Gin/Echo), REST API design, Docker, Kubernetes, CI/CD (GitHub Actions), Figma, NoSQL/SQL design patterns, caching strategies, OAuth2, JWT.
 <br><br>
 
 Mentor
-: Utkarsh Raj (rajutkarsh07)
+: Utkarsh Raj (rajutkarsh07), Sameera
 <br><br>
 
-Github Url
+Github URL
 : <https://github.com/c2siorg/fact-bounty>
 <br><br>
 

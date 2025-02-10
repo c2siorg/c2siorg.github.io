@@ -35,16 +35,20 @@ Expected Results
 <!-- : -- By the end of the project, the following outcomes are anticipated: -->
 <br><br>
 
-Mentor
-: Shubh Mehta (Shubh942)
+Skills Required:
+: Proficiency in REST, Flask, React, WebSockets, Docker, CI/CD tools (e.g., GitHub Actions), session management, and real-time data handling
 <br><br>
 
-Github Url
+Mentor
+: Shubh Mehta (Shubh942), Ravindu
+<br><br>
+
+Github URL
 : <https://github.com/c2siorg/GDB-UI>
 <br><br>
 
 Estimate Project Length
-: 350hr
+: 350 hours
 <br><br>
 
 Difficulty

@@ -26,7 +26,7 @@ Mentors
 : Ravindu
 <br><br>
 
-Github Url
+Github URL
 : <https://github.com/c2siorg/bug-connector>
 <br><br>
 

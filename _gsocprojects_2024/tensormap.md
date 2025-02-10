@@ -25,7 +25,7 @@ Mentor
 : Oshan Mudannayake (oshan.ivantha@gmail.com), Udesh
 <br><br>
 
-GitHub URL
+Github URL
 : <https://github.com/c2siorg/tensormap>
 <br><br>
 

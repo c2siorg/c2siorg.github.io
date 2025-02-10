@@ -38,11 +38,11 @@ Skills Required:
 <br><br>
 
 Mentor
-: Mahender Goud Thanda (Maahi10001)
+: Mahender Goud Thanda (Maahi10001), Charith
 <br><br>
 
 Estimate Project Length
-: 350hr
+: 350h hours
 <br><br>
 
 Github URL
