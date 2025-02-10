@@ -29,12 +29,12 @@ This project focuses on optimizing learning workflows by integrating an enhanced
 * Enhance the admin dashboard with real-time API refresh and analytics.
 <br>
 
-1. Optimize NoSQL Queries for Performance:
+1. *Optimize NoSQL Queries for Performance:*
 * Identify key indexes, optimize slow queries, and implement caching or denormalization strategies to improve retrieval times.
 <br>
 
 1. *Containerization & Dockerization:*
-* Implement Docker for consistent development and production environments.
+* Implement Docker for consistent development and production environments..
 <br>
 
 1. *UI/UX Refinement:*

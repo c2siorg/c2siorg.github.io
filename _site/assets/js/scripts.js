@@ -12,31 +12,24 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  // Ensure all panels are collapsed initially
+  // Expand the panel by default
   var panel = acc[i].nextElementSibling;
-  panel.style.maxHeight = null;
-
+  panel.style.maxHeight = panel.scrollHeight + "px";
+  
   acc[i].addEventListener("click", function() {
-    var activePanel = document.querySelector(".accordion.active");
-    
-    // Collapse the previously active panel, if any
-    if (activePanel && activePanel !== this) {
-      activePanel.classList.remove("active");
-      activePanel.nextElementSibling.style.maxHeight = null;
-    }
-
-    // Toggle the current panel
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
+      console.log("if");
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    }
+      console.log("else");
+    } 
   });
 
-  // Add bottom border to the last panel
-  if (i === acc.length - 1) {
+   // Add bottom border to the last panel
+   if (i === acc.length - 1) {
     var lastPanel = acc[i].nextElementSibling;
     lastPanel.classList.add("last-panel");
   }
