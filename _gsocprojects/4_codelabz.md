@@ -12,6 +12,7 @@ This project focuses on optimizing learning workflows by integrating an enhanced
 
 **Key Objectives**
 : 
+
 1. *Backend and Deployment:* 
 * The app is temporarily deployed on the client side using Firebase Hosting, so we need a no-cost solution for serverless deployment.
 * Find a free serverless hosting solution and migrate APIs from Firebase Functions while ensuring scalability, reliability, and minimal maintenance.
