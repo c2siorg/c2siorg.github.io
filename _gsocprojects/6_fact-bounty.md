@@ -11,11 +11,11 @@ This project focuses on optimizing fact-checking workflows by incorporating AI-p
 
 Key Objectives
 : 
- * **UI/UX Design:** Create the app’s user interface and experience by following proper design principles.
- * **AI-Powered Analytics:** Integrate NLP-based analytics to detect and classify fake news efficiently.
- * **React Native Implementation:** Expand the platform by developing a React Native app for cross-platform accessibility.
- * **Backend Migration:** Transition the backend to Go (using Gin or Echo) for improved performance, scalability, and maintainability. Use Go-based async routes. Go provides built-in Swagger support for API documentation.
- * **CI/CD Integration:** Automate testing and deployment using GitHub Actions with docker-conternarizations to ensure seamless updates.
+ * *UI/UX Design:* Create the app’s user interface and experience by following proper design principles.
+ * *AI-Powered Analytics:* Integrate NLP-based analytics to detect and classify fake news efficiently.
+ * *React Native Implementation:* Expand the platform by developing a React Native app for cross-platform accessibility.
+ * *Backend Migration:* Transition the backend to Go (using Gin or Echo) for improved performance, scalability, and maintainability. Use Go-based async routes. Go provides built-in Swagger support for API documentation.
+ * *CI/CD Integration:* Automate testing and deployment using GitHub Actions with docker-conternarizations to ensure seamless updates.
 <br><br>
 
 Expected Results

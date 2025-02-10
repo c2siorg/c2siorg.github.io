@@ -16,33 +16,33 @@ This project focuses on optimizing learning workflows by integrating an enhanced
 1. *Backend and Deployment:* 
 * The app is temporarily deployed on the client side using Firebase Hosting, so we need a no-cost solution for serverless deployment.
 * Find a free serverless hosting solution and migrate APIs from Firebase Functions while ensuring scalability, reliability, and minimal maintenance.
-<br><br>
+<br>
 
-2. *Implement Real-Time Notification System (No Cost):*
+1. *Implement Real-Time Notification System (No Cost):*
 * Research and implement a real-time notification system integrated with in-app notifications.
 * Ensure functionality for push and in-app notifications within free-tier limits.
-<br><br>
+<br>
 
-3. *Managing Org-Setting (Including Roles) and Implement Admin Features:*
+1. *Managing Org-Setting (Including Roles) and Implement Admin Features:*
 * Develop functionalities for managing organization settings.
 * Implement role-based access control to ensure secure and controlled access.
 * Enhance the admin dashboard with real-time API refresh and analytics.
-<br><br>
+<br>
 
-4. Optimize NoSQL Queries for Performance:
+1. Optimize NoSQL Queries for Performance:
 * Identify key indexes, optimize slow queries, and implement caching or denormalization strategies to improve retrieval times.
-<br><br>
+<br>
 
-5. *Containerization & Dockerization:*
+1. *Containerization & Dockerization:*
 * Implement Docker for consistent development and production environments.
-<br><br>
+<br>
 
-6. *UI/UX Refinement:*
+1. *UI/UX Refinement:*
 * Improve design consistency, usability, and responsiveness across all devices with proper design principles.
 * The codebase contains partial migrations and multiple MUI versions, so make it consistent and update it to the latest versions.
-<br><br>
+<br>
 
-7. *Ensure Proper Migration and Consistency:*
+1. *Ensure Proper Migration and Consistency:*
 * The codebase includes deprecated npm libraries and modules, update or replace them.
 * Convert the existing JavaScript codebase to TypeScript, ensuring type safety and maintainability.
 <br><br>
@@ -50,12 +50,12 @@ This project focuses on optimizing learning workflows by integrating an enhanced
 Expected results
 : By the completion of this project, CodeLabz will achieve:
 
-* **Optimized API performance:** Faster response times, reduced server load, and enhanced data retrieval, improving overall API performance.
-* **Better looking UI/UX:** A visually appealing and responsive interface that works seamlessly across all devices, improving user satisfaction.
-* **Scalable real-time backend:** A scalable, serverless backend that handles real-time data synchronization and notifications efficiently.
-* **Refined CI/CD pipelines and faster deployment cycles:** Improved data security with role-based access control, ensuring only authorized users access sensitive information.
-* **Improved admin functionality:** Advanced analytics, data monitoring, and administrative control tools.
-*  **Updated and consistent codebase:** Fully migrated, consistent, scalable and maintainable codebase.
+* *Optimized API performance:* Faster response times, reduced server load, and enhanced data retrieval, improving overall API performance.
+* *Better looking UI/UX:* A visually appealing and responsive interface that works seamlessly across all devices, improving user satisfaction.
+* *Scalable real-time backend:* A scalable, serverless backend that handles real-time data synchronization and notifications efficiently.
+* *Refined CI/CD pipelines and faster deployment cycles:* Improved data security with role-based access control, ensuring only authorized users access sensitive information.
+* *Improved admin functionality:* Advanced analytics, data monitoring, and administrative control tools.
+* *Updated and consistent codebase:* Fully migrated, consistent, scalable and maintainable codebase.
 <br><br>
 
 Knowledge Prerequisite

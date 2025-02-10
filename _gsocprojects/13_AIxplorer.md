@@ -18,13 +18,13 @@ Expected Results
 
 Key Objectives
 : 
-* **Codebase Optimization**: Refactor and improve the existing codebase for better maintainability and performance.
-* **Advanced Event Decoding & Indexing**: Improve transaction parsing, event decoding, and indexing mechanisms.
-* **Multi-Chain Support**: Integrate support for Solana, Sui, and Aptos blockchains.
-* **Enhanced UI/UX**: Design an improved, visually appealing UI that aligns with conventional blockchain explorers.
-* **Optimized AI Integration**: Research and integrate the best AI agent frameworks for efficient data processing.
-* **Retrieval-Augmented Generation (RAG) Implementation**: Incorporate RAG to reduce large language model (LLM) processing costs and improve response accuracy.
-* **API Development**: Build APIs to allow external developers to easily integrate and use the AI-powered agent.
+* *Codebase Optimization*: Refactor and improve the existing codebase for better maintainability and performance.
+* *Advanced Event Decoding & Indexing*: Improve transaction parsing, event decoding, and indexing mechanisms.
+* *Multi-Chain Support*: Integrate support for Solana, Sui, and Aptos blockchains.
+* *Enhanced UI/UX*: Design an improved, visually appealing UI that aligns with conventional blockchain explorers.
+* *Optimized AI Integration*: Research and integrate the best AI agent frameworks for efficient data processing.
+* *Retrieval-Augmented Generation (RAG) Implementation*: Incorporate RAG to reduce large language model (LLM) processing costs and improve response accuracy.
+* *API Development*: Build APIs to allow external developers to easily integrate and use the AI-powered agent.
 <br><br>
 
 Scope & Implementation Plan

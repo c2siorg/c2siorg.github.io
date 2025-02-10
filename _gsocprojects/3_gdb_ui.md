@@ -9,7 +9,9 @@ Brief explanation
 GDB-UI enhances the debugging workflow by offering a sleek, user-friendly UI, replacing the traditional command-line experience with a visual and accessible alternative. It supports both Docker-based and manual setups, allowing seamless integration into various development environments.
 <br><br>
 
-**Key Objectives**
+Key Objectives
+: 
+
 1. *First Deployment:* 
 * Deploy the project for initial use, ensuring the application is accessible and functional for all users.
 <br><br>

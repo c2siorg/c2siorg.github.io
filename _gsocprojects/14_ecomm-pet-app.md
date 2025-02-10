@@ -18,12 +18,12 @@ Expected Results
 
 Key Objectives
 : 
-* **Community & Interaction:** Implement a Stack Overflow-style community for discussions, real-time chat functionality, and user social pages.
-* **Deployment & DevOps:** Host on Firebase, Vercel, or AWS, with automated CI/CD pipelines using GitHub Actions.
-* **UI/UX Refinement:** Implement dark mode, responsive design, a Markdown editor, and syntax highlighting.
-* **Backend Optimization:** Use microservices architecture, GraphQL, MongoDB/PostgreSQL, Redis caching, and WebSockets for real-time updates.
-* **Scalability & Security:** Deploy using Docker & Kubernetes, implement RBAC, OAuth, JWT authentication, and 2FA for security.
-* **Admin Features:** Provide real-time analytics dashboards and moderation tools for effective platform management.
+* *Community & Interaction:* Implement a Stack Overflow-style community for discussions, real-time chat functionality, and user social pages.
+* *Deployment & DevOps:* Host on Firebase, Vercel, or AWS, with automated CI/CD pipelines using GitHub Actions.
+* *UI/UX Refinement:* Implement dark mode, responsive design, a Markdown editor, and syntax highlighting.
+* *Backend Optimization:* Use microservices architecture, GraphQL, MongoDB/PostgreSQL, Redis caching, and WebSockets for real-time updates.
+* *Scalability & Security:* Deploy using Docker & Kubernetes, implement RBAC, OAuth, JWT authentication, and 2FA for security.
+* *Admin Features:* Provide real-time analytics dashboards and moderation tools for effective platform management.
 <br><br>
 
 Knowledge Prerequisite

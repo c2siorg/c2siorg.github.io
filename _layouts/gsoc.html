@@ -30,7 +30,7 @@ bodyClass: "page-team"
     <div class="col-12 col-md-12 mb-3 mt-0">
       <div class="content">{{content}}</div>
 
-      <!-- testing -->
+      <!-- accordion -->
       {% assign projects = site.gsocprojects | sort: "num" %}
       {% for project in projects %}
         <div class="accordion">{{project.num}}. {{project.title}}</div>
@@ -38,7 +38,7 @@ bodyClass: "page-team"
           <p>{{project.content}}</p>
         </div>
       {% endfor %}
-      <!-- testing ends -->
+      <!-- accordion -->
     
       <br>
     </div>

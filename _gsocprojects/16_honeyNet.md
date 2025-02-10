@@ -13,10 +13,10 @@ Expected Results
 
 Key Objectives
 : 
-* **Automated Deployment:** Use Terraform to automate the provisioning, configuration, and decommissioning of honeypot infrastructure across multiple regions and potentially multiple cloud providers.
-* **Distributed Architecture:** Deploy honeypots in various regions (e.g., North America, Europe, Asia-Pacific) to capture a diverse range of attack vectors and adapt to region-specific threat landscapes.
-* **Data Enrichment:** Integrate logging, monitoring, and analytics to enrich raw data, correlating attack patterns with global threat intelligence feeds.
-* **Scalability and Flexibility:** Implement modular Terraform configurations and cloud-native services to enable rapid scaling, dynamic resource allocation, and easy modifications.
+* *Automated Deployment:* Use Terraform to automate the provisioning, configuration, and decommissioning of honeypot infrastructure across multiple regions and potentially multiple cloud providers.
+* *Distributed Architecture:* Deploy honeypots in various regions (e.g., North America, Europe, Asia-Pacific) to capture a diverse range of attack vectors and adapt to region-specific threat landscapes.
+* *Data Enrichment:* Integrate logging, monitoring, and analytics to enrich raw data, correlating attack patterns with global threat intelligence feeds.
+* *Scalability and Flexibility:* Implement modular Terraform configurations and cloud-native services to enable rapid scaling, dynamic resource allocation, and easy modifications.
 <br><br>
 
 Knowledge Prerequisite

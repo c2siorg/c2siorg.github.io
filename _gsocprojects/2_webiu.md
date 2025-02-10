@@ -8,7 +8,9 @@ Brief explanation
 WebiU aims to improve the system by optimizing APIs for faster and lighter responses, exploring serverless backend solutions for real-time data handling, and integrating CI/CD workflows to streamline development and deployment.
 <br><br>
 
-**Key Objectives**
+Key Objectives
+: 
+
 1. *API Optimization*
 * Refactor APIs to reduce response times and payload sizes.
 * Implement in-memory caching and compression (e.g., GZIP).

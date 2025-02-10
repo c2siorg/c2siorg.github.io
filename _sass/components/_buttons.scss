@@ -110,9 +110,17 @@
   transition: max-height 0.3s ease-out;
   border-left: 1px solid #c2c2c265;
   border-right: 1px solid #c2c2c265;
-
+  line-height: 1.5em;
 }
 
 .last-panel {
   border-bottom: 1px solid #c2c2c265;
+}
+
+.panel li{
+  padding-bottom: 0.2em;
+}
+
+.panel ol, ul{
+  padding-left: 1em;
 }

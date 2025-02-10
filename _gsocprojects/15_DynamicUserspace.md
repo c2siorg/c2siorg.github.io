@@ -13,9 +13,9 @@ Expected Results
 
 Key Objectives
 : 
-* **Dynamic Instrumentation:** Develop a plugin that intercepts key runtime events (e.g., instruction execution, memory accesses, system calls) in user-mode binaries using QEMU’s plugin API.
-* **Performance Profiling:** Collect and report metrics such as instruction counts, basic block execution frequencies, cache behavior, and memory access patterns to help analyze performance bottlenecks.
-* **Modular and Extensible Design:** Architect the plugin so that additional instrumentation features (such as logging, event correlation, and statistical analysis) can be added with minimal changes.
+* *Dynamic Instrumentation:* Develop a plugin that intercepts key runtime events (e.g., instruction execution, memory accesses, system calls) in user-mode binaries using QEMU’s plugin API.
+* *Performance Profiling:* Collect and report metrics such as instruction counts, basic block execution frequencies, cache behavior, and memory access patterns to help analyze performance bottlenecks.
+* *Modular and Extensible Design:* Architect the plugin so that additional instrumentation features (such as logging, event correlation, and statistical analysis) can be added with minimal changes.
 <br><br>
 
 Knowledge Prerequisite
