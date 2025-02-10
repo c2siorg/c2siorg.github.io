@@ -1,6 +1,6 @@
 ---
 num: 14
-title: ecomm-pet-app
+title: Ecomm-Pet-App
 ---
 
 Brief explanation 

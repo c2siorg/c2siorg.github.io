@@ -27,7 +27,7 @@ $font-family-heading: "Playfair Display", serif, -apple-system;
 $footer-background-color: $primary;
 $footer-text-color: $white;
 // $sub-footer-background-color: darken($primary, 10%);
-$sub-footer-background-color: $black;
+$sub-footer-background-color: darken($primary, 25%);
 $sub-footer-text-color: $white;
 
 // Bootstrap
