@@ -14,7 +14,7 @@ var i;
 for (i = 0; i < acc.length; i++) {
   // Ensure all panels are collapsed initially
   var panel = acc[i].nextElementSibling;
-  panel.style.maxHeight = null;
+  panel.style.maxHeight = panel.scrollHeight + "px";
 
   acc[i].addEventListener("click", function() {
     var activePanel = document.querySelector(".accordion.active");
