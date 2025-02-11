@@ -46,7 +46,7 @@ This project presents an exciting opportunity to work at the intersection of blo
 <br><br>
 
 Mentor
-: Mohit Bhat, Tharindu
+: Mohit Bhat, TharinduR
 <br><br>
 
 Github URL

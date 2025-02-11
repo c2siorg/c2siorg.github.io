@@ -27,7 +27,7 @@ Knowledge Prerequisite
 <br><br>
 
 Mentor
-: Rishabh K, TusmanNagMania
+: Amrita, Don
 <br><br>
 
 Github URL

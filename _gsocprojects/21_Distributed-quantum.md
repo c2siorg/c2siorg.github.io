@@ -26,7 +26,7 @@ Knowledge Prerequisite
 <br><br>
 
 Mentor
-: Rishabh K, TusmanNagMania
+: Don, Rishabh
 <br><br>
 
 Github URL

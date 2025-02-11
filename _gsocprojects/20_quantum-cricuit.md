@@ -32,7 +32,7 @@ Knowledge Prerequisite
 <br><br>
 
 Mentor
-: Rishabh K, TusmanNagMania
+: Don, Amrita, K
 <br><br>
 
 Github URL
