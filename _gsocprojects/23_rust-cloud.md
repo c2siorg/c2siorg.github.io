@@ -35,5 +35,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: quantum-monitor
+: rust-cloud
 <br><br>
