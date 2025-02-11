@@ -1,6 +1,6 @@
 ---
 num: 17
-title: Address Ownership Proof Protocol Service
+title: ProofOfMine - Address Ownership Proof Protocol Service
 ---
 
 Brief explanation 
@@ -39,7 +39,7 @@ Knowledge Prerequisite
 <br>
 
 Mentor
-: TBA
+: Raveen Harith Perera, Adem Bilican
 <br><br>
 
 Github URL
@@ -51,7 +51,7 @@ Estimate Project Length
 <br><br>
 
 Difficulty
-: TBA
+: Medium to Hard
 <br><br>
 
 Slack channel
