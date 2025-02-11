@@ -16,6 +16,11 @@ Are you new to open source and looking for exciting projects to contribute to? G
 👉 **Why should you engage early?**<br>
 It’s very important to connect with organizations as soon as possible. The more you interact with mentors and the community before submitting your proposal, the better your chances of being selected for GSoC!
 
+🎥 Want to learn more about Google Summer of Code?
+
+* [An introduction to Google Summer of Code](https://www.youtube.com/watch?v=7jD2tChhrWM)
+* [Learn how to apply as a GSoC contributor](https://youtu.be/YN7uGCg5vLg)
+
 🔹**Who Can Contribute?**
 
 Anyone interested is welcome to participate—whether you’re a **GSoC student, mentor, or simply passionate about open-source development!**

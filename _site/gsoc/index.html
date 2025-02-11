@@ -189,6 +189,13 @@ Are you new to open source and looking for exciting projects to contribute to? G
 <p>👉 <strong>Why should you engage early?</strong><br />
 It’s very important to connect with organizations as soon as possible. The more you interact with mentors and the community before submitting your proposal, the better your chances of being selected for GSoC!</p>
 
+<p>🎥 Want to learn more about Google Summer of Code?</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=7jD2tChhrWM">An introduction to Google Summer of Code</a></li>
+  <li><a href="https://youtu.be/YN7uGCg5vLg">Learn how to apply as a GSoC contributor</a></li>
+</ul>
+
 <p>🔹<strong>Who Can Contribute?</strong></p>
 
 <p>Anyone interested is welcome to participate—whether you’re a <strong>GSoC student, mentor, or simply passionate about open-source development!</strong></p>
@@ -1063,6 +1070,392 @@ This project presents an exciting opportunity to work at the intersection of blo
 <br /><br /></dd>
   <dt>Slack channel</dt>
   <dd>TBA
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">17. Address Ownership Proof Protocol Service</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>Address Ownership Proof Protocol (AOPP) provides a streamlined way to verify ownership of a cryptocurrency address. Traditionally, users had to manually sign a message from an exchange using third-party wallets like Electrum to prove that they are the ones who own the wallet, which was time-consuming and error-prone.<br />
+This project aims to build a self-hosted, web-based AOPP signing service that simplifies the verification process. The web application will allow users to sign messages using self hosted software wallets (electrum, blue wallet) and hardware wallets (Ledger, Trezor, BitBox) while ensuring seamless backend communication. Once a message is signed, the service will notify a backend, confirming wallet ownership.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd>By the end of the project, the following features will be implemented:</dd>
+</dl>
+
+<ul>
+  <li>Web-based AOPP Service – A web app where users can sign ownership proof messages.</li>
+  <li>Self-Hosted Wallet Support – Enable compatibility with wallets like Electrum, Sparrow, and others supporting message signing.</li>
+  <li>Hardware Wallet Integration – Direct support for signing via Ledger, Trezor, and BitBox.</li>
+  <li>AOPP-URL Handling – Implement the parsing and generation of AOPP-URLs for smooth integration.</li>
+  <li>Backend Notification System – Securely notify the backend once a signature is verified.</li>
+  <li>Security &amp; Compliance Enhancements – Implement best practices for cryptographic security.</li>
+  <li>Testing &amp; Error Handling – Comprehensive unit tests, integration tests, and fail-safe mechanisms.</li>
+  <li>Only Bitcoin for bitcoin wallets
+<br /><br /></li>
+</ul>
+
+<dl>
+  <dt>Tech Stack</dt>
+  <dd>This project will be built using Go for backend development due to its efficiency, concurrency support, and compatibility with cryptographic libraries. The proposed stack includes:
+    <ul>
+      <li>Backend: Go, PostgreSQL</li>
+      <li>Cryptographic Libraries: btcsuite/btcd, github.com/decred/dcrd/dcrec/secp256k1, github.com/btcsuite/btcutil</li>
+      <li>Wallet Integrations: ledgerhq/ledger-go, trezor-go, bitbox-go</li>
+      <li>Web Interface: React/Vue.js for a simple, intuitive UI</li>
+      <li>Deployment: Self-hostable via Docker
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>
+    <ul>
+      <li>Go programming &amp; API development</li>
+      <li>Bitcoin cryptography (ECDSA, Schnorr signatures, secp256k1) Experience with wallet integrations &amp; hardware wallet communication</li>
+      <li>Web technologies (REST APIs, WebSockets, OAuth/WebAuthn)</li>
+      <li>Database management with PostgreSQL                      <br />
+<br /></li>
+    </ul>
+  </dd>
+  <dt>Mentor</dt>
+  <dd>TBA
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd>TBA
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>TBA
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>TBA
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">18. Skam Shield - AI-Free Real-Time Scam Detector</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>Skam Shield currently offers scam protection through manual reporting and browser extensions. This project aims to build a real-time scam detection system for Windows, macOS, and Android that runs in the background and automatically detects and blocks scam attempts without using AI. The system will rely on rule-based detection, regex filtering, and user behavior tracking to identify fraudulent activities such as tech support scams, fake pop ups, phishing attempts, and scam calls.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd></dd>
+</dl>
+
+<ul>
+  <li>Windows/macOS background service that detects and blocks scam popups, VoIP calls, and phishing links.</li>
+  <li>Android app that blocks scam calls &amp; SMS and prevents fraudulent transactions.</li>
+  <li>Browser integration for detecting phishing URLs and scam warnings.</li>
+  <li>Auto-updating scam blacklist (integrated with Skam Shield Firestore DB).</li>
+  <li>Detailed scam attempt logs for forensic analysis.
+<br /><br /></li>
+</ul>
+
+<dl>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>
+    <ul>
+      <li>JavaScript (for browser extension)</li>
+      <li>Python or C++ (for system-level monitoring)</li>
+      <li>Firebase Firestore (for managing scam blacklists)</li>
+      <li>Android/Kotlin/ React Native (for mobile call and SMS blocking)  <br />
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Mentor</dt>
+  <dd>Rishabh K, TusmanNagMania
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/SkamSheild">https://github.com/c2siorg/SkamSheild</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Hard
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>skamsheild
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">19. Elly - Offline Data Collection & Auto-Sync Feature</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>Currently, App ELLY relies on real-time connectivity for data submission. This project will add offline support, enabling users to collect elephant data in remote locations without internet access. The data will be stored locally and automatically synced with the server once the device is online. This ensures continuous data collection, even in areas with poor network coverage.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd></dd>
+</dl>
+
+<ul>
+  <li>Local data storage on mobile devices (using SQLite or IndexedDB).</li>
+  <li>Auto-sync mechanism that uploads data once the internet is available.</li>
+  <li>Background sync service to retry failed uploads.</li>
+  <li>UI indicators to show pending and successfully uploaded data.
+<br /><br /></li>
+</ul>
+
+<dl>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>
+    <ul>
+      <li>React Native (for mobile app development)</li>
+      <li>Firebase Firestore/SQLite (for local and cloud storage)</li>
+      <li>Background services (for auto-sync functionality)
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Mentor</dt>
+  <dd>Rishabh K, TusmanNagMania
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/elly">https://github.com/c2siorg/elly</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>elly
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">20. Quantum Circuit Translation Framework (QCTF)</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>Quantum algorithms developed in different frameworks like Qiskit, Cirq, or Braket face challenges when being ported across various quantum hardware platforms such as IBM Q, Google Quantum Engine, or Rigetti. This project aims to develop a universal quantum circuit translation framework (QCTF) that enables seamless conversion of quantum circuits between major frameworks while optimizing for hardware-specific requirements. QCTF will handle basic gate translations and address gate optimization, qubit mapping, noise adaptation, and hardware-specific transpilation. This will empower researchers to develop quantum algorithms once and execute them on any supported quantum hardware without manual rewriting.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd></dd>
+</dl>
+
+<ul>
+  <li>Universal Circuit Converter:
+    <ul>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>Supports conversion between Qiskit, Cirq, Braket, and t</td>
+              <td>ket⟩ quantum circuits.</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+  </li>
+  <li>Hardware-Aware Transpilation:
+    <ul>
+      <li>Optimizes circuits for specific hardware gate sets (IBM, Google Sycamore, Rigetti Aspen).</li>
+    </ul>
+  </li>
+  <li>Noise-Adaptive Compilation:
+    <ul>
+      <li>Includes noise modeling to adjust circuits for real quantum device execution.</li>
+    </ul>
+  </li>
+  <li>Advanced Gate Support:
+    <ul>
+      <li>Handles custom parameterized gates, controlled operations, and mid-circuit measurements.</li>
+    </ul>
+  </li>
+  <li>Visualization Module:
+    <ul>
+      <li>Displays before-and-after circuit diagrams to track translation changes.
+<br /><br /></li>
+    </ul>
+  </li>
+</ul>
+
+<dl>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>
+    <ul>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>Quantum SDKs: Qiskit, Cirq, Amazon Braket, t</td>
+              <td>ket⟩</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>Quantum Circuit Theory: Gate sets, qubit topology, noise models</li>
+      <li>Compiler Design: Intermediate representations, transpilation techniques</li>
+      <li>Python Programming: For integration, APIs, and visualization</li>
+      <li>Hardware APIs: IBM Quantum, Google Quantum Engine, Rigetti Forest
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Mentor</dt>
+  <dd>Rishabh K, TusmanNagMania
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd>TBA
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>400 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Advanced – Requires knowledge of quantum mechanics, circuit optimization, and cross-platform software development.
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#quantum-circuit-translation
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">21. Distributed Quantum Computing Across Multiple QPUs</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>This project aims to explore and implement distributed quantum computing by leveraging multiple Quantum Processing Units (QPUs) across various hardware platforms. By integrating quantum circuits across IBM Quantum, Amazon Braket, Azure Quantum, and other quantum devices, the goal is to enhance the scalability and efficiency of quantum algorithms. The project will focus on coordinating the execution of quantum tasks on different QPUs, addressing the limitations of cross-hardware compatibility and entanglement, and developing methods for seamless integration of these diverse quantum systems into a unified architecture.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd></dd>
+</dl>
+
+<ul>
+  <li>Successful distribution of quantum circuits across multiple QPUs from different vendors (e.g., IBM, Rigetti, IonQ).</li>
+  <li>Creation of a hybrid quantum-classical orchestration system for resource management and job scheduling.</li>
+  <li>Execution of a quantum algorithm that spans multiple quantum devices and provides insights into how to improve quantum communication between these devices.</li>
+  <li>Evaluation of the latency, performance, and error rates of distributed quantum executions compared to single-device operations.
+<br /><br /></li>
+</ul>
+
+<dl>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>
+    <ul>
+      <li>Quantum Computing Frameworks: Familiarity with Qiskit (IBM), Amazon Braket SDK, Azure Quantum, and t-ket⟩ (Cambridge Quantum).</li>
+      <li>Quantum Hardware Access: Access to multiple QPUs (e.g., IBM Quantum, IonQ, Rigetti).</li>
+      <li>Distributed Systems: Basic knowledge of cloud-based orchestration for hybrid quantum-classical systems.</li>
+      <li>Quantum Communication: Understanding of entanglement swapping, quantum teleportation, and quantum repeaters.</li>
+      <li>Classical Programming: Expertise in Python, API integrations, and cloud orchestration (AWS, Azure).
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Mentor</dt>
+  <dd>Rishabh K, TusmanNagMania
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd>TBA
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>500 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>High
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#distributed-quantum
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">22. QuantumMonitor - Real-Time Quantum Hardware Monitoring Tool</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>QuantumMonitor will be a real-time monitoring tool specifically designed to track the performance and health of quantum hardware. It will collect and visualize critical metrics, including qubit health, noise levels, temperature, and error rates. The tool will provide a comprehensive dashboard that offers insights into quantum processor stability, enabling researchers and engineers to monitor quantum devices more effectively and ensure that they are operating optimally.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd></dd>
+</dl>
+
+<ul>
+  <li>A real-time dashboard displaying vital metrics like qubit coherence, gate fidelity, temperature, and noise levels.</li>
+  <li>Alerts for when performance metrics exceed predefined thresholds, signaling potential hardware issues.</li>
+  <li>Integration with various quantum hardware providers (IBM Q, Google, Honeywell, etc.) to provide a unified view of hardware performance.</li>
+  <li>A historical log of performance data for trend analysis and diagnostic purposes.</li>
+  <li>Ability to display health status for individual qubits, including error rates and failures.
+<br /><br /></li>
+</ul>
+
+<dl>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>
+    <ul>
+      <li>React Native &amp; React.js: To build interactive web and mobile interfaces for the monitoring tool.</li>
+      <li>Quantum Hardware APIs: Knowledge of APIs from hardware vendors like IBM Q, Google Quantum AI, or Rigetti to extract real-time metrics.</li>
+      <li>Firebase Firestore: For storing historical data and logs of performance metrics.</li>
+      <li>Cloud Integration: To enable remote monitoring and store performance data in the cloud for easy access and analysis.</li>
+      <li>Data Visualization Tools: Experience with data visualization libraries (e.g., D3.js) for building real-time charts and graphs to display hardware performance.
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Mentor</dt>
+  <dd>Rishabh K, TusmanNagMania
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd>TBA
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>450 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium-High
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>quantum-monitor
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">23. RustCloud</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>RustCloud  is a rust library which hides the difference between different APIs provided by varied cloud providers (AWS, GCP, Azure etc.) and allows you to manage different cloud resources through a unified and easy to use API.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd></dd>
+</dl>
+
+<ul>
+  <li>By the end of the project, API for BigQuery, Vertex AI, GenAI for AWS, GCP, Azure</li>
+  <li>Documentation -  Improve and maintain documentation related to the development areas, ensuring clarity for future contributors.
+<br /><br /></li>
+</ul>
+
+<dl>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Rust, AWS, GCP, Azure
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Pratik Dhanave, Mohit Bhat
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/RustCloud">https://github.com/c2siorg/RustCloud</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>quantum-monitor
 <br /><br /></dd>
 </dl>
 </p>
