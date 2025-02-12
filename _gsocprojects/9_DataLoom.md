@@ -20,11 +20,11 @@ Frontend: HTML, CSS, JavaScript, React (recommended)
 <br><br>
 
 Mentor
-: Oshan Mudannayake
+: Oshan Mudannayake, Danushka V
 <br><br>
 
 Github URL
-: TBA
+: <https://github.com/c2siorg/dataloom>
 <br><br>
 
 Estimate Project Length

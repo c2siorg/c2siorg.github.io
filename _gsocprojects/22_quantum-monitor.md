@@ -31,7 +31,7 @@ Mentor
 <br><br>
 
 Github URL
-: TBA
+: <https://github.com/c2siorg/QuantumMonitor>
 <br><br>
 
 Estimate Project Length

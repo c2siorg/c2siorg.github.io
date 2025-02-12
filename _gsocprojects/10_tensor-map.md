@@ -22,11 +22,11 @@ Knowledge Prerequisite
 <br><br>
 
 Mentor
-: Oshan Mudannayake, Utkarsh Raj(rajutkarsh07), UdeshUK
+: Oshan Mudannayake, Utkarsh Raj (rajutkarsh07), UdeshUK
 <br><br>
 
 Github URL
-: TBA
+: <https://github.com/c2siorg/tensormap>
 <br><br>
 
 Estimate Project Length

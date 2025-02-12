@@ -30,7 +30,7 @@ Mentor
 <br><br>
 
 Github URL
-: TBA
+: <https://github.com/c2siorg/imagelab>
 <br><br>
 
 Estimate Project Length
@@ -42,5 +42,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: <https://c2si-org.slack.com/archives/C06BYELUG05>
+: #imagelab
 <br><br>

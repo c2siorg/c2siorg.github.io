@@ -40,15 +40,15 @@ Knowledge Prerequisite
 : JavaScript/TypeScript (for VS Code extension development).
 Knowledge of Node.js and system APIs.
 Experience with security auditing and threat detection methodologies.
-Experience with security auditing and threat detection methodologies.
+Familiarity with networking and process monitoring tools.
 <br><br>
 
 Mentor
-: Tushar N, Charith
+: Tushar N, Charith, EMSDV
 <br><br>
 
 Github URL
-: TBA
+: <https://github.com/c2siorg/secureExtensionMonitor>
 <br><br>
 
 Estimate Project Length
@@ -60,5 +60,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: TBA
+: secure-extension-monitor
 <br><br>

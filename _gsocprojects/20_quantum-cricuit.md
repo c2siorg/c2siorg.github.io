@@ -1,6 +1,6 @@
 ---
 num: 20
-title: Quantum Circuit Translation Framework (QCTF)
+title: QBridge - Quantum Circuit Translation Framework (QCTF)
 ---
 
 Brief explanation 
@@ -11,7 +11,7 @@ Expected Results
 : 
 
 * Universal Circuit Converter:
-  * Supports conversion between Qiskit, Cirq, Braket, and t|ket⟩ quantum circuits.
+  * Supports conversion between Qiskit, Cirq, Braket, and TKET quantum circuits.
 * Hardware-Aware Transpilation:
   * Optimizes circuits for specific hardware gate sets (IBM, Google Sycamore, Rigetti Aspen).
 * Noise-Adaptive Compilation:
@@ -24,7 +24,7 @@ Expected Results
 
 Knowledge Prerequisite
 : 
-* Quantum SDKs: Qiskit, Cirq, Amazon Braket, t|ket⟩
+* Quantum SDKs: Qiskit, Cirq, Amazon Braket, TKET
 * Quantum Circuit Theory: Gate sets, qubit topology, noise models
 * Compiler Design: Intermediate representations, transpilation techniques
 * Python Programming: For integration, APIs, and visualization
@@ -32,15 +32,15 @@ Knowledge Prerequisite
 <br><br>
 
 Mentor
-: Don, Amrita, K
+: Don, Amrita, MadFeminine
 <br><br>
 
 Github URL
-: TBA
+: <https://github.com/c2siorg/QBridge>
 <br><br>
 
 Estimate Project Length
-: 400 hours
+: 350 hours
 <br><br>
 
 Difficulty
@@ -48,5 +48,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: #quantum-circuit-translation
+: #qbridge
 <br><br>

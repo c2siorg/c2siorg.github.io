@@ -24,7 +24,7 @@ Knowledge Prerequisite
 <br><br>
 
 Mentor
-: Rishabh K, Don
+: Rishabh K, Don, MadFeminine
 <br><br>
 
 Github URL

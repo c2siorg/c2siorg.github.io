@@ -24,11 +24,11 @@ Knowledge Prerequisite
 <br>
 
 Mentor
-: Danushka V
+: Danushka V, WiztaMax, Keneth
 <br><br>
 
 Github URL
-: TBA
+: <https://github.com/c2siorg/honeynet>
 <br><br>
 
 Estimate Project Length
@@ -40,5 +40,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: TBA
+: Honeynet
 <br><br>

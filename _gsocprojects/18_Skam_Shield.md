@@ -26,7 +26,7 @@ Knowledge Prerequisite
 <br><br>
 
 Mentor
-: Rishabh K, Amrita
+: Rishabh K, Amrita KasunBn
 <br><br>
 
 Github URL

@@ -42,7 +42,7 @@ Skills Required:
 <br><br>
 
 Mentor
-: Shubh Mehta (Shubh942), Ravindu
+: Shubh Mehta (Shubh942), Nipuna, EMSDV
 <br><br>
 
 Github URL

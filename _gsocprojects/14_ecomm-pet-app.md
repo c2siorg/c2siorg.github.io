@@ -35,7 +35,7 @@ Mentor
 <br><br>
 
 Github URL
-: TBA
+: <https://github.com/c2siorg/ecomm-pet-app>
 <br><br>
 
 Estimate Project Length

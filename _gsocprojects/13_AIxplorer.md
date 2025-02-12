@@ -37,7 +37,9 @@ Scope & Implementation Plan
 <br><br>
 
 Knowledge Prerequisite
-: Blockchain & Smart Contracts: Solidity, Cadence, Move
+: To contribute effectively, participants should have experience with:
+
+Blockchain & Smart Contracts: Solidity, Cadence, Move
 Development & Infrastructure: Rust, Node.js, React.js, TypeScript
 AI & Machine Learning: LLMs, RAG, AI Agents, LangChain, AI SDKs, Agent Frameworks
 API Development: REST, GraphQL, WebSockets
@@ -50,7 +52,7 @@ Mentor
 <br><br>
 
 Github URL
-: TBA
+: <https://github.com/c2siorg/AIXplorer>
 <br><br>
 
 Estimate Project Length

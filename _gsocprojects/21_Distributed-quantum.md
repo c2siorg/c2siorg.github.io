@@ -1,6 +1,6 @@
 ---
 num: 21
-title: Distributed Quantum Computing Across Multiple QPUs
+title: QNet - Distributed Quantum Computing Across Multiple QPUs
 ---
 
 Brief explanation 
@@ -26,15 +26,15 @@ Knowledge Prerequisite
 <br><br>
 
 Mentor
-: Don, Rishabh
+: Don, Rishabh, RashmiS
 <br><br>
 
 Github URL
-: TBA
+: <https://github.com/c2siorg/QNet>
 <br><br>
 
 Estimate Project Length
-: 500 hours
+: 350 hours
 <br><br>
 
 Difficulty
@@ -42,5 +42,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: #distributed-quantum
+: #QNet
 <br><br>

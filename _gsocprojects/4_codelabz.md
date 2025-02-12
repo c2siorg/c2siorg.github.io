@@ -53,17 +53,18 @@ Expected results
 * *Optimized API performance:* Faster response times, reduced server load, and enhanced data retrieval, improving overall API performance.
 * *Better looking UI/UX:* A visually appealing and responsive interface that works seamlessly across all devices, improving user satisfaction.
 * *Scalable real-time backend:* A scalable, serverless backend that handles real-time data synchronization and notifications efficiently.
-* *Refined CI/CD pipelines and faster deployment cycles:* Improved data security with role-based access control, ensuring only authorized users access sensitive information.
+* *Refined CI/CD pipelines and faster deployment cycles:*  Improved consistency and reproducibility of environments through Docker.
+* *Enhanced data security and privacy:* Improved data security with role-based access control, ensuring only authorized users access sensitive information.
 * *Improved admin functionality:* Advanced analytics, data monitoring, and administrative control tools.
 * *Updated and consistent codebase:* Fully migrated, consistent, scalable and maintainable codebase.
 <br><br>
 
 Knowledge Prerequisite
-: Proficiency in ReactJS, Redux, Material-UI, TypeScript, Node.js, Express.js, Firebase Functions, Firestore, REST/GraphQL API design, Docker, Kubernetes, CI/CD (GitHub Actions), cloud hosting (Firebase), Figma, NoSQL design patterns, query optimization, caching strategies, OAuth, JWT, Firebase Authentication, and Role-Based Access Control (RBAC).
+: Proficiency in React.js, Redux, Material-UI, TypeScript, Node.js, Express.js, Firebase, API design, Docker, CI/CD (GitHub Actions), Figma, NoSQL design patterns, query optimization, caching strategies, OAuth, and Role-Based Access Control (RBAC).
 <br><br>
 
 Mentor
-: Mallepally Lokeshwar Reddy (lokeshwar777), Utkarsh Raj (rajutkarsh07)
+: Mallepally Lokeshwar Reddy(lokeshwar777), Utkarsh Raj(rajutkarsh07)
 <br><br>
 
 Github URL

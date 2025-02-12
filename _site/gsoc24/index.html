@@ -248,7 +248,7 @@ You can also talk to us about possible project ideas and we are happy to improve
     </ul>
   </dd>
   <dt>Knowledge Prerequisite</dt>
-  <dd>Python, Large Language Models, Hugging Face, Pytorch, API development (Flask), NLP, Database Management, MongoDB, LangChain, Prompt Designing
+  <dd>Python, Large Language Models, Huggingface, LangChain, Database management, Pinecone, Flask, Agentic Frameworks
 <br /><br /></dd>
   <dt>Mentors</dt>
   <dd>Hardik Jindal (hardik1408), Nipuna
@@ -387,7 +387,7 @@ GDB-UI enhances the debugging workflow by offering a sleek, user-friendly UI, re
   <dd>Proficiency in REST, Flask, React, WebSockets, Docker, CI/CD tools (e.g., GitHub Actions), session management, and real-time data handling
 <br /><br /></dd>
   <dt>Mentor</dt>
-  <dd>Shubh Mehta (Shubh942), Ravindu
+  <dd>Shubh Mehta (Shubh942), Nipuna, EMSDV
 <br /><br /></dd>
   <dt>Github URL</dt>
   <dd><a href="https://github.com/c2siorg/GDB-UI">https://github.com/c2siorg/GDB-UI</a>
@@ -477,7 +477,8 @@ This project focuses on optimizing learning workflows by integrating an enhanced
   <li><em>Optimized API performance:</em> Faster response times, reduced server load, and enhanced data retrieval, improving overall API performance.</li>
   <li><em>Better looking UI/UX:</em> A visually appealing and responsive interface that works seamlessly across all devices, improving user satisfaction.</li>
   <li><em>Scalable real-time backend:</em> A scalable, serverless backend that handles real-time data synchronization and notifications efficiently.</li>
-  <li><em>Refined CI/CD pipelines and faster deployment cycles:</em> Improved data security with role-based access control, ensuring only authorized users access sensitive information.</li>
+  <li><em>Refined CI/CD pipelines and faster deployment cycles:</em>  Improved consistency and reproducibility of environments through Docker.</li>
+  <li><em>Enhanced data security and privacy:</em> Improved data security with role-based access control, ensuring only authorized users access sensitive information.</li>
   <li><em>Improved admin functionality:</em> Advanced analytics, data monitoring, and administrative control tools.</li>
   <li><em>Updated and consistent codebase:</em> Fully migrated, consistent, scalable and maintainable codebase.
 <br /><br /></li>
@@ -485,10 +486,10 @@ This project focuses on optimizing learning workflows by integrating an enhanced
 
 <dl>
   <dt>Knowledge Prerequisite</dt>
-  <dd>Proficiency in ReactJS, Redux, Material-UI, TypeScript, Node.js, Express.js, Firebase Functions, Firestore, REST/GraphQL API design, Docker, Kubernetes, CI/CD (GitHub Actions), cloud hosting (Firebase), Figma, NoSQL design patterns, query optimization, caching strategies, OAuth, JWT, Firebase Authentication, and Role-Based Access Control (RBAC).
+  <dd>Proficiency in React.js, Redux, Material-UI, TypeScript, Node.js, Express.js, Firebase, API design, Docker, CI/CD (GitHub Actions), Figma, NoSQL design patterns, query optimization, caching strategies, OAuth, and Role-Based Access Control (RBAC).
 <br /><br /></dd>
   <dt>Mentor</dt>
-  <dd>Mallepally Lokeshwar Reddy (lokeshwar777), Utkarsh Raj (rajutkarsh07)
+  <dd>Mallepally Lokeshwar Reddy(lokeshwar777), Utkarsh Raj(rajutkarsh07)
 <br /><br /></dd>
   <dt>Github URL</dt>
   <dd><a href="https://github.com/c2siorg/codelabz">https://github.com/c2siorg/codelabz</a>
@@ -506,30 +507,45 @@ This project focuses on optimizing learning workflows by integrating an enhanced
 </p>
         </div>
       
-        <div class="accordion">5. Querying engine for Hyperledger Fabric</div>
+        <div class="accordion">5. LedgerLens - A transaction validation and querying engine for Hyperledger Fabric</div>
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
-  <dd>This project aims to develop a data storing and querying engine for Hyperledger Fabric that leverages the SmartQC transaction model proposed in the paper <a href="https://arxiv.org/abs/2402.17868">arxiv.org</a>. The goal is to enable efficient storage and retrieval of complex data transactions while ensuring immutability, auditability, and efficient query execution on Distributed Ledger Technology (DLT). This system will enable users to perform complex queries on the ledger with minimum complexity.
+  <dd>This project aims to develop a data storing and querying engine for Hyperledger Fabric that leverages the SmartQC transaction model proposed in the paper (arxiv.org). The goal is to enable efficient storage and retrieval of complex data transactions while ensuring immutability, auditability, and efficient query execution on Hyperledger Fabric. The transaction model introduces a novel way of structuring data that goes into the ledger (Similar to a relational database schema). The idea of this project is to implement an off-chain service/node that provides endpoints to manage transactions and act as the intermediary validator before pushing the transaction into the hyperledger. Then utilise the structure and schema (metadata) of the transactions to perform advanced querying.
 <br /><br /></dd>
-  <dt>Expected Results</dt>
+  <dt>Key Objectives</dt>
   <dd>
     <ul>
-      <li>Implementation of the transaction model validator node in GoLang</li>
-      <li>An architecture for the querying engine that facilitates faster and more complex queries (using an : Off-chain DB that keeps a ledger copy or indexing mechanism before putting it into the ledger)</li>
-      <li>Visualisation of transactions on a graph based DB</li>
-      <li>Performance analysis
+      <li>Implementation of the transaction model validator node in GoLang
+        <ul>
+          <li>A rest API to facilitate transactions</li>
+          <li>A rest API to facilitate transactions</li>
+        </ul>
+      </li>
+      <li>Implement a Hyperledger Fabric Smart Contract (Chain code) to manage transactions</li>
+      <li>An architecture for the querying engine that facilitates faster and more complex queries (using an Off-chain DB that keeps a ledger copy or indexing mechanism before putting it into the ledger)</li>
+      <li>Performance analysis 
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Expected Outcome</dt>
+  <dd>
+    <ul>
+      <li>Go Gin Rest API that implements the CRUD operations for transaction management.</li>
+      <li>A connector to the Hyperledger Fabric</li>
+      <li>Ledgerlens Hyperleder Fabric Chain code</li>
+      <li>Querying algorithm 
 <br /><br /></li>
     </ul>
   </dd>
   <dt>Knowledge Prerequisite</dt>
-  <dd>Go Programming Language, Docker, Blockchain &amp; Distributed Ledger, Hyperledger Fabric, SmartQC Transaction Model
+  <dd>Go Programming Language (Gin), Docker, Blockchain &amp; Distributed Ledger, Hyperledger Fabric, SmartQC Transaction Model
 <br /><br /></dd>
   <dt>Mentor</dt>
-  <dd>Tharindu Ranathunga, Raveen
+  <dd>Tharindu Ranathunga, Alan McGibney 
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/LedgerLens">https://github.com/c2siorg/LedgerLens</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 Hours
@@ -538,7 +554,7 @@ This project focuses on optimizing learning workflows by integrating an enhanced
   <dd>Intermediate
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>TBA
+  <dd>LedgerLens
 <br /><br /></dd>
 </dl>
 </p>
@@ -568,7 +584,7 @@ This project focuses on optimizing fact-checking workflows by incorporating AI-p
     <ul>
       <li>Overall migration to more efficient frameworks and dependencies in Flask and Elasticsearch.</li>
       <li>AI-Driven Fact Checking: Improved misinformation detection through NLP-based analytics,semantic similarity matching for detecting duplicate fact-checks.</li>
-      <li>Scalable and Efficient Backend: A FastAPI-based backend for enhanced speed and reliability.</li>
+      <li>Scalable and Efficient Backend: A Go-based backend for enhanced speed and reliability.</li>
       <li>Cross-Platform Accessibility: A React Native app ensuring a seamless mobile experience.</li>
       <li>Automated CI/CD Pipelines: Fully integrated build, test, and deployment workflows with Github actions.</li>
       <li>Modernize the Frontend: Upgrade React dependencies and remove unnecessary Chrome-only restrictions,consider replacing Redux Devtools dependency if not required.
@@ -659,7 +675,7 @@ Current implementation on WebGPU does not support advanced features such as diff
   <dd>Sahan Dissanayake, Oshan Mudannayake
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/imagelab">https://github.com/c2siorg/imagelab</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 hours
@@ -668,7 +684,7 @@ Current implementation on WebGPU does not support advanced features such as diff
   <dd>Medium
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd><a href="https://c2si-org.slack.com/archives/C06BYELUG05">https://c2si-org.slack.com/archives/C06BYELUG05</a>
+  <dd>#imagelab
 <br /><br /></dd>
 </dl>
 </p>
@@ -694,10 +710,10 @@ Current implementation on WebGPU does not support advanced features such as diff
 Frontend: HTML, CSS, JavaScript, React (recommended)
 <br /><br /></dd>
   <dt>Mentor</dt>
-  <dd>Oshan Mudannayake
+  <dd>Oshan Mudannayake, Danushka V
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/dataloom">https://github.com/c2siorg/dataloom</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 hours
@@ -734,10 +750,10 @@ Frontend: HTML, CSS, JavaScript, React (recommended)
   <dd>Tensorflow, Python, Javascript
 <br /><br /></dd>
   <dt>Mentor</dt>
-  <dd>Oshan Mudannayake, Utkarsh Raj(rajutkarsh07), UdeshUK
+  <dd>Oshan Mudannayake, Utkarsh Raj (rajutkarsh07), UdeshUK
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/tensormap">https://github.com/c2siorg/tensormap</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 hours
@@ -805,13 +821,13 @@ Frontend: HTML, CSS, JavaScript, React (recommended)
   <dd>JavaScript/TypeScript (for VS Code extension development).
 Knowledge of Node.js and system APIs.
 Experience with security auditing and threat detection methodologies.
-Experience with security auditing and threat detection methodologies.
+Familiarity with networking and process monitoring tools.
 <br /><br /></dd>
   <dt>Mentor</dt>
-  <dd>Tushar N, Charith
+  <dd>Tushar N, Charith, EMSDV
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/secureExtensionMonitor">https://github.com/c2siorg/secureExtensionMonitor</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 hours
@@ -820,7 +836,7 @@ Experience with security auditing and threat detection methodologies.
   <dd>Hard
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>TBA
+  <dd>secure-extension-monitor
 <br /><br /></dd>
 </dl>
 </p>
@@ -860,7 +876,7 @@ Note: You don’t need to implement all these features this year. You have to co
   <dd>Mohit Bhat, Tharindu
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/NFT-Toolbox">https://github.com/c2siorg/NFT-Toolbox</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 hours
@@ -917,18 +933,23 @@ Note: You don’t need to implement all these features this year. You have to co
     </ul>
   </dd>
   <dt>Knowledge Prerequisite</dt>
-  <dd>Blockchain &amp; Smart Contracts: Solidity, Cadence, Move
+  <dd>To contribute effectively, participants should have experience with:</dd>
+</dl>
+
+<p>Blockchain &amp; Smart Contracts: Solidity, Cadence, Move
 Development &amp; Infrastructure: Rust, Node.js, React.js, TypeScript
 AI &amp; Machine Learning: LLMs, RAG, AI Agents, LangChain, AI SDKs, Agent Frameworks
 API Development: REST, GraphQL, WebSockets
 <br /><br />
 This project presents an exciting opportunity to work at the intersection of blockchain and AI, pushing the boundaries of decentralized data exploration.
-<br /><br /></dd>
+<br /><br /></p>
+
+<dl>
   <dt>Mentor</dt>
   <dd>Mohit Bhat, TharinduR
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/AIXplorer">https://github.com/c2siorg/AIXplorer</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 hours
@@ -979,7 +1000,7 @@ This project presents an exciting opportunity to work at the intersection of blo
   <dd>Shubh Mehta (Shubh942), Primal
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/ecomm-pet-app">https://github.com/c2siorg/ecomm-pet-app</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 hours
@@ -994,7 +1015,7 @@ This project presents an exciting opportunity to work at the intersection of blo
 </p>
         </div>
       
-        <div class="accordion">15. Dynamic Userspace Binary Instrumentation with QEMU Plugins (Packed and Obfuscated Binaries)</div>
+        <div class="accordion">15. QBinTracer - Dynamic Userspace Binary Instrumentation with QEMU Plugins (Packed and Obfuscated Binaries)</div>
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
@@ -1016,10 +1037,10 @@ This project presents an exciting opportunity to work at the intersection of blo
   <dd>Low-level programming (C, ASM), Virtualization with QEMU, X86-64, Linux                                       <br />
 <br /></dd>
   <dt>Mentor</dt>
-  <dd>Danushka V
+  <dd>Danushka V, WiztaMax, Keneth
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/QBinTracer">https://github.com/c2siorg/QBinTracer</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 hours
@@ -1028,7 +1049,7 @@ This project presents an exciting opportunity to work at the intersection of blo
   <dd>Hard
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>TBA
+  <dd>QbinTracer
 <br /><br /></dd>
 </dl>
 </p>
@@ -1057,10 +1078,10 @@ This project presents an exciting opportunity to work at the intersection of blo
   <dd>Cloud deployment, Terraform, bash                         <br />
 <br /></dd>
   <dt>Mentor</dt>
-  <dd>Danushka V
+  <dd>Danushka V, WiztaMax, Keneth
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/honeynet">https://github.com/c2siorg/honeynet</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 hours
@@ -1069,7 +1090,7 @@ This project presents an exciting opportunity to work at the intersection of blo
   <dd>Easy
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>TBA
+  <dd>Honeynet
 <br /><br /></dd>
 </dl>
 </p>
@@ -1114,7 +1135,8 @@ This project aims to build a self-hosted, web-based AOPP signing service that si
   <dd>
     <ul>
       <li>Go programming &amp; API development</li>
-      <li>Bitcoin cryptography (ECDSA, Schnorr signatures, secp256k1) Experience with wallet integrations &amp; hardware wallet communication</li>
+      <li>Bitcoin cryptography (ECDSA, Schnorr signatures, secp256k1)</li>
+      <li>Experience with wallet integrations &amp; hardware wallet communication</li>
       <li>Web technologies (REST APIs, WebSockets, OAuth/WebAuthn)</li>
       <li>Database management with PostgreSQL                      <br />
 <br /></li>
@@ -1124,7 +1146,7 @@ This project aims to build a self-hosted, web-based AOPP signing service that si
   <dd>Raveen Harith Perera, Adem Bilican
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/ProofOfMine">https://github.com/c2siorg/ProofOfMine</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 hours
@@ -1133,7 +1155,7 @@ This project aims to build a self-hosted, web-based AOPP signing service that si
   <dd>Medium to Hard
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>TBA
+  <dd>proof-of-mine
 <br /><br /></dd>
 </dl>
 </p>
@@ -1170,7 +1192,7 @@ This project aims to build a self-hosted, web-based AOPP signing service that si
     </ul>
   </dd>
   <dt>Mentor</dt>
-  <dd>Rishabh K, Amrita
+  <dd>Rishabh K, Amrita KasunBn
 <br /><br /></dd>
   <dt>Github URL</dt>
   <dd><a href="https://github.com/c2siorg/SkamSheild">https://github.com/c2siorg/SkamSheild</a>
@@ -1217,7 +1239,7 @@ This project aims to build a self-hosted, web-based AOPP signing service that si
     </ul>
   </dd>
   <dt>Mentor</dt>
-  <dd>Rishabh K, Don
+  <dd>Rishabh K, Don, MadFeminine
 <br /><br /></dd>
   <dt>Github URL</dt>
   <dd><a href="https://github.com/c2siorg/elly">https://github.com/c2siorg/elly</a>
@@ -1235,7 +1257,7 @@ This project aims to build a self-hosted, web-based AOPP signing service that si
 </p>
         </div>
       
-        <div class="accordion">20. Quantum Circuit Translation Framework (QCTF)</div>
+        <div class="accordion">20. QBridge - Quantum Circuit Translation Framework (QCTF)</div>
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
@@ -1248,16 +1270,7 @@ This project aims to build a self-hosted, web-based AOPP signing service that si
 <ul>
   <li>Universal Circuit Converter:
     <ul>
-      <li>
-        <table>
-          <tbody>
-            <tr>
-              <td>Supports conversion between Qiskit, Cirq, Braket, and t</td>
-              <td>ket⟩ quantum circuits.</td>
-            </tr>
-          </tbody>
-        </table>
-      </li>
+      <li>Supports conversion between Qiskit, Cirq, Braket, and TKET quantum circuits.</li>
     </ul>
   </li>
   <li>Hardware-Aware Transpilation:
@@ -1287,16 +1300,7 @@ This project aims to build a self-hosted, web-based AOPP signing service that si
   <dt>Knowledge Prerequisite</dt>
   <dd>
     <ul>
-      <li>
-        <table>
-          <tbody>
-            <tr>
-              <td>Quantum SDKs: Qiskit, Cirq, Amazon Braket, t</td>
-              <td>ket⟩</td>
-            </tr>
-          </tbody>
-        </table>
-      </li>
+      <li>Quantum SDKs: Qiskit, Cirq, Amazon Braket, TKET</li>
       <li>Quantum Circuit Theory: Gate sets, qubit topology, noise models</li>
       <li>Compiler Design: Intermediate representations, transpilation techniques</li>
       <li>Python Programming: For integration, APIs, and visualization</li>
@@ -1305,25 +1309,25 @@ This project aims to build a self-hosted, web-based AOPP signing service that si
     </ul>
   </dd>
   <dt>Mentor</dt>
-  <dd>Don, Amrita, K
+  <dd>Don, Amrita, MadFeminine
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/QBridge">https://github.com/c2siorg/QBridge</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
-  <dd>400 hours
+  <dd>350 hours
 <br /><br /></dd>
   <dt>Difficulty</dt>
   <dd>Advanced – Requires knowledge of quantum mechanics, circuit optimization, and cross-platform software development.
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>#quantum-circuit-translation
+  <dd>#qbridge
 <br /><br /></dd>
 </dl>
 </p>
         </div>
       
-        <div class="accordion">21. Distributed Quantum Computing Across Multiple QPUs</div>
+        <div class="accordion">21. QNet - Distributed Quantum Computing Across Multiple QPUs</div>
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
@@ -1354,19 +1358,19 @@ This project aims to build a self-hosted, web-based AOPP signing service that si
     </ul>
   </dd>
   <dt>Mentor</dt>
-  <dd>Don, Rishabh
+  <dd>Don, Rishabh, RashmiS
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/QNet">https://github.com/c2siorg/QNet</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
-  <dd>500 hours
+  <dd>350 hours
 <br /><br /></dd>
   <dt>Difficulty</dt>
   <dd>High
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>#distributed-quantum
+  <dd>#QNet
 <br /><br /></dd>
 </dl>
 </p>
@@ -1407,7 +1411,7 @@ This project aims to build a self-hosted, web-based AOPP signing service that si
   <dd>Amrita, Don
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/QuantumMonitor">https://github.com/c2siorg/QuantumMonitor</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>450 hours

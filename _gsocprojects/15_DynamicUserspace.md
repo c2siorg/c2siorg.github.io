@@ -1,6 +1,7 @@
 ---
 num: 15
-title: Dynamic Userspace Binary Instrumentation with QEMU Plugins (Packed and Obfuscated Binaries)
+title: QBinTracer - Dynamic Userspace Binary Instrumentation with QEMU Plugins (Packed and Obfuscated Binaries)
+
 ---
 
 Brief explanation 
@@ -23,11 +24,11 @@ Knowledge Prerequisite
 <br>
 
 Mentor
-: Danushka V
+: Danushka V, WiztaMax, Keneth
 <br><br>
 
 Github URL
-: TBA
+: <https://github.com/c2siorg/QBinTracer>
 <br><br>
 
 Estimate Project Length
@@ -39,5 +40,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: TBA
+: QbinTracer
 <br><br>

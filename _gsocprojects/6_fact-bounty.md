@@ -22,7 +22,7 @@ Expected Results
 : By the completion of this project, FactBounty will achieve:
  * Overall migration to more efficient frameworks and dependencies in Flask and Elasticsearch.
  * AI-Driven Fact Checking: Improved misinformation detection through NLP-based analytics,semantic similarity matching for detecting duplicate fact-checks.
- * Scalable and Efficient Backend: A FastAPI-based backend for enhanced speed and reliability.
+ * Scalable and Efficient Backend: A Go-based backend for enhanced speed and reliability.
  * Cross-Platform Accessibility: A React Native app ensuring a seamless mobile experience.
  * Automated CI/CD Pipelines: Fully integrated build, test, and deployment workflows with Github actions.
  * Modernize the Frontend: Upgrade React dependencies and remove unnecessary Chrome-only restrictions,consider replacing Redux Devtools dependency if not required.

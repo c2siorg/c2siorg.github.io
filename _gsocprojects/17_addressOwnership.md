@@ -33,7 +33,8 @@ Tech Stack
 Knowledge Prerequisite
 : 
 * Go programming & API development
-* Bitcoin cryptography (ECDSA, Schnorr signatures, secp256k1) Experience with wallet integrations & hardware wallet communication
+* Bitcoin cryptography (ECDSA, Schnorr signatures, secp256k1) 
+* Experience with wallet integrations & hardware wallet communication
 * Web technologies (REST APIs, WebSockets, OAuth/WebAuthn)
 * Database management with PostgreSQL                        
 <br>
@@ -43,7 +44,7 @@ Mentor
 <br><br>
 
 Github URL
-: TBA
+: <https://github.com/c2siorg/ProofOfMine>
 <br><br>
 
 Estimate Project Length
@@ -55,5 +56,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: TBA
+: proof-of-mine
 <br><br>

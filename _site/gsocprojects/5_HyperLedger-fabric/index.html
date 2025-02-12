@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Querying engine for Hyperledger Fabric</title>
+  <title>LedgerLens - A transaction validation and querying engine for Hyperledger Fabric</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
   <!-- Google Fonts CDN -->
@@ -15,7 +15,7 @@
   <link href="/assets/css/style.css" rel="stylesheet">
   
   
-  <meta property="og:title" content="Querying engine for Hyperledger Fabric"/>
+  <meta property="og:title" content="LedgerLens - A transaction validation and querying engine for Hyperledger Fabric"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content=""/>
   
@@ -160,29 +160,44 @@
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
       <div class="service service-single">
-        <h1 class="title">Querying engine for Hyperledger Fabric</h1>
+        <h1 class="title">LedgerLens - A transaction validation and querying engine for Hyperledger Fabric</h1>
         <div class="content"><dl>
   <dt>Brief explanation</dt>
-  <dd>This project aims to develop a data storing and querying engine for Hyperledger Fabric that leverages the SmartQC transaction model proposed in the paper <a href="https://arxiv.org/abs/2402.17868">arxiv.org</a>. The goal is to enable efficient storage and retrieval of complex data transactions while ensuring immutability, auditability, and efficient query execution on Distributed Ledger Technology (DLT). This system will enable users to perform complex queries on the ledger with minimum complexity.
+  <dd>This project aims to develop a data storing and querying engine for Hyperledger Fabric that leverages the SmartQC transaction model proposed in the paper (arxiv.org). The goal is to enable efficient storage and retrieval of complex data transactions while ensuring immutability, auditability, and efficient query execution on Hyperledger Fabric. The transaction model introduces a novel way of structuring data that goes into the ledger (Similar to a relational database schema). The idea of this project is to implement an off-chain service/node that provides endpoints to manage transactions and act as the intermediary validator before pushing the transaction into the hyperledger. Then utilise the structure and schema (metadata) of the transactions to perform advanced querying.
 <br /><br /></dd>
-  <dt>Expected Results</dt>
+  <dt>Key Objectives</dt>
   <dd>
     <ul>
-      <li>Implementation of the transaction model validator node in GoLang</li>
-      <li>An architecture for the querying engine that facilitates faster and more complex queries (using an : Off-chain DB that keeps a ledger copy or indexing mechanism before putting it into the ledger)</li>
-      <li>Visualisation of transactions on a graph based DB</li>
-      <li>Performance analysis
+      <li>Implementation of the transaction model validator node in GoLang
+        <ul>
+          <li>A rest API to facilitate transactions</li>
+          <li>A rest API to facilitate transactions</li>
+        </ul>
+      </li>
+      <li>Implement a Hyperledger Fabric Smart Contract (Chain code) to manage transactions</li>
+      <li>An architecture for the querying engine that facilitates faster and more complex queries (using an Off-chain DB that keeps a ledger copy or indexing mechanism before putting it into the ledger)</li>
+      <li>Performance analysis 
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Expected Outcome</dt>
+  <dd>
+    <ul>
+      <li>Go Gin Rest API that implements the CRUD operations for transaction management.</li>
+      <li>A connector to the Hyperledger Fabric</li>
+      <li>Ledgerlens Hyperleder Fabric Chain code</li>
+      <li>Querying algorithm 
 <br /><br /></li>
     </ul>
   </dd>
   <dt>Knowledge Prerequisite</dt>
-  <dd>Go Programming Language, Docker, Blockchain &amp; Distributed Ledger, Hyperledger Fabric, SmartQC Transaction Model
+  <dd>Go Programming Language (Gin), Docker, Blockchain &amp; Distributed Ledger, Hyperledger Fabric, SmartQC Transaction Model
 <br /><br /></dd>
   <dt>Mentor</dt>
-  <dd>Tharindu Ranathunga, Raveen
+  <dd>Tharindu Ranathunga, Alan McGibney 
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd>TBA
+  <dd><a href="https://github.com/c2siorg/LedgerLens">https://github.com/c2siorg/LedgerLens</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 Hours
@@ -191,7 +206,7 @@
   <dd>Intermediate
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>TBA
+  <dd>LedgerLens
 <br /><br /></dd>
 </dl>
 </div>
