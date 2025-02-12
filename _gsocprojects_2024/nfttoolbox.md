@@ -46,4 +46,4 @@ Difficulty
 <br><br>
 
 Slack channel
-: nft-toolbox
+:  #nft-toolbox

@@ -35,5 +35,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: project-explainer
+:  #project-explainer
 <br><br>

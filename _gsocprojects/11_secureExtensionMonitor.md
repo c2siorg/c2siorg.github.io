@@ -60,5 +60,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: secure-extension-monitor
+:  #secure-extension-monitor
 <br><br>

@@ -47,5 +47,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: ecomm-pet-app
+: #ecomm-pet-app
 <br><br>

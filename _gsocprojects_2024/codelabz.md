@@ -61,5 +61,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: codelabz
+:  #codelabz
 <br><br>

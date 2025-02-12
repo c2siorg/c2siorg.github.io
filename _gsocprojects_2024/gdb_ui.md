@@ -42,5 +42,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: gdb-ui
+:  #gdb-ui
 <br><br>

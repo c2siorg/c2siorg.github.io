@@ -49,5 +49,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: fact-bounty-
+: #fact-bounty-
 <br><br>

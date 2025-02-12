@@ -56,5 +56,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: proof-of-mine
+: #proof-of-mine
 <br><br>

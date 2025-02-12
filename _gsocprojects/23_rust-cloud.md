@@ -35,5 +35,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: rust-cloud
+: #rust-cloud
 <br><br>

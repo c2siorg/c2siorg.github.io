@@ -47,5 +47,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: <https://c2si-org.slack.com/archives/C06CQ69BLP2>
+:  #nft-toolbox
 <br><br>

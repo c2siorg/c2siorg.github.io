@@ -54,9 +54,9 @@ Estimate Project Length
 <br><br>
 
 Difficulty
-:  Medium
+: Medium
 <br><br>
 
 Slack channel
-: gdb-ui
+: #gdb-ui
 <br><br>

@@ -34,5 +34,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: webfl
+: #webfl
 <br><br>

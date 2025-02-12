@@ -36,5 +36,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: <https://c2si-org.slack.com/archives/C06Q2TM4AKF>
+: #dataLoom
 <br><br>

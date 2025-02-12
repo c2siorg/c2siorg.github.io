@@ -42,5 +42,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: skamsheild
+: #skamsheild
 <br><br>

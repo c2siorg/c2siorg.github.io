@@ -40,5 +40,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: Honeynet
+: #Honeynet
 <br><br>

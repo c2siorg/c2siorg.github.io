@@ -64,5 +64,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: <https://c2si-org.slack.com/archives/C08CBCV996J>
+: #ai-explorer
 <br><br>

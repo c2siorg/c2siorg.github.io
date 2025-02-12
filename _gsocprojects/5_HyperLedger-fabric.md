@@ -46,5 +46,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: LedgerLens
+: #LedgerLens
 <br><br>

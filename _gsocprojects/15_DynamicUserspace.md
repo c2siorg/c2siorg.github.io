@@ -40,5 +40,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: QbinTracer
+: #QbinTracer
 <br><br>

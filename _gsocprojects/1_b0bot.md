@@ -40,4 +40,4 @@ Difficulty
 <br><br>
 
 Slack channel
-: b0bot
+:  #b0bot

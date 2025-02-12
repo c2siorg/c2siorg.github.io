@@ -43,5 +43,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: quantum-monitor
+: #quantum-monitor
 <br><br>

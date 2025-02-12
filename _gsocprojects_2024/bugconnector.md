@@ -39,5 +39,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: bug-connector
+:  #bug-connector
 <br><br>

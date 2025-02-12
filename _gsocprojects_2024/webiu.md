@@ -37,5 +37,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: WebiU
+:  #WebiU
 <br><br>

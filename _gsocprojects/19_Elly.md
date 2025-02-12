@@ -40,5 +40,5 @@ Difficulty
 <br><br>
 
 Slack channel
-: elly
+: #elly
 <br><br>
