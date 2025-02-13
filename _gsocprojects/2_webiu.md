@@ -44,7 +44,7 @@ Mentor
 <br><br>
 
 Estimate Project Length
-: 350h hours
+: 350 hours
 <br><br>
 
 Github URL

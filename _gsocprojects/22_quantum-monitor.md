@@ -35,7 +35,7 @@ Github URL
 <br><br>
 
 Estimate Project Length
-: 450 hours
+: 350 hours
 <br><br>
 
 Difficulty
