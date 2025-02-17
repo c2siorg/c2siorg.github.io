@@ -4,7 +4,7 @@ title: NFT-TOOLBOX
 ---
 
 Brief explanation 
-: An npm package for seamless integration of all NFT related functionalities in Web2 projects. This project helps web2 developers seamlessly integrate web3 functionality.
+: An npm package for seamless integration of all NFT-related functionalities in Web2 projects. This project helps Web2 developers seamlessly integrate Web3 functionality.
 <br><br>
 
 Expected Results
@@ -17,8 +17,8 @@ Features we would like to implement in NFT-ToolBox Project:
 * Add Multiple ERC support related to nfts in easy and feasible manner
 * Add support for Solana NFT’s
 * Add Support for Tezos NFT’s
-* Add support for Flow Blockchian NFT’s
-* Add support for Aptos Blockchian NFT’s
+* Add support for Flow Blockchain NFT’s
+* Add support for Aptos Blockchain NFT’s
 * Add Support for Cross Chain NFT’s
 * Build An UI to mint NFT’s on any chain
 * Make UI to deploy different kinds of NFT standards (Something like Thirdweb)

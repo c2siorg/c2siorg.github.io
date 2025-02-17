@@ -18,7 +18,7 @@ This project focuses on optimizing learning workflows by integrating an enhanced
 * Find a free serverless hosting solution and migrate APIs from Firebase Functions while ensuring scalability, reliability, and minimal maintenance.
 <br>
 
-1. *Implement Real-Time Notification System (No Cost):*
+1. *Implement a Real-Time Notification System (No Cost):*
 * Research and implement a real-time notification system integrated with in-app notifications.
 * Ensure functionality for push and in-app notifications within free-tier limits.
 <br>
@@ -34,7 +34,7 @@ This project focuses on optimizing learning workflows by integrating an enhanced
 <br>
 
 1. *Containerization & Dockerization:*
-* Implement Docker for consistent development and production environments..
+* Implement Docker for consistent development and production environments.
 <br>
 
 1. *UI/UX Refinement:*

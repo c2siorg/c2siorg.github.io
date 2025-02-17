@@ -22,7 +22,7 @@ C2SI offer internships where students are requir ed to carry out different work 
 # Working Together
 ---
 ## Mentorships:
-C2SI offers the mentorshiops for the researches which conducting under above mentioned areas. Email us if you are looking for a mentor to advice you on your research.
+C2SI offers the mentorships for the researches which conducting under above mentioned areas. Email us if you are looking for a mentor to advice you on your research.
 <br><br>
 
 # Current Openings

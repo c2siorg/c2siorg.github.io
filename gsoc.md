@@ -44,7 +44,7 @@ Let’s build something great together! 🚀
 
 <br>
 
-# Idea List for 2025
+# 2025 Project Ideas List
 
 
 
