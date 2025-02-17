@@ -15,7 +15,7 @@ Key Objectives
  * *AI-Powered Analytics:* Integrate NLP-based analytics to detect and classify fake news efficiently.
  * *React Native Implementation:* Expand the platform by developing a React Native app for cross-platform accessibility.
  * *Backend Migration:* Transition the backend to Go (using Gin or Echo) for improved performance, scalability, and maintainability. Use Go-based async routes. Go provides built-in Swagger support for API documentation.
- * *CI/CD Integration:* Automate testing and deployment using GitHub Actions with docker-conternarizations to ensure seamless updates.
+ * *CI/CD Integration:* Automate testing and deployment using GitHub Actions with docker-containerizations to ensure seamless updates.
 <br><br>
 
 Expected Results

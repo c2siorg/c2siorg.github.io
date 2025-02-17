@@ -4,7 +4,7 @@ title: Secure Extension Monitor – A VS Code Security Auditing Tool
 ---
 
 Brief explanation 
-: This project aims to develop a VS Code extension that enhances the security of the developer environment by monitoring other installed extensions for suspicious behaviors. Malicious VS Code extensions can access the file system, execute scripts, and make network requests without the user's knowledge, posing a significant security risk. This tool will analyze installed extensions, detect potential threats, and provide alerts to users.
+: This project aims to develop a VS Code extension that enhances the security of the developer environment by monitoring other installed extensions for suspicious behaviors. Malicious VS Code extensions can access the file system, execute scripts, and make network requests without the user's knowledge, posing a significant security risk. This tool will analyze installed extensions, detect potential threats, and alert users.
 <br><br>
 
 Key Objectives

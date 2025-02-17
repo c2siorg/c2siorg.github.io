@@ -32,7 +32,7 @@ Key Objectives
 
 
 Expected Results
-: By the end of the summer We are planning to make the project live by completing it end to end integrations and will deliver faster, lightweight APIs, a robust real-time data architecture, and automated CI/CD workflows. These improvements will enhance user experience, scalability, and developer productivity.
+: By the end of the summer, We are planning to make the project live by completing it end-to-end integrations and will deliver faster, lightweight APIs, a robust real-time data architecture, and automated CI/CD workflows. These improvements will enhance user experience, scalability, and developer productivity.
 <br><br>
 
 Skills Required:

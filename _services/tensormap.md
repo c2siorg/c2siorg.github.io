@@ -5,7 +5,7 @@ weight: 20
 image: "/images/logo/c2si-logo-mobile.png"
 ---
 
-TensorMap is a web application that will allow the users to create machine learning algorithms visually. TensorMap supports reverse engineering of the visual layout to a Tensorflow implementation in preferred languages. The goal of the project is to let the beginners play with machine learning algorithms in Tensorflow without less background knowledge about the library. For more details about the project, read our [project wiki.](https://github.com/scorelab/TensorMap/wiki)
+TensorMap is a web application that will allow the users to create machine learning algorithms visually. TensorMap supports reverse engineering of the visual layout to a TensorFlow implementation in preferred languages. The goal of the project is to let the beginners play with machine learning algorithms in TensorFlow without less background knowledge about the library. For more details about the project, read our [project wiki.](https://github.com/scorelab/TensorMap/wiki)
 
 ## Getting Started
 Follow these steps the steps in the `tensormap-server` and `tensormap-client` directories to setup each component.

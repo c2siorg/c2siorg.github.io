@@ -22,7 +22,7 @@ Key Objectives
 <br><br>
 
 3. *Session Management for Multiuser Support:*
-* Implement a system to store debugging sessions uniquely for each user to enable multiuser functionality.
+* Implement a system to store debugging sessions uniquely for each user to enable multi-user functionality.
 * Ensure session persistence and isolation to prevent interference between users.
 <br><br>
 
@@ -33,7 +33,7 @@ Key Objectives
 
 
 Expected Results
-: By the completion of the project, the application will be fully deployed with multiuser support, persistent session management, real-time debugging results, and a robust CI/CD pipeline. These enhancements will provide a seamless debugging experience, improve scalability, and simplify the development workflow for contributors.
+: By the end of this project, the application will be fully deployed with multi-user support, persistent session management, real-time debugging results, and a robust CI/CD pipeline. These enhancements will provide a seamless debugging experience, improve scalability, and simplify the development workflow for contributors.
 <!-- : -- By the end of the project, the following outcomes are anticipated: -->
 <br><br>
 
