@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Checking Ruby..."
+ruby -v
+
+echo "Installing Bundler 2.4.22 (user install) if missing..."
+if ! ruby -S bundle _2.4.22_ -v >/dev/null 2>&1; then
+  gem install --user-install bundler -v 2.4.22 --no-document
+fi
+
+# Ensure user gem bin is available in PATH for this session
+export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
+echo "Configuring Bundler to install into vendor/bundle..."
+ruby -S bundle _2.4.22_ config set --local path 'vendor/bundle'
+
+echo "Installing project gems..."
+ruby -S bundle _2.4.22_ install --jobs 4
+
+echo "Setup complete. To build and serve the site locally run:"
+echo "  ruby -S bundle _2.4.22_ exec jekyll serve --livereload"
+
+exit 0

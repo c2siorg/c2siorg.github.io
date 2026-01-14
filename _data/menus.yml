@@ -20,7 +20,7 @@ main:
   - name: "GitHub"
     url: "https://github.com/c2siorg"
     weight: 6
-  - name: "GSoC 25"
+  - name: "GSoC 26"
     url: "/gsoc"
     weight: 7
 

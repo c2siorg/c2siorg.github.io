@@ -1,14 +1,14 @@
 ---
-title: GSoC 2025
+title: GSoC 2026
 layout: gsoc
 description: Services
 intro_image: "/images/logo/gsoc1.png"
 intro_image_absolute: false
 intro_image_hide_on_mobile: false
-tagline: Welcome to the C2SI Google Summer of Code (GSoC) 2025 project ideas page. 
+tagline: Welcome to the C2SI Google Summer of Code (GSoC) 2026 project ideas page. 
 ---
 
-🚀 We’re excited to participate in GSoC for the 10th time, providing students and contributors with an opportunity to learn, collaborate, and contribute to impactful open-source projects.
+🚀 We’re excited to participate in GSoC for the 11th time, providing students and contributors with an opportunity to learn, collaborate, and contribute to impactful open-source projects.
 
 🌟 **Become a GSoC Contributor**<br>
 Are you new to open source and looking for exciting projects to contribute to? Google Summer of Code (GSoC) is the perfect opportunity! With the guidance of experienced mentors, you’ll gain hands-on experience working on real-world projects.
@@ -44,7 +44,7 @@ Let’s build something great together! 🚀
 
 <br>
 
-# Idea List for 2025
+# Idea List for 2026
 
 
 

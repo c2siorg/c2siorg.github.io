@@ -9,6 +9,7 @@ npm-debug.log
 .jekyll-metadata
 Gemfile.lock
 **/Gemfile.lock
+vendor/bundle/
 
 # Temporary files
 tmp
