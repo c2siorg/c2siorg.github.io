@@ -26,6 +26,9 @@ collections:
   gsocprojects:
     output: true
     sort_by: num
+  gsocprojects_2025:
+    output: true
+    sort_by: num
 
 defaults:
   - scope:

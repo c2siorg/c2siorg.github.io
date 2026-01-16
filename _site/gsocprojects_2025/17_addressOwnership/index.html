@@ -1,0 +1,60 @@
+<dl>
+  <dt>Brief explanation</dt>
+  <dd>Address Ownership Proof Protocol (AOPP) provides a streamlined way to verify ownership of a cryptocurrency address. Traditionally, users had to manually sign a message from an exchange using third-party wallets like Electrum to prove that they are the ones who own the wallet, which was time-consuming and error-prone.<br />
+This project aims to build a self-hosted, web-based AOPP signing service that simplifies the verification process. The web application will allow users to sign messages using self hosted software wallets (electrum, blue wallet) and hardware wallets (Ledger, Trezor, BitBox) while ensuring seamless backend communication. Once a message is signed, the service will notify a backend, confirming wallet ownership.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd>By the end of the project, the following features will be implemented:</dd>
+</dl>
+
+<ul>
+  <li>Web-based AOPP Service – A web app where users can sign ownership proof messages.</li>
+  <li>Self-Hosted Wallet Support – Enable compatibility with wallets like Electrum, Sparrow, and others supporting message signing.</li>
+  <li>Hardware Wallet Integration – Direct support for signing via Ledger, Trezor, and BitBox.</li>
+  <li>AOPP-URL Handling – Implement the parsing and generation of AOPP-URLs for smooth integration.</li>
+  <li>Backend Notification System – Securely notify the backend once a signature is verified.</li>
+  <li>Security &amp; Compliance Enhancements – Implement best practices for cryptographic security.</li>
+  <li>Testing &amp; Error Handling – Comprehensive unit tests, integration tests, and fail-safe mechanisms.</li>
+  <li>Only Bitcoin for bitcoin wallets
+<br /><br /></li>
+</ul>
+
+<dl>
+  <dt>Tech Stack</dt>
+  <dd>This project will be built using Go for backend development due to its efficiency, concurrency support, and compatibility with cryptographic libraries. The proposed stack includes:
+    <ul>
+      <li>Backend: Go, PostgreSQL</li>
+      <li>Cryptographic Libraries: btcsuite/btcd, github.com/decred/dcrd/dcrec/secp256k1, github.com/btcsuite/btcutil</li>
+      <li>Wallet Integrations: ledgerhq/ledger-go, trezor-go, bitbox-go</li>
+      <li>Web Interface: React/Vue.js for a simple, intuitive UI</li>
+      <li>Deployment: Self-hostable via Docker
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>
+    <ul>
+      <li>Go programming &amp; API development</li>
+      <li>Bitcoin cryptography (ECDSA, Schnorr signatures, secp256k1)</li>
+      <li>Experience with wallet integrations &amp; hardware wallet communication</li>
+      <li>Web technologies (REST APIs, WebSockets, OAuth/WebAuthn)</li>
+      <li>Database management with PostgreSQL                      <br />
+<br /></li>
+    </ul>
+  </dd>
+  <dt>Mentor</dt>
+  <dd>Raveen Harith Perera, Adem Bilican
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/ProofOfMine">https://github.com/c2siorg/ProofOfMine</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium to Hard
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#proof-of-mine
+<br /><br /></dd>
+</dl>

@@ -1,0 +1,48 @@
+<dl>
+  <dt>Brief explanation</dt>
+  <dd>This project aims to develop a data storing and querying engine for Hyperledger Fabric that leverages the SmartQC transaction model proposed in the paper (arxiv.org). The goal is to enable efficient storage and retrieval of complex data transactions while ensuring immutability, auditability, and efficient query execution on Hyperledger Fabric. The transaction model introduces a novel way of structuring data that goes into the ledger (Similar to a relational database schema). The idea of this project is to implement an off-chain service/node that provides endpoints to manage transactions and act as the intermediary validator before pushing the transaction into the hyperledger. Then utilise the structure and schema (metadata) of the transactions to perform advanced querying.
+<br /><br /></dd>
+  <dt>Key Objectives</dt>
+  <dd>
+    <ul>
+      <li>Implementation of the transaction model validator node in GoLang
+        <ul>
+          <li>A rest API to facilitate transactions</li>
+          <li>A rest API to facilitate transactions</li>
+        </ul>
+      </li>
+      <li>Implement a Hyperledger Fabric Smart Contract (Chain code) to manage transactions</li>
+      <li>An architecture for the querying engine that facilitates faster and more complex queries (using an Off-chain DB that keeps a ledger copy or indexing mechanism before putting it into the ledger)</li>
+      <li>Performance analysis 
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Expected Outcome</dt>
+  <dd>
+    <ul>
+      <li>Go Gin Rest API that implements the CRUD operations for transaction management.</li>
+      <li>A connector to the Hyperledger Fabric</li>
+      <li>Ledgerlens Hyperleder Fabric Chain code</li>
+      <li>Querying algorithm 
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Go Programming Language (Gin), Docker, Blockchain &amp; Distributed Ledger, Hyperledger Fabric, SmartQC Transaction Model
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Tharindu Ranathunga, Alan McGibney 
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/LedgerLens">https://github.com/c2siorg/LedgerLens</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 Hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Intermediate
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#LedgerLens
+<br /><br /></dd>
+</dl>

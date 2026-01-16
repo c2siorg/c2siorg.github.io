@@ -30,12 +30,17 @@ bodyClass: "page-team"
     <div class="col-12 col-md-12 mb-3 mt-0">
       <div class="content">{{content}}</div>
 
-      <!-- accordion -->
-      {% if page.projects_collection and site.collections[page.projects_collection] %}
-        {% assign projects = site.collections[page.projects_collection].docs | sort: "num" %}
-      {% else %}
-        {% assign projects = site.gsocprojects | sort: "num" %}
+      <!-- accordion: hardcoded to use gsocprojects_2025 -->
+      {% assign projects = nil %}
+      {% for coll in site.collections %}
+        {% if coll.label == "gsocprojects_2025" %}
+          {% assign projects = coll.docs %}
+        {% endif %}
+      {% endfor %}
+      {% if projects == nil %}
+        {% assign projects = site.gsocprojects.docs %}
       {% endif %}
+      {% assign projects = projects | sort: "num" %}
       {% for project in projects %}
         <div class="accordion">{{project.num}}. {{project.title}}</div>
         <div class="panel">
@@ -43,10 +48,6 @@ bodyClass: "page-team"
         </div>
       {% endfor %}
       <!-- accordion -->
-      
-      <div class="previous-gsoc-link mt-4">
-        <a href="/gsoc/previous/" class="btn btn-primary"><u>Previous GSoC Projects</u></a>
-      </div>
     
       <br>
     </div>
