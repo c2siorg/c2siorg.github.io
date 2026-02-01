@@ -79,42 +79,61 @@
 }
 
 .accordion {
-  background-color: #fcfcfc;
-  color: #444;
+  background-color: #ffffff;
+  color: #2c3e50;
   cursor: pointer;
-  padding: 18px;
+  padding: 20px 24px;
   width: 100%;
   text-align: left;
   outline: none;
   font-size: 18px;
-  font-weight: bold;
-  border: 1px solid #c2c2c265;
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.5s ease;}
+  font-weight: 600;
+  border: 2px solid #c2c2c265;
+  // border-left: 3px solid transparent;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
 
 .accordion:hover {
-  background-color: #f7f7f7;
+  background-color: #fafafa;
+  // border-left-color: $primary;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  // transform: translateX(2px);
+  border-left: 3px solid $primary;
+}
+
+.accordion.active {
+  background-color: #f8f9fa;
+  border-left-color: $primary;
+  border-left: 3px solid $primary;
 }
 
 .accordion:after {
   content: '\002B';
-  color: #777;
-  font-weight: bold;
+  color: $primary;
+  font-weight: 600;
   float: right;
-  margin-left: 5 px;
+  font-size: 20px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion.active:after {
+  transform: rotate(45deg);
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 0 24px;
   padding-left: 50px;
   padding-right: 50px;
-  background-color: #ffffff;
+  background-color: #fafafa;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  border-left: 1px solid #c2c2c265;
-  border-right: 1px solid #c2c2c265;
-  line-height: 1.5em;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #e8e8e8;
+  border-bottom: 1px solid #ffffff;
+  line-height: 1.6em;
 }
 
 .last-panel {

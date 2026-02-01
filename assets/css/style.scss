@@ -76,11 +76,35 @@ body {
 
 #gsocBtn{
   background: $primary;
+  border-radius: 0;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#gsocBtn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scaleX(0);
+  // transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #gsocBtn:hover{
-  transition: all 0.2s ease;
-  background-color: lighten($primary, 10%);
+  background-color: lighten($primary, 2%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  // transform: translateY(-1px);
+}
+
+#gsocBtn:hover::after {
+  transform: scaleX(1);
 }
 
 #githubBtn{

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>QubitForge - Visual Quantum Circuit Designer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="QubitForge - Visual Quantum Circuit Designer"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      
+      <a href="/">Home</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/services/">Projects</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/publications/">Publications</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/team/">Team</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/opportunities/">Opportunities</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/blog/">Blog</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="https://github.com/c2siorg">GitHub</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/gsoc">GSoC 26</a>
+      
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="140px" height="37px" alt="C2SI" src="/images/logo/c2si-logo-main.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="C2SI" src="/images/logo/c2si-logo-mobile.png" /></a>
+    </div>
+    <i class="fa-brands fa-github"></i>
+
+<div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      
+      <a href="/" >Home</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/services/" >Projects</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/publications/" >Publications</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/team/" >Team</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/opportunities/" >Opportunities</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/blog/" >Blog</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="https://github.com/c2siorg" target = "_blank" id="githubBtn" style="width: 7em; height: 1.6em; padding-bottom: 1.7em; padding-left: 1em; padding-top: 0.3em;"><img src="/images/logo/github-long.png" width="75px" id="githubimg"></a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/gsoc" id="gsocBtn" style="color: #f8f8f8; padding: 8px 16px; text-decoration: none; margin-left: 10px;">GSoC 26</a>
+      
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">QubitForge - Visual Quantum Circuit Designer</h1>
+        <div class="content"><dl>
+  <dt>Brief explanation:</dt>
+  <dd>QubitForge is a browser-based quantum circuit design and simulation platform inspired by Tinkercad’s intuitive approach to electronics. Users build quantum circuits visually by dragging and dropping qubits, gates, and measurements onto a workspace, then immediately observe simulation results through live visualizations.
+<br />
+The platform features:
+    <ul>
+      <li>Visual Circuit Builder: Drag-and-drop interface for constructing quantum circuits with a component palette</li>
+      <li>Real-time Simulation: Instant state visualization and measurement statistics as circuits are built</li>
+      <li>Component Library: Comprehensive gate library from basic (H, X, Y, Z) to advanced (controlled gates, custom unitaries)</li>
+      <li>Export System: Generate OpenQASM, Qiskit, or PennyLane code from visual circuits
+<br />
+The UI mimics Tinkercad’s workspace, central canvas, left component palette, and right properties/output panel.
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Expected results</dt>
+  <dd>
+    <ul>
+      <li>Circuit Workspace: Grid-based canvas with zoom, pan, and undo/redo support.</li>
+      <li>Gate Palette: Categorized component library with drag-and-drop functionality.</li>
+      <li>Wire System: Visual qubit wires connecting gates with automatic routing.</li>
+      <li>Simulation Panel: State vector display, probability bars, and measurement histogram.</li>
+      <li>Export Module: Code generation for OpenQASM 2.0/3.0, Qiskit, and PennyLane formats.</li>
+      <li>Circuit Library: Save/load circuits, shareable circuit links.
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>
+    <ul>
+      <li>Frontend Development: ReactJS, React DnD or similar drag-drop library, Canvas/SVG graphics.</li>
+      <li>Quantum Computing: Understanding of quantum gates, circuits, and measurements.</li>
+      <li>Visualization: Chart libraries for simulation output display.</li>
+      <li>State Management: Complex state handling for circuit representation
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Mentors</dt>
+  <dd>Shehani, Roshan, Don
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>500 hours
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd>TBA
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Hard
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#qubitforge
+<br /><br /></dd>
+</dl>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/about/">About</a>
+            </li>
+            
+            <li class="active">
+              <a href="#">Back To the top</a>
+            </li>
+          </ul>
+          <h2 class="footer-title"><img src="/images/logo/footer-logo.png" alt="C2SI Logo" width="100"></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/c2siorg" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://www.linkedin.com/company/c2siorg" target="blank"><img src="/images/social/linkedin.svg" title="LinkedIn" alt="LinkedIn" /></a>
+  
+    <a href="https://twitter.com/c2si_org" target="blank"><img src="/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
+  
+    <a href="https://www.facebook.com/c2si.org" target="blank"><img src="/images/social/facebook.svg" title="Facebook" alt="Facebook" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">©2026 Ceylon Computer Science Institute. All rights reserved.</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>
