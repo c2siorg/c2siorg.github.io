@@ -272,9 +272,9 @@ It’s very important to connect with organizations as soon as possible. The mor
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
-  <dd>WebiU is a dynamic organization website which uses reusable components concept that fetches project data in real-time from GitHub repositories, ensuring live updates without manual intervention. It provides configurable templates to showcase project details such as title, description, technology stack, and demo links and organisation updates.
+  <dd>WebiU is a dynamic organization website built using reusable component architecture that fetches project data in real time from GitHub repositories, ensuring live updates without manual intervention. It provides configurable templates to showcase project details such as title, description, technology stack, demo links, and organization updates.
 <br /><br />
-WebiU aims to improve the system by optimizing APIs for faster and lighter responses, exploring serverless backend solutions for real-time data handling, and integrating CI/CD workflows to streamline development and deployment.
+The project aims to further improve the platform by optimizing APIs for faster and lighter responses, exploring serverless backend solutions for scalable real-time data handling, integrating CI/CD workflows, and introducing lightweight AI features to enhance project presentation and discoverability without increasing system complexity.
 <br /><br /></dd>
   <dt>Key Objectives</dt>
   <dd></dd>
@@ -285,26 +285,36 @@ WebiU aims to improve the system by optimizing APIs for faster and lighter respo
     <ul>
       <li>Refactor APIs to reduce response times and payload sizes.</li>
       <li>Implement in-memory caching and compression (e.g., GZIP).</li>
-      <li>Explore modern API solutions like GraphQL for efficient data fetching.
+      <li>Explore GraphQL for efficient data fetching.
 <br /><br /></li>
     </ul>
   </li>
   <li><em>Alternative Backend Strategies</em>
     <ul>
-      <li>Leverage serverless architectures to handle real-time data effectively and scale dynamically.
+      <li>Leverage serverless architectures for scalable real-time data processing.
 <br /><br /></li>
     </ul>
   </li>
   <li><em>CI/CD Integration</em>
     <ul>
       <li>Automate testing, building, and deployment with tools like GitHub Actions.</li>
-      <li>Ensure smooth rollback mechanisms and error handling for deployments.
+      <li>Enable safe deployments with rollback and error handling.
 <br /><br /></li>
     </ul>
   </li>
   <li><em>Admin Features</em>
     <ul>
-      <li>Expand admin controls with project analytics and manual API refresh options.
+      <li>Extend admin controls with project analytics.</li>
+      <li>Provide manual API and AI content refresh options.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>AI Enhancements</em>
+    <ul>
+      <li>Generate concise project summaries from GitHub README and metadata</li>
+      <li>Detect technology stack automatically for accurate tech badges and filtering</li>
+      <li>Enable optional natural-language project search mapped to existing metadata</li>
+      <li>Cache AI outputs and refresh only on repository updates
 <br /><br /></li>
     </ul>
   </li>
@@ -312,10 +322,10 @@ WebiU aims to improve the system by optimizing APIs for faster and lighter respo
 
 <dl>
   <dt>Expected Results</dt>
-  <dd>By the end of the summer We are planning to make the project live by completing it end to end integrations and will deliver faster, lightweight APIs, a robust real-time data architecture, and automated CI/CD workflows. These improvements will enhance user experience, scalability, and developer productivity.
+  <dd>By the end of the summer, WebiU will be production-ready with optimized APIs, a scalable real-time architecture, automated CI/CD workflows, and selective AI enhancements. These improvements will reduce manual effort, improve project discovery, and deliver a cleaner, faster, and more maintainable platform.
 <br /><br /></dd>
   <dt>Skills Required:</dt>
-  <dd>Proficiency in REST/GraphQL, Node.js, serverless technologies, Angular, and CI/CD tools.
+  <dd>REST/GraphQL, GitHub APIs, Node.js &amp; Serverless, Angular, CI/CD (GitHub Actions), Basic API-based AI integration.
 <br /><br /></dd>
   <dt>Mentor</dt>
   <dd>Mahender Goud Thanda (Maahi10001), Charith
@@ -546,6 +556,164 @@ This project focuses on optimizing learning workflows by integrating an enhanced
 <br /><br /></dd>
   <dt>Slack channel</dt>
   <dd>#imagelab
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">6. DataLoom</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>DataLoom is a web-based graphical interface designed to simplify data wrangling and transformation tasks for tabular datasets. It serves as an intuitive front-end for the pandas library, enabling users to perform complex data manipulation operations without requiring advanced programming expertise. By bridging the gap between data analysis and usability, DataLoom empowers users to streamline their data workflows efficiently.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd>
+    <ul>
+      <li>Redesign and modernize the UI to be more responsive, professional, and user-friendly.</li>
+      <li>Introduce additional data transformation operations.</li>
+      <li>Restructure the project to enhance readability, maintainability, and ease of contribution for new developers.
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Backend: Python, Pandas, FastAPI (recommended)
+Frontend: HTML, CSS, JavaScript, React (recommended)
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Oshan Mudannayake, Danushka V
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/dataloom">https://github.com/c2siorg/dataloom</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Easy
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#dataLoom
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">7. TensorMap</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>TensorMap is a web application that will allow the users to create machine learning algorithms visually. TensorMap supports reverse engineering of the visual layout to a Tensorflow implementation in preferred languages. The goal of the project is to let the beginners play with machine learning algorithms in Tensorflow without less background knowledge about the library.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd>
+    <ul>
+      <li>Clean up the project structure.</li>
+      <li>Completely switch to poetry for dependency management.</li>
+      <li>Complete the project Wiki.</li>
+      <li>Implement additional visualizations such as 3D plots, heatmaps, and interactive graphs.</li>
+      <li>Add built-in functions for common data augmentation techniques.</li>
+      <li>Add more functionality to the application (open-ended).
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Tensorflow, Python, Javascript
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Oshan Mudannayake, Utkarsh Raj (rajutkarsh07), UdeshUK
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/tensormap">https://github.com/c2siorg/tensormap</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Hard
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#tensormap
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">8. Honeynet</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>Develop a scalable, cloud-native honeypot deployment framework that leverages Terraform to provision and manage honeypot instances across multiple geographic regions. This platform will help security teams gather threat intelligence, understand attacker methodologies, and improve defensive postures by simulating realistic targets in various cloud environments.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd>Check project GeoDNSScanner (<a href="https://github.com/c2siorg/GeoDnsScanner">https://github.com/c2siorg/GeoDnsScanner</a>), you will create something similar to this but to deploy honeypots
+<br /><br /></dd>
+  <dt>Key Objectives</dt>
+  <dd>
+    <ul>
+      <li><em>Automated Deployment:</em> Use Terraform to automate the provisioning, configuration, and decommissioning of honeypot infrastructure across multiple regions and potentially multiple cloud providers.</li>
+      <li><em>Distributed Architecture:</em> Deploy honeypots in various regions (e.g., North America, Europe, Asia-Pacific) to capture a diverse range of attack vectors and adapt to region-specific threat landscapes.</li>
+      <li><em>Data Enrichment:</em> Integrate logging, monitoring, and analytics to enrich raw data, correlating attack patterns with global threat intelligence feeds.</li>
+      <li><em>Scalability and Flexibility:</em> Implement modular Terraform configurations and cloud-native services to enable rapid scaling, dynamic resource allocation, and easy modifications.
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Cloud deployment, Terraform, bash                         <br />
+<br /></dd>
+  <dt>Mentor</dt>
+  <dd>Danushka V, WiztaMax, Keneth
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/honeynet">https://github.com/c2siorg/honeynet</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Easy
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#Honeynet
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">9. RustCloud</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>RustCloud  is a rust library which hides the difference between different APIs provided by varied cloud providers (AWS, GCP, Azure etc.) and allows you to manage different cloud resources through a unified and easy to use API.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd></dd>
+</dl>
+
+<ul>
+  <li>By the end of the project, API for BigQuery, Vertex AI, GenAI for AWS, GCP, Azure</li>
+  <li>Documentation -  Improve and maintain documentation related to the development areas, ensuring clarity for future contributors.
+<br /><br /></li>
+</ul>
+
+<dl>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Rust, AWS, GCP, Azure
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Pratik Dhanave, Mohit Bhat
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/RustCloud">https://github.com/c2siorg/RustCloud</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#rust-cloud
 <br /><br /></dd>
 </dl>
 </p>
