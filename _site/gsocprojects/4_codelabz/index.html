@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CodeLabz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Self host font -->
+  <!-- <link rel="preload" href="/assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  
+  <meta property="og:title" content="CodeLabz"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content=""/>
+  
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+
+</head>
+
+<body class='page page-service'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  
+  <ul>
+    
+    <li class="">
+      
+      <a href="/">Home</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/services/">Projects</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/publications/">Publications</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/team/">Team</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/opportunities/">Opportunities</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/blog/">Blog</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="https://github.com/c2siorg">GitHub</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/gsoc">GSoC 26</a>
+      
+    </li>
+    
+  </ul>
+</div>
+
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img width="140px" height="37px" alt="C2SI" src="/images/logo/c2si-logo-main.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img width="32px" height="32px" alt="C2SI" src="/images/logo/c2si-logo-mobile.png" /></a>
+    </div>
+    <i class="fa-brands fa-github"></i>
+
+<div id="main-menu" class="main-menu">
+  
+  <ul>
+    
+    <li class="">
+      
+      <a href="/" >Home</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/services/" >Projects</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/publications/" >Publications</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/team/" >Team</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/opportunities/" >Opportunities</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/blog/" >Blog</a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="https://github.com/c2siorg" target = "_blank" id="githubBtn" style="width: 7em; height: 1.6em; padding-bottom: 1.7em; padding-left: 1em; padding-top: 0.3em;"><img src="/images/logo/github-long.png" width="75px" id="githubimg"></a>
+      
+    </li>
+    
+    <li class="">
+      
+      <a href="/gsoc" id="gsocBtn" style="color: #f8f8f8; padding: 8px 16px; text-decoration: none; margin-left: 10px;">GSoC 26</a>
+      
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <h1 class="title">CodeLabz</h1>
+        <div class="content"><dl>
+  <dt>Brief Explanation</dt>
+  <dd>CodeLabz is an interactive, cloud-based learning platform designed to facilitate engagement with online tutorials. It enables organizations to create, manage, and share structured learning resources with users. The platform is built with a ReactJS frontend, complemented by a scalable backend powered by Google Cloud Firestore and Firebase Realtime Database, ensuring seamless real-time data synchronization and an intuitive user experience.
+<br /><br />
+This project focuses on optimizing learning workflows by integrating an enhanced UI, efficient data management, and dynamic real-time updates. CodeLabz serves as a centralized solution for tutorial creation, consumption, and collaboration, ensuring an effective and scalable educational experience. It currently requires the following improvements.
+<br /><br /></dd>
+  <dt><strong>Key Objectives</strong></dt>
+  <dd></dd>
+</dl>
+
+<ol>
+  <li><em>Backend and Deployment:</em>
+    <ul>
+      <li>The app is temporarily deployed on the client side using Firebase Hosting, so we need a no-cost solution for serverless deployment.</li>
+      <li>Find a free serverless hosting solution and migrate APIs from Firebase Functions while ensuring scalability, reliability, and minimal maintenance.
+<br /></li>
+    </ul>
+  </li>
+  <li><em>Implement Real-Time Notification System (No Cost):</em>
+    <ul>
+      <li>Research and implement a real-time notification system integrated with in-app notifications.</li>
+      <li>Ensure functionality for push and in-app notifications within free-tier limits.
+<br /></li>
+    </ul>
+  </li>
+  <li><em>Managing Org-Setting (Including Roles) and Implement Admin Features:</em>
+    <ul>
+      <li>Develop functionalities for managing organization settings.</li>
+      <li>Implement role-based access control to ensure secure and controlled access.</li>
+      <li>Enhance the admin dashboard with real-time API refresh and analytics.
+<br /></li>
+    </ul>
+  </li>
+  <li><em>Optimize NoSQL Queries for Performance:</em>
+    <ul>
+      <li>Identify key indexes, optimize slow queries, and implement caching or denormalization strategies to improve retrieval times.
+<br /></li>
+    </ul>
+  </li>
+  <li><em>Containerization &amp; Dockerization:</em>
+    <ul>
+      <li>Implement Docker for consistent development and production environments..
+<br /></li>
+    </ul>
+  </li>
+  <li><em>UI/UX Refinement:</em>
+    <ul>
+      <li>Improve design consistency, usability, and responsiveness across all devices with proper design principles.</li>
+      <li>The codebase contains partial migrations and multiple MUI versions, so make it consistent and update it to the latest versions.
+<br /></li>
+    </ul>
+  </li>
+  <li><em>Ensure Proper Migration and Consistency:</em>
+    <ul>
+      <li>The codebase includes deprecated npm libraries and modules, update or replace them.</li>
+      <li>Convert the existing JavaScript codebase to TypeScript, ensuring type safety and maintainability.
+<br /><br /></li>
+    </ul>
+  </li>
+</ol>
+
+<dl>
+  <dt>Expected results</dt>
+  <dd>By the completion of this project, CodeLabz will achieve:</dd>
+</dl>
+
+<ul>
+  <li><em>Optimized API performance:</em> Faster response times, reduced server load, and enhanced data retrieval, improving overall API performance.</li>
+  <li><em>Better looking UI/UX:</em> A visually appealing and responsive interface that works seamlessly across all devices, improving user satisfaction.</li>
+  <li><em>Scalable real-time backend:</em> A scalable, serverless backend that handles real-time data synchronization and notifications efficiently.</li>
+  <li><em>Refined CI/CD pipelines and faster deployment cycles:</em>  Improved consistency and reproducibility of environments through Docker.</li>
+  <li><em>Enhanced data security and privacy:</em> Improved data security with role-based access control, ensuring only authorized users access sensitive information.</li>
+  <li><em>Improved admin functionality:</em> Advanced analytics, data monitoring, and administrative control tools.</li>
+  <li><em>Updated and consistent codebase:</em> Fully migrated, consistent, scalable and maintainable codebase.
+<br /><br /></li>
+</ul>
+
+<dl>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Proficiency in React.js, Redux, Material-UI, TypeScript, Node.js, Express.js, Firebase, API design, Docker, CI/CD (GitHub Actions), Figma, NoSQL design patterns, query optimization, caching strategies, OAuth, and Role-Based Access Control (RBAC).
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Mallepally Lokeshwar Reddy(lokeshwar777), Utkarsh Raj(rajutkarsh07)
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/codelabz">https://github.com/c2siorg/codelabz</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#codelabz
+<br /><br /></dd>
+</dl>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <ul>
+            
+            
+            <li class="">
+              <a href="/">Home</a>
+            </li>
+            
+            <li class="">
+              <a href="/about/">About</a>
+            </li>
+            
+            <li class="active">
+              <a href="#">Back To the top</a>
+            </li>
+          </ul>
+          <h2 class="footer-title"><img src="/images/logo/footer-logo.png" alt="C2SI Logo" width="100"></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            <div class="social">
+  
+    <a href="https://github.com/c2siorg" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+  
+    <a href="https://www.linkedin.com/company/c2siorg" target="blank"><img src="/images/social/linkedin.svg" title="LinkedIn" alt="LinkedIn" /></a>
+  
+    <a href="https://twitter.com/c2si_org" target="blank"><img src="/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
+  
+    <a href="https://www.facebook.com/c2si.org" target="blank"><img src="/images/social/facebook.svg" title="Facebook" alt="Facebook" /></a>
+  
+</div>
+
+          
+          
+          <div class="copyright">©2026 Ceylon Computer Science Institute. All rights reserved.</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  
+</body>
+</html>

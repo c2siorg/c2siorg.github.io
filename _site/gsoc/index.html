@@ -227,9 +227,327 @@ It’s very important to connect with organizations as soon as possible. The mor
       <!-- accordion -->
       
       
-        <div class="accordion">1. Projects coming soon...</div>
+        <div class="accordion">1. B0Bot</div>
         <div class="panel">
-          <p><p>Stay tuned!</p>
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>B0Bot is a CyberSecurity News API tailored for automated bots on social media platforms. It is a cutting-edge Flask-based API that grants seamless access to the latest cybersecurity and hacker news. Users can effortlessly retrieve news articles either through specific keywords or without, streamlining the information acquisition process. Once a user requests our API, it retrieves news data from our knowledge base and feeds it to the LLM. After the LLM processes the data, the API obtains the response and returns it in JSON format. The API is powered by LangChain and a Huggingface endpoint, ensuring that users receive accurate and up-to-date information.
+<br /><br /></dd>
+  <dt>Expected results</dt>
+  <dd>This year, we are planning to integrate the following features into b0bot:<br /><br />
+    <ul>
+      <li>Implement CDC via RSS feed readers or debezium connectors with kafka bus.</li>
+      <li>Implement caching mechanisms (e.g. Redis) to reduce response time for frequent requests.</li>
+      <li>Add a subscription feature for users to receive daily or weekly summaries, over email.</li>
+      <li>Create an agentic AI framework using Langchain/LangGraph to create planner and executor agents. Example of possible agents can be scraper agent, responder agent, notification agent, analyzer agent. Thorough research is expected from the contributor before deciding the agentic framework.</li>
+      <li>Extend the LLM to support multi-turn dialogue, allowing users to engage in conversational interactions with the API.</li>
+      <li>Extend data sources to various social media websites by using their APIs.</li>
+      <li>Creating tests for the API and proper error handling.</li>
+      <li>Improved UI, possibly creating a dashboard.
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Python, Large Language Models, Huggingface, LangChain, Database management, Pinecone, Flask, Agentic Frameworks
+<br /><br /></dd>
+  <dt>Mentors</dt>
+  <dd>Hardik Jindal (hardik1408), Nipuna
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/b0bot">https://github.com/c2siorg/b0bot</a>
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Hard
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#b0bot</dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">2. WebiU</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>WebiU is a dynamic organization website which uses reusable components concept that fetches project data in real-time from GitHub repositories, ensuring live updates without manual intervention. It provides configurable templates to showcase project details such as title, description, technology stack, and demo links and organisation updates.
+<br /><br />
+WebiU aims to improve the system by optimizing APIs for faster and lighter responses, exploring serverless backend solutions for real-time data handling, and integrating CI/CD workflows to streamline development and deployment.
+<br /><br /></dd>
+  <dt>Key Objectives</dt>
+  <dd></dd>
+</dl>
+
+<ol>
+  <li><em>API Optimization</em>
+    <ul>
+      <li>Refactor APIs to reduce response times and payload sizes.</li>
+      <li>Implement in-memory caching and compression (e.g., GZIP).</li>
+      <li>Explore modern API solutions like GraphQL for efficient data fetching.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Alternative Backend Strategies</em>
+    <ul>
+      <li>Leverage serverless architectures to handle real-time data effectively and scale dynamically.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>CI/CD Integration</em>
+    <ul>
+      <li>Automate testing, building, and deployment with tools like GitHub Actions.</li>
+      <li>Ensure smooth rollback mechanisms and error handling for deployments.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Admin Features</em>
+    <ul>
+      <li>Expand admin controls with project analytics and manual API refresh options.
+<br /><br /></li>
+    </ul>
+  </li>
+</ol>
+
+<dl>
+  <dt>Expected Results</dt>
+  <dd>By the end of the summer We are planning to make the project live by completing it end to end integrations and will deliver faster, lightweight APIs, a robust real-time data architecture, and automated CI/CD workflows. These improvements will enhance user experience, scalability, and developer productivity.
+<br /><br /></dd>
+  <dt>Skills Required:</dt>
+  <dd>Proficiency in REST/GraphQL, Node.js, serverless technologies, Angular, and CI/CD tools.
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Mahender Goud Thanda (Maahi10001), Charith
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/Webiu">https://github.com/c2siorg/Webiu</a>
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#WebiU
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">3. GDB UI</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>GDB-UI is a modern, web-based interface for the GNU Debugger (GDB), designed to simplify the debugging process for developers working with C, and C++. It provides real-time interaction with GDB, enabling features like monitoring program execution, inspecting variables, setting breakpoints, and more, all through an intuitive web application.
+<br /><br />
+GDB-UI enhances the debugging workflow by offering a sleek, user-friendly UI, replacing the traditional command-line experience with a visual and accessible alternative. It supports both Docker-based and manual setups, allowing seamless integration into various development environments.
+<br /><br /></dd>
+  <dt>Key Objectives</dt>
+  <dd></dd>
+</dl>
+
+<ol>
+  <li><em>First Deployment:</em>
+    <ul>
+      <li>Deploy the project for initial use, ensuring the application is accessible and functional for all users.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>CI/CD Integration:</em>
+    <ul>
+      <li>Automate the testing, building, and deployment processes using tools like GitHub Actions.</li>
+      <li>Ensure smooth deployment pipelines with robust rollback mechanisms and proper error handling.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Session Management for Multiuser Support:</em>
+    <ul>
+      <li>Implement a system to store debugging sessions uniquely for each user to enable multiuser functionality.</li>
+      <li>Ensure session persistence and isolation to prevent interference between users.
+<br /><br /></li>
+    </ul>
+  </li>
+  <li><em>Real-Time Debugging Results:</em>
+    <ul>
+      <li>Design the application to display debugger results in real time without requiring page refreshes.</li>
+      <li>Use WebSockets or similar technologies to handle live updates efficiently.
+<br /><br /></li>
+    </ul>
+  </li>
+</ol>
+
+<dl>
+  <dt>Expected Results</dt>
+  <dd>By the completion of the project, the application will be fully deployed with multiuser support, persistent session management, real-time debugging results, and a robust CI/CD pipeline. These enhancements will provide a seamless debugging experience, improve scalability, and simplify the development workflow for contributors.
+<!-- : -- By the end of the project, the following outcomes are anticipated: -->
+<br /><br /></dd>
+  <dt>Skills Required:</dt>
+  <dd>Proficiency in REST, Flask, React, WebSockets, Docker, CI/CD tools (e.g., GitHub Actions), session management, and real-time data handling
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Shubh Mehta (Shubh942), Nipuna, EMSDV
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/GDB-UI">https://github.com/c2siorg/GDB-UI</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#gdb-ui
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">4. CodeLabz</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief Explanation</dt>
+  <dd>CodeLabz is an interactive, cloud-based learning platform designed to facilitate engagement with online tutorials. It enables organizations to create, manage, and share structured learning resources with users. The platform is built with a ReactJS frontend, complemented by a scalable backend powered by Google Cloud Firestore and Firebase Realtime Database, ensuring seamless real-time data synchronization and an intuitive user experience.
+<br /><br />
+This project focuses on optimizing learning workflows by integrating an enhanced UI, efficient data management, and dynamic real-time updates. CodeLabz serves as a centralized solution for tutorial creation, consumption, and collaboration, ensuring an effective and scalable educational experience. It currently requires the following improvements.
+<br /><br /></dd>
+  <dt><strong>Key Objectives</strong></dt>
+  <dd></dd>
+</dl>
+
+<ol>
+  <li><em>Backend and Deployment:</em>
+    <ul>
+      <li>The app is temporarily deployed on the client side using Firebase Hosting, so we need a no-cost solution for serverless deployment.</li>
+      <li>Find a free serverless hosting solution and migrate APIs from Firebase Functions while ensuring scalability, reliability, and minimal maintenance.
+<br /></li>
+    </ul>
+  </li>
+  <li><em>Implement Real-Time Notification System (No Cost):</em>
+    <ul>
+      <li>Research and implement a real-time notification system integrated with in-app notifications.</li>
+      <li>Ensure functionality for push and in-app notifications within free-tier limits.
+<br /></li>
+    </ul>
+  </li>
+  <li><em>Managing Org-Setting (Including Roles) and Implement Admin Features:</em>
+    <ul>
+      <li>Develop functionalities for managing organization settings.</li>
+      <li>Implement role-based access control to ensure secure and controlled access.</li>
+      <li>Enhance the admin dashboard with real-time API refresh and analytics.
+<br /></li>
+    </ul>
+  </li>
+  <li><em>Optimize NoSQL Queries for Performance:</em>
+    <ul>
+      <li>Identify key indexes, optimize slow queries, and implement caching or denormalization strategies to improve retrieval times.
+<br /></li>
+    </ul>
+  </li>
+  <li><em>Containerization &amp; Dockerization:</em>
+    <ul>
+      <li>Implement Docker for consistent development and production environments..
+<br /></li>
+    </ul>
+  </li>
+  <li><em>UI/UX Refinement:</em>
+    <ul>
+      <li>Improve design consistency, usability, and responsiveness across all devices with proper design principles.</li>
+      <li>The codebase contains partial migrations and multiple MUI versions, so make it consistent and update it to the latest versions.
+<br /></li>
+    </ul>
+  </li>
+  <li><em>Ensure Proper Migration and Consistency:</em>
+    <ul>
+      <li>The codebase includes deprecated npm libraries and modules, update or replace them.</li>
+      <li>Convert the existing JavaScript codebase to TypeScript, ensuring type safety and maintainability.
+<br /><br /></li>
+    </ul>
+  </li>
+</ol>
+
+<dl>
+  <dt>Expected results</dt>
+  <dd>By the completion of this project, CodeLabz will achieve:</dd>
+</dl>
+
+<ul>
+  <li><em>Optimized API performance:</em> Faster response times, reduced server load, and enhanced data retrieval, improving overall API performance.</li>
+  <li><em>Better looking UI/UX:</em> A visually appealing and responsive interface that works seamlessly across all devices, improving user satisfaction.</li>
+  <li><em>Scalable real-time backend:</em> A scalable, serverless backend that handles real-time data synchronization and notifications efficiently.</li>
+  <li><em>Refined CI/CD pipelines and faster deployment cycles:</em>  Improved consistency and reproducibility of environments through Docker.</li>
+  <li><em>Enhanced data security and privacy:</em> Improved data security with role-based access control, ensuring only authorized users access sensitive information.</li>
+  <li><em>Improved admin functionality:</em> Advanced analytics, data monitoring, and administrative control tools.</li>
+  <li><em>Updated and consistent codebase:</em> Fully migrated, consistent, scalable and maintainable codebase.
+<br /><br /></li>
+</ul>
+
+<dl>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Proficiency in React.js, Redux, Material-UI, TypeScript, Node.js, Express.js, Firebase, API design, Docker, CI/CD (GitHub Actions), Figma, NoSQL design patterns, query optimization, caching strategies, OAuth, and Role-Based Access Control (RBAC).
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Mallepally Lokeshwar Reddy(lokeshwar777), Utkarsh Raj(rajutkarsh07)
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/codelabz">https://github.com/c2siorg/codelabz</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#codelabz
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">5. ImageLab - Improve user experience</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>ImageLab is a standalone tool designed to help users learn and experiment with image processing techniques interactively. It provides an intuitive environment for beginners to understand image processing concepts without deep programming knowledge. Advanced users can use ImageLab as a test environment before implementing actual image processing applications.
+<br /><br /></dd>
+  <dt>Expected Results</dt>
+  <dd>The goal of this year is to improve the ImageLab experience for the users and the developers alike.
+<br /><br />
+    <ul>
+      <li>Make the UI responsive.</li>
+      <li>Fix the UI/UX issues in the current project such as tooltips not being displayed correctly.</li>
+      <li>Increase the library of the blocks / parameters of operations.</li>
+      <li>Come up with a deployment/release strategy.</li>
+      <li>Complete the documentation on the project to support both users and developers, making it easier to understand, contribute to, and maintain the project.</li>
+      <li>Transition the application’s architecture from an experiment-centric to a project-based approach.</li>
+      <li>Develop a project library for easy management and retrieval of user projects.</li>
+      <li>Implement features to collect user analytics and feedback within the application.</li>
+      <li>(Optional) Build features necessary for creating object detection pipelines.
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Javascript / Typescript, OpenCV, Electron (Optional)
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Oshan, Charitha 
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/c2siorg/imagelab">https://github.com/c2siorg/imagelab</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#imagelab
+<br /><br /></dd>
+</dl>
 </p>
         </div>
       
