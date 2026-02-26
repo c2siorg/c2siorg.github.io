@@ -11,19 +11,28 @@
   top: 0;
   z-index: 1000;
   width: 100%;
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   &.header-absolute {
     position: absolute;
     z-index: 10;
     width: 100%;
   }
 }
+
 .lock-scroll {
   .header {
+    // Mobile menu is open — header sits above the $primary overlay (z-index 1000 > 20).
+    // Make it transparent so the white hamburger X is visible against the blue overlay.
+    background-color: transparent;
+    border-bottom-color: transparent;
+    box-shadow: none;
+
     &.header-absolute {
       position: static;
     }
