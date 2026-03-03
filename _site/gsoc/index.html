@@ -517,33 +517,48 @@ This project focuses on optimizing learning workflows by integrating an enhanced
 </p>
         </div>
       
-        <div class="accordion">5. ImageLab - Improve user experience</div>
+        <div class="accordion">5. ImageLab</div>
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
-  <dd>ImageLab is a standalone tool designed to help users learn and experiment with image processing techniques interactively. It provides an intuitive environment for beginners to understand image processing concepts without deep programming knowledge. Advanced users can use ImageLab as a test environment before implementing actual image processing applications.
+  <dd>ImageLab is a block-based image processing tool built on Blockly and OpenCV. Students drag operators into a pipeline and run it against an uploaded image. This project transforms ImageLab into a genuine learning environment by adding per-step intermediate previews, histogram analysis, pipeline persistence, batch processing, and custom composite operators (macros).
 <br /><br /></dd>
-  <dt>Expected Results</dt>
-  <dd>The goal of this year is to improve the ImageLab experience for the users and the developers alike.
-<br /><br />
+  <dt>How it works</dt>
+  <dd>
     <ul>
-      <li>Make the UI responsive.</li>
-      <li>Fix the UI/UX issues in the current project such as tooltips not being displayed correctly.</li>
-      <li>Increase the library of the blocks / parameters of operations.</li>
-      <li>Come up with a deployment/release strategy.</li>
-      <li>Complete the documentation on the project to support both users and developers, making it easier to understand, contribute to, and maintain the project.</li>
-      <li>Transition the application’s architecture from an experiment-centric to a project-based approach.</li>
-      <li>Develop a project library for easy management and retrieval of user projects.</li>
-      <li>Implement features to collect user analytics and feedback within the application.</li>
-      <li>(Optional) Build features necessary for creating object detection pipelines.
+      <li>Input: An uploaded image and a Blockly-based operator pipeline designed by the user</li>
+      <li>Processing: OpenCV operators are executed step-by-step on the backend, returning the image state after every operator</li>
+      <li>Output: Intermediate images at each step, per-channel RGB histograms with statistics, saved/shareable pipelines, batch-processed ZIP results, and reusable macro blocks in the Blockly sidebar
 <br /><br /></li>
     </ul>
   </dd>
-  <dt>Knowledge Prerequisite</dt>
-  <dd>Javascript / Typescript, OpenCV, Electron (Optional)
+  <dt>Expected Results</dt>
+  <dd>
+    <ul>
+      <li>Students can inspect every operator’s effect step-by-step instead of seeing only the final image</li>
+      <li>Quantitative analysis (histogram, statistics) is available for every intermediate step</li>
+      <li>Pipelines can be saved, loaded, and shared via URL, enabling collaboration and teaching workflows</li>
+      <li>ImageLab’s first database usage sets the foundation for future features (user accounts, pipeline ratings)</li>
+      <li>Batch processing allows applying saved pipelines to multiple images concurrently with progress tracking and ZIP download</li>
+      <li>Custom composite operators (macros) teach abstraction by letting users package sub-chains as reusable blocks in the Blockly sidebar
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Tech stack / Tools</dt>
+  <dd>FastAPI, OpenCV, PostgreSQL, SQLModel, Alembic, React, TypeScript, Blockly, Zustand
 <br /><br /></dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>
+    <ul>
+      <li>Proficiency in Python and TypeScript/React</li>
+      <li>Familiarity with OpenCV or willingness to learn image processing basics</li>
+      <li>Understanding of REST API design and relational databases</li>
+      <li>Experience with Blockly is a plus but not required
+<br /><br /></li>
+    </ul>
+  </dd>
   <dt>Mentor</dt>
-  <dd>Oshan, Charitha 
+  <dd>Oshan Mudannayake 
 <br /><br /></dd>
   <dt>Github URL</dt>
   <dd><a href="https://github.com/c2siorg/imagelab">https://github.com/c2siorg/imagelab</a>
@@ -552,7 +567,7 @@ This project focuses on optimizing learning workflows by integrating an enhanced
   <dd>350 hours
 <br /><br /></dd>
   <dt>Difficulty</dt>
-  <dd>Medium
+  <dd>Hard
 <br /><br /></dd>
   <dt>Slack channel</dt>
   <dd>#imagelab
@@ -565,23 +580,46 @@ This project focuses on optimizing learning workflows by integrating an enhanced
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
-  <dd>DataLoom is a web-based graphical interface designed to simplify data wrangling and transformation tasks for tabular datasets. It serves as an intuitive front-end for the pandas library, enabling users to perform complex data manipulation operations without requiring advanced programming expertise. By bridging the gap between data analysis and usability, DataLoom empowers users to streamline their data workflows efficiently.
+  <dd>DataLoom is a web-based data wrangling tool with a unique git-like checkpoint/revert system. This project expands DataLoom into a complete data preparation platform by adding multi-format upload, data profiling, merge/join operations, formula columns, data visualization, an automated data quality engine, and multi-format export with quality reports.
 <br /><br /></dd>
-  <dt>Expected Results</dt>
+  <dt>How it works</dt>
   <dd>
     <ul>
-      <li>Redesign and modernize the UI to be more responsive, professional, and user-friendly.</li>
-      <li>Introduce additional data transformation operations.</li>
-      <li>Restructure the project to enhance readability, maintainability, and ease of contribution for new developers.
+      <li>Input: Data files in multiple formats (CSV, xlsx, json, parquet, tsv)</li>
+      <li>Processing: pandas-powered transforms with a checkpoint system, including profiling, merge/join, formula columns, quality assessment (duplicate detection, outlier flagging, pattern validation), and visualization generation</li>
+      <li>Output: Transformed datasets, column-level statistical profiles, composite quality scores with one-click fixes, interactive charts (histogram, bar, scatter, time series), and multi-format exports with downloadable HTML/PDF quality reports
 <br /><br /></li>
     </ul>
   </dd>
-  <dt>Knowledge Prerequisite</dt>
-  <dd>Backend: Python, Pandas, FastAPI (recommended)
-Frontend: HTML, CSS, JavaScript, React (recommended)
+  <dt>Expected Results</dt>
+  <dd>
+    <ul>
+      <li>Users can upload xlsx, json, parquet, and tsv files in addition to CSV</li>
+      <li>Automatic data profiling gives instant insight into column statistics on upload</li>
+      <li>All transform forms use dropdown column selectors instead of free-text input</li>
+      <li>Users can merge/join data across projects</li>
+      <li>Computed formula columns and reusable transformation pipelines are supported</li>
+      <li>Basic visualization (histogram, bar, scatter, time series) is available in-app</li>
+      <li>Automated data quality assessment detects duplicates, outliers, and pattern violations with a composite quality score and one-click fixes</li>
+      <li>Data can be exported in multiple formats (xlsx/parquet/json/tsv), and comprehensive quality reports can be generated as HTML or PDF
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Tech stack / Tools</dt>
+  <dd>FastAPI, pandas, PostgreSQL, SQLModel, Alembic, React, TypeScript, scikit-learn, matplotlib
 <br /><br /></dd>
+  <dt>Knowledge Prerequisites</dt>
+  <dd>
+    <ul>
+      <li>Strong Python skills with pandas experience</li>
+      <li>React/JavaScript/TypeScript proficiency</li>
+      <li>Understanding of SQL joins and data transformation concepts</li>
+      <li>Familiarity with charting libraries (recharts or similar)
+<br /><br /></li>
+    </ul>
+  </dd>
   <dt>Mentor</dt>
-  <dd>Oshan Mudannayake, Danushka V
+  <dd>Oshan Mudannayake
 <br /><br /></dd>
   <dt>Github URL</dt>
   <dd><a href="https://github.com/c2siorg/dataloom">https://github.com/c2siorg/dataloom</a>
@@ -590,7 +628,7 @@ Frontend: HTML, CSS, JavaScript, React (recommended)
   <dd>350 hours
 <br /><br /></dd>
   <dt>Difficulty</dt>
-  <dd>Easy
+  <dd>Hard
 <br /><br /></dd>
   <dt>Slack channel</dt>
   <dd>#dataLoom
@@ -603,25 +641,45 @@ Frontend: HTML, CSS, JavaScript, React (recommended)
         <div class="panel">
           <p><dl>
   <dt>Brief explanation</dt>
-  <dd>TensorMap is a web application that will allow the users to create machine learning algorithms visually. TensorMap supports reverse engineering of the visual layout to a Tensorflow implementation in preferred languages. The goal of the project is to let the beginners play with machine learning algorithms in Tensorflow without less background knowledge about the library.
+  <dd>TensorMap is a visual neural network builder where users drag layer nodes onto a ReactFlow canvas, connect them, and train Keras models. This project transforms TensorMap into a complete neural network design studio by adding a data-driven layer registry, 11 new layer types, real-time training visualization, model export in industry-standard formats, post-training interpretability tools, and automated hyperparameter tuning.
 <br /><br /></dd>
-  <dt>Expected Results</dt>
+  <dt>How it works</dt>
   <dd>
     <ul>
-      <li>Clean up the project structure.</li>
-      <li>Completely switch to poetry for dependency management.</li>
-      <li>Complete the project Wiki.</li>
-      <li>Implement additional visualizations such as 3D plots, heatmaps, and interactive graphs.</li>
-      <li>Add built-in functions for common data augmentation techniques.</li>
-      <li>Add more functionality to the application (open-ended).
+      <li>Input: A model architecture defined as ReactFlow nodes and edges (layer types with parameters) plus a training dataset</li>
+      <li>Processing: Keras model generation from the visual graph, training with structured Socket.IO metric callbacks, hyperparameter search (grid/random), and post-training analysis (confusion matrix, feature importance)</li>
+      <li>Output: Trained models with real-time interactive training charts, exported model files (SavedModel/ONNX/TFLite), comparison dashboards, interpretability reports, and tuning results with one-click best-parameter application
 <br /><br /></li>
     </ul>
   </dd>
-  <dt>Knowledge Prerequisite</dt>
-  <dd>Tensorflow, Python, Javascript
+  <dt>Expected Results</dt>
+  <dd>
+    <ul>
+      <li>Adding a new layer type requires only a registry entry (data-driven) instead of 6+ file edits</li>
+      <li>15 layer types available (up from 4), covering CNNs, RNNs, and regularization</li>
+      <li>Training progress shown as real-time interactive charts with structured metrics</li>
+      <li>Models can be exported in SavedModel, ONNX, and TFLite formats</li>
+      <li>Multiple training runs can be visually compared in a dashboard</li>
+      <li>Post-training analysis tools (confusion matrix, classification report, feature importance, prediction explorer) help users understand model behavior and diagnose issues</li>
+      <li>Automated hyperparameter tuning with grid and random search strategies eliminates manual trial-and-error, with real-time progress tracking and one-click application of best parameters
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Tech stack / Tools</dt>
+  <dd>FastAPI, TensorFlow/Keras, PostgreSQL, SQLModel, Alembic, scikit-learn, Socket.IO, React, TypeScript, ReactFlow
 <br /><br /></dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>
+    <ul>
+      <li>Python proficiency with TensorFlow/Keras experience</li>
+      <li>React/JavaScript/TypeScript proficiency with component-based UI patterns</li>
+      <li>Understanding of neural network architectures and training workflows</li>
+      <li>Familiarity with Socket.IO or WebSocket-based real-time communication
+<br /><br /></li>
+    </ul>
+  </dd>
   <dt>Mentor</dt>
-  <dd>Oshan Mudannayake, Utkarsh Raj (rajutkarsh07), UdeshUK
+  <dd>Oshan Mudannayake
 <br /><br /></dd>
   <dt>Github URL</dt>
   <dd><a href="https://github.com/c2siorg/tensormap">https://github.com/c2siorg/tensormap</a>
@@ -714,6 +772,366 @@ Frontend: HTML, CSS, JavaScript, React (recommended)
 <br /><br /></dd>
   <dt>Slack channel</dt>
   <dd>#rust-cloud
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">10. Agentic Cognitive Firewall SDK</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>The Cognitive Firewall is a Zero Trust control layer for agentic systems that protects the reasoning control plane of large language model (LLM) agents. It prevents prompt injection, context manipulation, memory poisoning, and unsafe tool-output re-injection by enforcing policy-driven validation before any input enters model context. The system acts as a programmable admission controller for agent cognition, ensuring that prompts, retrieved documents, memory writes, and tool outputs are continuously verified. It enables secure-by-design agent development through contextual integrity enforcement and cognitive telemetry.
+<br /><br /></dd>
+  <dt>How it works:</dt>
+  <dd>Input:</dd>
+  <dd>
+    <ul>
+      <li>User prompts</li>
+      <li>Retrieved RAG documents</li>
+      <li>Tool outputs</li>
+      <li>Memory write operations</li>
+      <li>System prompts</li>
+    </ul>
+  </dd>
+  <dd>Processing:</dd>
+  <dd>
+    <ul>
+      <li>SDK intercepts agent inputs/outputs</li>
+      <li>Sends payload to Firewall API</li>
+      <li>Injection pattern detection (rule-based + heuristic scoring)</li>
+      <li>Context sanitization &amp; instruction stripping</li>
+      <li>Policy-as-code evaluation</li>
+      <li>Risk scoring engine</li>
+      <li>Allow / Sanitize / Block decision</li>
+      <li>Logging &amp; cognitive telemetry storage</li>
+    </ul>
+  </dd>
+  <dd>Output:
+    <ul>
+      <li>Sanitized context (if allowed)</li>
+      <li>Block decision with reason (if denied)</li>
+      <li>Risk score metadata</li>
+      <li>Audit logs for governance
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Expected Results</dt>
+  <dd></dd>
+  <dd>Milestone 1 (Weeks 1–4): Core Firewall MVP</dd>
+  <dd>
+    <ul>
+      <li>FastAPI-based Cognitive Firewall service</li>
+      <li>Python SDK middleware for agent interception</li>
+      <li>Prompt injection detection engine (rule-based)</li>
+      <li>Document sanitization module</li>
+      <li>Policy-as-code YAML engine</li>
+    </ul>
+  </dd>
+  <dd>Milestone 2 (Weeks 5–8): Context Integrity Controls</dd>
+  <dd>
+    <ul>
+      <li>Tool output inspection with DLP scanning</li>
+      <li>Memory write validation with TTL enforcement</li>
+      <li>Risk scoring engine</li>
+      <li>Provenance tagging for context elements</li>
+      <li>Logging + audit trail storage</li>
+    </ul>
+  </dd>
+  <dd>Milestone 3 (Weeks 9–12): Observability &amp; Enterprise Readiness</dd>
+  <dd>
+    <ul>
+      <li>Cognitive telemetry dashboard</li>
+      <li>Agent-level risk aggregation</li>
+      <li>Policy versioning &amp; configuration management</li>
+      <li>Example integration with LangGraph agent</li>
+      <li>Documentation + deployment scripts (Docker)
+<br />
+<br /></li>
+    </ul>
+  </dd>
+  <dd>12-Week Implementation Plan:</dd>
+  <dd>Weeks 1–2: Architecture &amp; Foundations</dd>
+  <dd>
+    <ul>
+      <li>Define system architecture (SDK + Firewall Service)</li>
+      <li>Design data model for context validation</li>
+      <li>Create FastAPI skeleton</li>
+      <li>Define validation schema (Pydantic models)</li>
+      <li>Create GitHub repository structure</li>
+    </ul>
+  </dd>
+  <dd>Weeks 3–4: Prompt &amp; Document Protection</dd>
+  <dd>
+    <ul>
+      <li>Implement prompt injection detection rules</li>
+      <li>Implement document sanitization module</li>
+      <li>Add pattern detection (override attempts, encoded payloads)</li>
+      <li>Build policy-as-code YAML loader</li>
+      <li>Integrate SDK with validation endpoint</li>
+    </ul>
+  </dd>
+  <dd>Weeks 5–6: Tool Output &amp; Memory Controls</dd>
+  <dd>
+    <ul>
+      <li>Implement DLP scanning module</li>
+      <li>Add secret detection patterns</li>
+      <li>Implement memory write validation rules</li>
+      <li>Add TTL enforcement &amp; size constraints</li>
+      <li>Risk scoring engine (weighted scoring)</li>
+    </ul>
+  </dd>
+  <dd>Weeks 7–8: Context Provenance &amp; Logging</dd>
+  <dd>
+    <ul>
+      <li>Add metadata tagging (source, trust score)</li>
+      <li>Implement logging to Postgres</li>
+      <li>Create audit trail schema</li>
+      <li>Add decision trace logging</li>
+    </ul>
+  </dd>
+  <dd>Weeks 9–10: Observability Layer</dd>
+  <dd>
+    <ul>
+      <li>Build basic dashboard (Streamlit or simple UI)</li>
+      <li>Display risk scores &amp; blocked events</li>
+      <li>Add agent-level summaries</li>
+      <li>Add exportable security reports</li>
+    </ul>
+  </dd>
+  <dd>Weeks 11–12: Hardening &amp; Deployment</dd>
+  <dd>
+    <ul>
+      <li>Dockerize service</li>
+      <li>Add basic authentication for firewall API</li>
+      <li>Write integration example with LangGraph</li>
+      <li>Write documentation</li>
+      <li>Final testing + injection scenario testing</li>
+      <li>Prepare proposal/demo presentation
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Tech stack / Tools</dt>
+  <dd>
+    <ul>
+      <li>Backend: FastAPI</li>
+      <li>LLM/AI: LangChain or LangGraph, OpenAI / HuggingFace</li>
+      <li>Storage/DB: PostgreSQL (audit logs), optional SQLite for MVP</li>
+      <li>Messaging/Streaming (if any): Not required for MVP</li>
+      <li>Caching (if any): Redis</li>
+      <li>Containerization: Docker</li>
+      <li>Dashboard: Streamlit or lightweight React frontend
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Python, FastAPI, REST APIs, LLM fundamentals, Prompt engineering, Security basics, Regex, YAML parsing, Basic DevOps (Docker)
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Tharindu Ranathunga, Kavishka Fernando (kavishkafernando64@gmail.com)
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd>TBA
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>120–150 hours (approx. 10–12 hours/week for 12 weeks)
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium (security + AI systems design + architecture integration)
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>TBA
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">11. LensMint Web3 Camera</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>LensMint Camera is a Web3-enabled camera system built on Raspberry Pi that captures media with cryptographic provenance and signed metadata and mints photos as nft on the blockchain. This project will rewrite and strengthen the camera OS and interface in Rust, and build a secure device key generation and identity layer to improve authenticity, tamper resistance, and integration with future decentralized systems.<br /><br /></dd>
+  <dt>How it works:</dt>
+  <dd>Inputs:
+    <ul>
+      <li>Camera sensor image/video data via Raspberry Pi CSI interface.</li>
+      <li>User interaction via touchscreen/UI or hardware buttons.</li>
+    </ul>
+  </dd>
+  <dd>Processing:
+    <ul>
+      <li>Rust-based/Python-based firmware/OS controls board peripherals.</li>
+      <li>Secure entropy collection for device keypair generation.</li>
+      <li>Camera capture and processing pipeline.</li>
+      <li>Cryptographic signing and metadata generation.</li>
+      <li>Blockchain Processing for NFT generation.</li>
+      <li>ZK proof generation.</li>
+    </ul>
+  </dd>
+  <dd>Output:
+    <ul>
+      <li>Signed photo/video data.</li>
+      <li>Unique device identity for provenance.</li>
+      <li>Stable camera UI and control interface.</li>
+      <li>An NFT that can be shared.
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Expected Results</dt>
+  <dd>
+    <ul>
+      <li>Rust-native core OS/firmware and improved camera interface</li>
+      <li>Secure device cryptographic key generation using hardware entropy</li>
+      <li>Safe key storage abstraction (flash/secure enclave)</li>
+      <li>Rust API for camera control and capture pipeline</li>
+      <li>Modular identity layer for verifiable device signatures</li>
+      <li>Performance optimizations and reliability improvements</li>
+      <li>Improve blockchain processing</li>
+      <li>Add AI features - Agentic camera support</li>
+      <li>OS/UI design improvement</li>
+      <li>Note: Not all features need to be implemented; you can work on a subset of features or all, depending on what you can accomplish during gsoc period. Also, you can suggest more improvements on your side that are not listed here
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Tech stack / Tools</dt>
+  <dd>Hardware
+    <ul>
+      <li>Raspberry Pi (4, Zero, etc.) with CSI camera modules (e.g., Raspberry Pi Camera Module) <a href="https://www.raspberrypi.com/documentation/accessories/camera.html">Raspberry Pi</a></li>
+    </ul>
+  </dd>
+  <dd>Programming languages:
+    <ul>
+      <li>Rust (embedded where applicable)</li>
+      <li>Python</li>
+      <li>Javascript</li>
+    </ul>
+  </dd>
+  <dd>OS / Firmware:
+    <ul>
+      <li>Rust OS / embedded crate stack (embedded-hal, rp-pico SDK etc.)</li>
+      <li>Camera control via libcamera ecosystem (Linux stack) (GitHub)</li>
+    </ul>
+  </dd>
+  <dd>Cryptography:
+    <ul>
+      <li>Rust crypto crates (e.g., ed25519-dalek, rand)</li>
+      <li>ZK Proof</li>
+    </ul>
+  </dd>
+  <dd>Build &amp; tooling:
+    <ul>
+      <li><code>cargo</code>, cross-compile toolchains</li>
+      <li>Embedded flashing tools (OpenOCD / Pi Imager) (Wikipedia)</li>
+    </ul>
+  </dd>
+  <dd>Technology:
+    <ul>
+      <li>Blockchain
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>
+    <ul>
+      <li>Rust programming and systems-level coding</li>
+      <li>Embedded/Linux systems (Raspberry Pi environment)</li>
+      <li>Cryptographic key management and signatures</li>
+      <li>Understanding of camera hardware interfaces</li>
+      <li>Blockchain Knowledge
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Mentor</dt>
+  <dd>Mohit Bhat
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd><a href="https://github.com/mbcse/lensmint-camera">https://github.com/mbcse/lensmint-camera</a>
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Hard
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>#gsoc-lensmint
+<br /><br /></dd>
+</dl>
+</p>
+        </div>
+      
+        <div class="accordion">12. PII-Safe – Privacy Guard for Agentic AI & MCP Workflows</div>
+        <div class="panel">
+          <p><dl>
+  <dt>Brief explanation</dt>
+  <dd>As AI agents increasingly process security logs, chat transcripts, and incident reports, they are often exposed to sensitive personal information such as emails, usernames, IP addresses, and customer identifiers. PII-Safe is a middleware and MCP compatible privacy plugin that automatically detects, redacts, or pseudonymizes personal data before it reaches an LLM or is stored in memory. The project aims to make agentic AI deployments safer, more compliant, and production-ready  without compromising analytical value.<br /><br /></dd>
+  <dt>How it works:</dt>
+  <dd>Policy Representation &amp; Enforcement:
+PII-Safe represents privacy controls as policy-as-code, keeping privacy rules separate from application logic. Each incoming piece of data (such as a log entry or text document) is converted into a structured input that includes context like the operation type (e.g., analysis or export) and the types of sensitive information detected (e.g., email, IP address, phone number). This structured input is evaluated against declarative policies that return a clear decision such as <code>allow, redact, pseudonymize, or block</code>. <br />For example, a simple policy might state that during internal analysis, email addresses can be replaced with consistent placeholders (e.g., USER_01) to preserve context. However, if the same data is being exported outside the system, all email addresses and IP addresses must be fully redacted. If someone attempts to export raw, unsanitized data, the policy engine would return a deny decision and stop the operation.<br /><br /></dd>
+  <dd>Inputs:
+    <ul>
+      <li>Prompts,security logs, incident case data, tool-call payloads, or unstructured text containing potential personal information.</li>
+    </ul>
+  </dd>
+  <dd>Processing:
+    <ul>
+      <li>Schema-aware PII detection (structured JSON + free text).</li>
+      <li>Policy-driven sanitization (redaction, pseudonymization, allowlists).</li>
+      <li>Context-preserving token mapping for case-level consistency.</li>
+      <li>Privacy exposure scoring and audit logging.</li>
+      <li>MCP tool interface for integration into agent workflows.</li>
+    </ul>
+  </dd>
+  <dd>Output:
+    <ul>
+      <li>Sanitized data safe for AI processing, a privacy risk score, and an auditable transformation report (with secure mapping for authorized re-identification).
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Tech stack</dt>
+  <dd>
+    <ul>
+      <li>Backend: FastAPI (Python)</li>
+      <li>LLM/AI:
+ spaCy or HuggingFace (for lightweight entity detection),
+ Optional integration examples with LangChain / LangGraph,
+OLLAMA for local testing</li>
+      <li>Storage/DB:
+ SQLite (default) or Postgres (optional extension)</li>
+      <li>Caching:  Redis 
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Expected Results</dt>
+  <dd>
+    <ul>
+      <li>Policy-based PII detection and configurable redaction engine</li>
+      <li>Stable pseudonymization system (consistent within incident scope)</li>
+      <li>FastAPI-based middleware +  MCP server mode</li>
+      <li>CLI tool for batch dataset sanitization</li>
+      <li>Audit logging and privacy exposure scoring</li>
+      <li>Dockerized deployment with example datasets</li>
+      <li>Unit tests and integration tests with real world agentic AI framework
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Python, REST API development, Basic cybersecurity knowledge, Understanding of JSON and data schemas, Foundational understanding of data privacy principles
+<br /><br /></dd>
+  <dt>Mentor</dt>
+  <dd>Tharindu Ranathunga, Kavishka Fernando (kavishkafernando64@gmail.com)
+<br /><br /></dd>
+  <dt>Github URL</dt>
+  <dd>TBA
+<br /><br /></dd>
+  <dt>Estimate Project Length</dt>
+  <dd>175–350 hours
+<br /><br /></dd>
+  <dt>Difficulty</dt>
+  <dd>Medium
+<br /><br /></dd>
+  <dt>Slack channel</dt>
+  <dd>TBA
 <br /><br /></dd>
 </dl>
 </p>

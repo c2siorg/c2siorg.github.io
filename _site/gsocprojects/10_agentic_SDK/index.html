@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>DataLoom</title>
+  <title>Agentic Cognitive Firewall SDK</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
   <!-- Google Fonts CDN -->
@@ -15,7 +15,7 @@
   <link href="/assets/css/style.css" rel="stylesheet">
   
   
-  <meta property="og:title" content="DataLoom"/>
+  <meta property="og:title" content="Agentic Cognitive Firewall SDK"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content=""/>
   
@@ -160,61 +160,169 @@
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
       <div class="service service-single">
-        <h1 class="title">DataLoom</h1>
+        <h1 class="title">Agentic Cognitive Firewall SDK</h1>
         <div class="content"><dl>
   <dt>Brief explanation</dt>
-  <dd>DataLoom is a web-based data wrangling tool with a unique git-like checkpoint/revert system. This project expands DataLoom into a complete data preparation platform by adding multi-format upload, data profiling, merge/join operations, formula columns, data visualization, an automated data quality engine, and multi-format export with quality reports.
+  <dd>The Cognitive Firewall is a Zero Trust control layer for agentic systems that protects the reasoning control plane of large language model (LLM) agents. It prevents prompt injection, context manipulation, memory poisoning, and unsafe tool-output re-injection by enforcing policy-driven validation before any input enters model context. The system acts as a programmable admission controller for agent cognition, ensuring that prompts, retrieved documents, memory writes, and tool outputs are continuously verified. It enables secure-by-design agent development through contextual integrity enforcement and cognitive telemetry.
 <br /><br /></dd>
-  <dt>How it works</dt>
+  <dt>How it works:</dt>
+  <dd>Input:</dd>
   <dd>
     <ul>
-      <li>Input: Data files in multiple formats (CSV, xlsx, json, parquet, tsv)</li>
-      <li>Processing: pandas-powered transforms with a checkpoint system, including profiling, merge/join, formula columns, quality assessment (duplicate detection, outlier flagging, pattern validation), and visualization generation</li>
-      <li>Output: Transformed datasets, column-level statistical profiles, composite quality scores with one-click fixes, interactive charts (histogram, bar, scatter, time series), and multi-format exports with downloadable HTML/PDF quality reports
+      <li>User prompts</li>
+      <li>Retrieved RAG documents</li>
+      <li>Tool outputs</li>
+      <li>Memory write operations</li>
+      <li>System prompts</li>
+    </ul>
+  </dd>
+  <dd>Processing:</dd>
+  <dd>
+    <ul>
+      <li>SDK intercepts agent inputs/outputs</li>
+      <li>Sends payload to Firewall API</li>
+      <li>Injection pattern detection (rule-based + heuristic scoring)</li>
+      <li>Context sanitization &amp; instruction stripping</li>
+      <li>Policy-as-code evaluation</li>
+      <li>Risk scoring engine</li>
+      <li>Allow / Sanitize / Block decision</li>
+      <li>Logging &amp; cognitive telemetry storage</li>
+    </ul>
+  </dd>
+  <dd>Output:
+    <ul>
+      <li>Sanitized context (if allowed)</li>
+      <li>Block decision with reason (if denied)</li>
+      <li>Risk score metadata</li>
+      <li>Audit logs for governance
 <br /><br /></li>
     </ul>
   </dd>
   <dt>Expected Results</dt>
+  <dd></dd>
+  <dd>Milestone 1 (Weeks 1–4): Core Firewall MVP</dd>
   <dd>
     <ul>
-      <li>Users can upload xlsx, json, parquet, and tsv files in addition to CSV</li>
-      <li>Automatic data profiling gives instant insight into column statistics on upload</li>
-      <li>All transform forms use dropdown column selectors instead of free-text input</li>
-      <li>Users can merge/join data across projects</li>
-      <li>Computed formula columns and reusable transformation pipelines are supported</li>
-      <li>Basic visualization (histogram, bar, scatter, time series) is available in-app</li>
-      <li>Automated data quality assessment detects duplicates, outliers, and pattern violations with a composite quality score and one-click fixes</li>
-      <li>Data can be exported in multiple formats (xlsx/parquet/json/tsv), and comprehensive quality reports can be generated as HTML or PDF
+      <li>FastAPI-based Cognitive Firewall service</li>
+      <li>Python SDK middleware for agent interception</li>
+      <li>Prompt injection detection engine (rule-based)</li>
+      <li>Document sanitization module</li>
+      <li>Policy-as-code YAML engine</li>
+    </ul>
+  </dd>
+  <dd>Milestone 2 (Weeks 5–8): Context Integrity Controls</dd>
+  <dd>
+    <ul>
+      <li>Tool output inspection with DLP scanning</li>
+      <li>Memory write validation with TTL enforcement</li>
+      <li>Risk scoring engine</li>
+      <li>Provenance tagging for context elements</li>
+      <li>Logging + audit trail storage</li>
+    </ul>
+  </dd>
+  <dd>Milestone 3 (Weeks 9–12): Observability &amp; Enterprise Readiness</dd>
+  <dd>
+    <ul>
+      <li>Cognitive telemetry dashboard</li>
+      <li>Agent-level risk aggregation</li>
+      <li>Policy versioning &amp; configuration management</li>
+      <li>Example integration with LangGraph agent</li>
+      <li>Documentation + deployment scripts (Docker)
+<br />
+<br /></li>
+    </ul>
+  </dd>
+  <dd>12-Week Implementation Plan:</dd>
+  <dd>Weeks 1–2: Architecture &amp; Foundations</dd>
+  <dd>
+    <ul>
+      <li>Define system architecture (SDK + Firewall Service)</li>
+      <li>Design data model for context validation</li>
+      <li>Create FastAPI skeleton</li>
+      <li>Define validation schema (Pydantic models)</li>
+      <li>Create GitHub repository structure</li>
+    </ul>
+  </dd>
+  <dd>Weeks 3–4: Prompt &amp; Document Protection</dd>
+  <dd>
+    <ul>
+      <li>Implement prompt injection detection rules</li>
+      <li>Implement document sanitization module</li>
+      <li>Add pattern detection (override attempts, encoded payloads)</li>
+      <li>Build policy-as-code YAML loader</li>
+      <li>Integrate SDK with validation endpoint</li>
+    </ul>
+  </dd>
+  <dd>Weeks 5–6: Tool Output &amp; Memory Controls</dd>
+  <dd>
+    <ul>
+      <li>Implement DLP scanning module</li>
+      <li>Add secret detection patterns</li>
+      <li>Implement memory write validation rules</li>
+      <li>Add TTL enforcement &amp; size constraints</li>
+      <li>Risk scoring engine (weighted scoring)</li>
+    </ul>
+  </dd>
+  <dd>Weeks 7–8: Context Provenance &amp; Logging</dd>
+  <dd>
+    <ul>
+      <li>Add metadata tagging (source, trust score)</li>
+      <li>Implement logging to Postgres</li>
+      <li>Create audit trail schema</li>
+      <li>Add decision trace logging</li>
+    </ul>
+  </dd>
+  <dd>Weeks 9–10: Observability Layer</dd>
+  <dd>
+    <ul>
+      <li>Build basic dashboard (Streamlit or simple UI)</li>
+      <li>Display risk scores &amp; blocked events</li>
+      <li>Add agent-level summaries</li>
+      <li>Add exportable security reports</li>
+    </ul>
+  </dd>
+  <dd>Weeks 11–12: Hardening &amp; Deployment</dd>
+  <dd>
+    <ul>
+      <li>Dockerize service</li>
+      <li>Add basic authentication for firewall API</li>
+      <li>Write integration example with LangGraph</li>
+      <li>Write documentation</li>
+      <li>Final testing + injection scenario testing</li>
+      <li>Prepare proposal/demo presentation
 <br /><br /></li>
     </ul>
   </dd>
   <dt>Tech stack / Tools</dt>
-  <dd>FastAPI, pandas, PostgreSQL, SQLModel, Alembic, React, TypeScript, scikit-learn, matplotlib
-<br /><br /></dd>
-  <dt>Knowledge Prerequisites</dt>
   <dd>
     <ul>
-      <li>Strong Python skills with pandas experience</li>
-      <li>React/JavaScript/TypeScript proficiency</li>
-      <li>Understanding of SQL joins and data transformation concepts</li>
-      <li>Familiarity with charting libraries (recharts or similar)
+      <li>Backend: FastAPI</li>
+      <li>LLM/AI: LangChain or LangGraph, OpenAI / HuggingFace</li>
+      <li>Storage/DB: PostgreSQL (audit logs), optional SQLite for MVP</li>
+      <li>Messaging/Streaming (if any): Not required for MVP</li>
+      <li>Caching (if any): Redis</li>
+      <li>Containerization: Docker</li>
+      <li>Dashboard: Streamlit or lightweight React frontend
 <br /><br /></li>
     </ul>
   </dd>
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Python, FastAPI, REST APIs, LLM fundamentals, Prompt engineering, Security basics, Regex, YAML parsing, Basic DevOps (Docker)
+<br /><br /></dd>
   <dt>Mentor</dt>
-  <dd>Oshan Mudannayake
+  <dd>Tharindu Ranathunga, Kavishka Fernando (kavishkafernando64@gmail.com)
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd><a href="https://github.com/c2siorg/dataloom">https://github.com/c2siorg/dataloom</a>
+  <dd>TBA
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
-  <dd>350 hours
+  <dd>120–150 hours (approx. 10–12 hours/week for 12 weeks)
 <br /><br /></dd>
   <dt>Difficulty</dt>
-  <dd>Hard
+  <dd>Medium (security + AI systems design + architecture integration)
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>#dataLoom
+  <dd>TBA
 <br /><br /></dd>
 </dl>
 </div>

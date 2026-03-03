@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>DataLoom</title>
+  <title>LensMint Web3 Camera</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
   <!-- Google Fonts CDN -->
@@ -15,7 +15,7 @@
   <link href="/assets/css/style.css" rel="stylesheet">
   
   
-  <meta property="og:title" content="DataLoom"/>
+  <meta property="og:title" content="LensMint Web3 Camera"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content=""/>
   
@@ -160,52 +160,105 @@
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
       <div class="service service-single">
-        <h1 class="title">DataLoom</h1>
+        <h1 class="title">LensMint Web3 Camera</h1>
         <div class="content"><dl>
   <dt>Brief explanation</dt>
-  <dd>DataLoom is a web-based data wrangling tool with a unique git-like checkpoint/revert system. This project expands DataLoom into a complete data preparation platform by adding multi-format upload, data profiling, merge/join operations, formula columns, data visualization, an automated data quality engine, and multi-format export with quality reports.
-<br /><br /></dd>
-  <dt>How it works</dt>
-  <dd>
+  <dd>LensMint Camera is a Web3-enabled camera system built on Raspberry Pi that captures media with cryptographic provenance and signed metadata and mints photos as nft on the blockchain. This project will rewrite and strengthen the camera OS and interface in Rust, and build a secure device key generation and identity layer to improve authenticity, tamper resistance, and integration with future decentralized systems.<br /><br /></dd>
+  <dt>How it works:</dt>
+  <dd>Inputs:
     <ul>
-      <li>Input: Data files in multiple formats (CSV, xlsx, json, parquet, tsv)</li>
-      <li>Processing: pandas-powered transforms with a checkpoint system, including profiling, merge/join, formula columns, quality assessment (duplicate detection, outlier flagging, pattern validation), and visualization generation</li>
-      <li>Output: Transformed datasets, column-level statistical profiles, composite quality scores with one-click fixes, interactive charts (histogram, bar, scatter, time series), and multi-format exports with downloadable HTML/PDF quality reports
+      <li>Camera sensor image/video data via Raspberry Pi CSI interface.</li>
+      <li>User interaction via touchscreen/UI or hardware buttons.</li>
+    </ul>
+  </dd>
+  <dd>Processing:
+    <ul>
+      <li>Rust-based/Python-based firmware/OS controls board peripherals.</li>
+      <li>Secure entropy collection for device keypair generation.</li>
+      <li>Camera capture and processing pipeline.</li>
+      <li>Cryptographic signing and metadata generation.</li>
+      <li>Blockchain Processing for NFT generation.</li>
+      <li>ZK proof generation.</li>
+    </ul>
+  </dd>
+  <dd>Output:
+    <ul>
+      <li>Signed photo/video data.</li>
+      <li>Unique device identity for provenance.</li>
+      <li>Stable camera UI and control interface.</li>
+      <li>An NFT that can be shared.
 <br /><br /></li>
     </ul>
   </dd>
   <dt>Expected Results</dt>
   <dd>
     <ul>
-      <li>Users can upload xlsx, json, parquet, and tsv files in addition to CSV</li>
-      <li>Automatic data profiling gives instant insight into column statistics on upload</li>
-      <li>All transform forms use dropdown column selectors instead of free-text input</li>
-      <li>Users can merge/join data across projects</li>
-      <li>Computed formula columns and reusable transformation pipelines are supported</li>
-      <li>Basic visualization (histogram, bar, scatter, time series) is available in-app</li>
-      <li>Automated data quality assessment detects duplicates, outliers, and pattern violations with a composite quality score and one-click fixes</li>
-      <li>Data can be exported in multiple formats (xlsx/parquet/json/tsv), and comprehensive quality reports can be generated as HTML or PDF
+      <li>Rust-native core OS/firmware and improved camera interface</li>
+      <li>Secure device cryptographic key generation using hardware entropy</li>
+      <li>Safe key storage abstraction (flash/secure enclave)</li>
+      <li>Rust API for camera control and capture pipeline</li>
+      <li>Modular identity layer for verifiable device signatures</li>
+      <li>Performance optimizations and reliability improvements</li>
+      <li>Improve blockchain processing</li>
+      <li>Add AI features - Agentic camera support</li>
+      <li>OS/UI design improvement</li>
+      <li>Note: Not all features need to be implemented; you can work on a subset of features or all, depending on what you can accomplish during gsoc period. Also, you can suggest more improvements on your side that are not listed here
 <br /><br /></li>
     </ul>
   </dd>
   <dt>Tech stack / Tools</dt>
-  <dd>FastAPI, pandas, PostgreSQL, SQLModel, Alembic, React, TypeScript, scikit-learn, matplotlib
-<br /><br /></dd>
-  <dt>Knowledge Prerequisites</dt>
+  <dd>Hardware
+    <ul>
+      <li>Raspberry Pi (4, Zero, etc.) with CSI camera modules (e.g., Raspberry Pi Camera Module) <a href="https://www.raspberrypi.com/documentation/accessories/camera.html">Raspberry Pi</a></li>
+    </ul>
+  </dd>
+  <dd>Programming languages:
+    <ul>
+      <li>Rust (embedded where applicable)</li>
+      <li>Python</li>
+      <li>Javascript</li>
+    </ul>
+  </dd>
+  <dd>OS / Firmware:
+    <ul>
+      <li>Rust OS / embedded crate stack (embedded-hal, rp-pico SDK etc.)</li>
+      <li>Camera control via libcamera ecosystem (Linux stack) (GitHub)</li>
+    </ul>
+  </dd>
+  <dd>Cryptography:
+    <ul>
+      <li>Rust crypto crates (e.g., ed25519-dalek, rand)</li>
+      <li>ZK Proof</li>
+    </ul>
+  </dd>
+  <dd>Build &amp; tooling:
+    <ul>
+      <li><code>cargo</code>, cross-compile toolchains</li>
+      <li>Embedded flashing tools (OpenOCD / Pi Imager) (Wikipedia)</li>
+    </ul>
+  </dd>
+  <dd>Technology:
+    <ul>
+      <li>Blockchain
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Knowledge Prerequisite</dt>
   <dd>
     <ul>
-      <li>Strong Python skills with pandas experience</li>
-      <li>React/JavaScript/TypeScript proficiency</li>
-      <li>Understanding of SQL joins and data transformation concepts</li>
-      <li>Familiarity with charting libraries (recharts or similar)
+      <li>Rust programming and systems-level coding</li>
+      <li>Embedded/Linux systems (Raspberry Pi environment)</li>
+      <li>Cryptographic key management and signatures</li>
+      <li>Understanding of camera hardware interfaces</li>
+      <li>Blockchain Knowledge
 <br /><br /></li>
     </ul>
   </dd>
   <dt>Mentor</dt>
-  <dd>Oshan Mudannayake
+  <dd>Mohit Bhat
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd><a href="https://github.com/c2siorg/dataloom">https://github.com/c2siorg/dataloom</a>
+  <dd><a href="https://github.com/mbcse/lensmint-camera">https://github.com/mbcse/lensmint-camera</a>
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
   <dd>350 hours
@@ -214,7 +267,7 @@
   <dd>Hard
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>#dataLoom
+  <dd>#gsoc-lensmint
 <br /><br /></dd>
 </dl>
 </div>

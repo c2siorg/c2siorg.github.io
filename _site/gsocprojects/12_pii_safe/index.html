@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>DataLoom</title>
+  <title>PII-Safe – Privacy Guard for Agentic AI & MCP Workflows</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="/images/favicon-32x32.svg">
   <!-- Google Fonts CDN -->
@@ -15,7 +15,7 @@
   <link href="/assets/css/style.css" rel="stylesheet">
   
   
-  <meta property="og:title" content="DataLoom"/>
+  <meta property="og:title" content="PII-Safe – Privacy Guard for Agentic AI & MCP Workflows"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content=""/>
   
@@ -160,61 +160,77 @@
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
       <div class="service service-single">
-        <h1 class="title">DataLoom</h1>
+        <h1 class="title">PII-Safe – Privacy Guard for Agentic AI & MCP Workflows</h1>
         <div class="content"><dl>
   <dt>Brief explanation</dt>
-  <dd>DataLoom is a web-based data wrangling tool with a unique git-like checkpoint/revert system. This project expands DataLoom into a complete data preparation platform by adding multi-format upload, data profiling, merge/join operations, formula columns, data visualization, an automated data quality engine, and multi-format export with quality reports.
-<br /><br /></dd>
-  <dt>How it works</dt>
+  <dd>As AI agents increasingly process security logs, chat transcripts, and incident reports, they are often exposed to sensitive personal information such as emails, usernames, IP addresses, and customer identifiers. PII-Safe is a middleware and MCP compatible privacy plugin that automatically detects, redacts, or pseudonymizes personal data before it reaches an LLM or is stored in memory. The project aims to make agentic AI deployments safer, more compliant, and production-ready  without compromising analytical value.<br /><br /></dd>
+  <dt>How it works:</dt>
+  <dd>Policy Representation &amp; Enforcement:
+PII-Safe represents privacy controls as policy-as-code, keeping privacy rules separate from application logic. Each incoming piece of data (such as a log entry or text document) is converted into a structured input that includes context like the operation type (e.g., analysis or export) and the types of sensitive information detected (e.g., email, IP address, phone number). This structured input is evaluated against declarative policies that return a clear decision such as <code>allow, redact, pseudonymize, or block</code>. <br />For example, a simple policy might state that during internal analysis, email addresses can be replaced with consistent placeholders (e.g., USER_01) to preserve context. However, if the same data is being exported outside the system, all email addresses and IP addresses must be fully redacted. If someone attempts to export raw, unsanitized data, the policy engine would return a deny decision and stop the operation.<br /><br /></dd>
+  <dd>Inputs:
+    <ul>
+      <li>Prompts,security logs, incident case data, tool-call payloads, or unstructured text containing potential personal information.</li>
+    </ul>
+  </dd>
+  <dd>Processing:
+    <ul>
+      <li>Schema-aware PII detection (structured JSON + free text).</li>
+      <li>Policy-driven sanitization (redaction, pseudonymization, allowlists).</li>
+      <li>Context-preserving token mapping for case-level consistency.</li>
+      <li>Privacy exposure scoring and audit logging.</li>
+      <li>MCP tool interface for integration into agent workflows.</li>
+    </ul>
+  </dd>
+  <dd>Output:
+    <ul>
+      <li>Sanitized data safe for AI processing, a privacy risk score, and an auditable transformation report (with secure mapping for authorized re-identification).
+<br /><br /></li>
+    </ul>
+  </dd>
+  <dt>Tech stack</dt>
   <dd>
     <ul>
-      <li>Input: Data files in multiple formats (CSV, xlsx, json, parquet, tsv)</li>
-      <li>Processing: pandas-powered transforms with a checkpoint system, including profiling, merge/join, formula columns, quality assessment (duplicate detection, outlier flagging, pattern validation), and visualization generation</li>
-      <li>Output: Transformed datasets, column-level statistical profiles, composite quality scores with one-click fixes, interactive charts (histogram, bar, scatter, time series), and multi-format exports with downloadable HTML/PDF quality reports
+      <li>Backend: FastAPI (Python)</li>
+      <li>LLM/AI:
+ spaCy or HuggingFace (for lightweight entity detection),
+ Optional integration examples with LangChain / LangGraph,
+OLLAMA for local testing</li>
+      <li>Storage/DB:
+ SQLite (default) or Postgres (optional extension)</li>
+      <li>Caching:  Redis 
 <br /><br /></li>
     </ul>
   </dd>
   <dt>Expected Results</dt>
   <dd>
     <ul>
-      <li>Users can upload xlsx, json, parquet, and tsv files in addition to CSV</li>
-      <li>Automatic data profiling gives instant insight into column statistics on upload</li>
-      <li>All transform forms use dropdown column selectors instead of free-text input</li>
-      <li>Users can merge/join data across projects</li>
-      <li>Computed formula columns and reusable transformation pipelines are supported</li>
-      <li>Basic visualization (histogram, bar, scatter, time series) is available in-app</li>
-      <li>Automated data quality assessment detects duplicates, outliers, and pattern violations with a composite quality score and one-click fixes</li>
-      <li>Data can be exported in multiple formats (xlsx/parquet/json/tsv), and comprehensive quality reports can be generated as HTML or PDF
+      <li>Policy-based PII detection and configurable redaction engine</li>
+      <li>Stable pseudonymization system (consistent within incident scope)</li>
+      <li>FastAPI-based middleware +  MCP server mode</li>
+      <li>CLI tool for batch dataset sanitization</li>
+      <li>Audit logging and privacy exposure scoring</li>
+      <li>Dockerized deployment with example datasets</li>
+      <li>Unit tests and integration tests with real world agentic AI framework
 <br /><br /></li>
     </ul>
   </dd>
-  <dt>Tech stack / Tools</dt>
-  <dd>FastAPI, pandas, PostgreSQL, SQLModel, Alembic, React, TypeScript, scikit-learn, matplotlib
+  <dt>Knowledge Prerequisite</dt>
+  <dd>Python, REST API development, Basic cybersecurity knowledge, Understanding of JSON and data schemas, Foundational understanding of data privacy principles
 <br /><br /></dd>
-  <dt>Knowledge Prerequisites</dt>
-  <dd>
-    <ul>
-      <li>Strong Python skills with pandas experience</li>
-      <li>React/JavaScript/TypeScript proficiency</li>
-      <li>Understanding of SQL joins and data transformation concepts</li>
-      <li>Familiarity with charting libraries (recharts or similar)
-<br /><br /></li>
-    </ul>
-  </dd>
   <dt>Mentor</dt>
-  <dd>Oshan Mudannayake
+  <dd>Tharindu Ranathunga, Kavishka Fernando (kavishkafernando64@gmail.com)
 <br /><br /></dd>
   <dt>Github URL</dt>
-  <dd><a href="https://github.com/c2siorg/dataloom">https://github.com/c2siorg/dataloom</a>
+  <dd>TBA
 <br /><br /></dd>
   <dt>Estimate Project Length</dt>
-  <dd>350 hours
+  <dd>175–350 hours
 <br /><br /></dd>
   <dt>Difficulty</dt>
-  <dd>Hard
+  <dd>Medium
 <br /><br /></dd>
   <dt>Slack channel</dt>
-  <dd>#dataLoom
+  <dd>TBA
 <br /><br /></dd>
 </dl>
 </div>
