@@ -72,7 +72,7 @@ Mentor
 <br><br>
 
 Github URL
-: <https://github.com/mbcse/lensmint-camera>
+: <https://github.com/c2siorg/lensmint-camera>
 <br><br>
 
 Estimate Project Length
