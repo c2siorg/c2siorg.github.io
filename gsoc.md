@@ -35,7 +35,7 @@ Anyone interested is welcome to participate—whether you’re a **GSoC student,
 
 📢 Join Our Community
 
-💬 Slack: [C2SI Slack Workspace](https://join.slack.com/t/c2si-org/shared_invite/zt-3qk7nh9cm-h~QniTu1VEuRBa326NNmWw)<br>
+💬 Slack: [C2SI Slack Workspace](https://join.slack.com/t/c2si-org/shared_invite/zt-3tg0kuuw2-7tY1gsOGHBH4LK84sJabug)<br>
 📝 Proposal Template: [View Here](https://shorturl.at/dtR23)<br>
 💻 Explore Our Projects: [C2SI GitHub Repository](https://github.com/c2siorg)<br>
 
