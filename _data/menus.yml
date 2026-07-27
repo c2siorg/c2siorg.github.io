@@ -15,7 +15,8 @@ main:
     url: "/opportunities/"
     weight: 4
   - name: "Blog"
-    url: "/blog/"
+    url: "https://blog.c2si.org/"
+    target: "_blank"
     weight: 5
   - name: "GitHub"
     url: "https://github.com/c2siorg"

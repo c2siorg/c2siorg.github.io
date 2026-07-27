@@ -6,7 +6,7 @@
       {% if item.url == '/gsoc' %}
       <a href="/gsoc">GSoC 26</a>
       {% else %}
-      <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+      <a href="{{ item.url | relative_url }}"{% if item.target %} target="{{ item.target }}" rel="noopener noreferrer"{% endif %}>{{ item.name }}</a>
       {% endif %}
     </li>
     {% endfor %}
