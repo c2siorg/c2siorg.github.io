@@ -1,3 +1,4 @@
+
 var body = document.querySelector('body')
 var menuTrigger = document.querySelector('#toggle-main-menu-mobile');
 var menuContainer = document.querySelector('#main-menu-mobile');
@@ -22,10 +23,8 @@ for (i = 0; i < acc.length; i++) {
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
-      console.log("if");
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-      console.log("else");
     } 
   });
 
