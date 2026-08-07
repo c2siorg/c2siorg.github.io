@@ -3,22 +3,37 @@
   outline: none;
   z-index: 30;
   cursor: pointer;
+
   @include media-breakpoint-up(md) {
     display: none;
   }
+
   &:focus {
     outline: none;
   }
+
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
     background: $primary;
   }
+
   .hamburger-inner::after {
     width: 18px;
     right: 0;
   }
+
   &.is-active {
+
+    // Bars must be white so the X is visible against the $primary overlay background.
+    // Without this, the unconditional `background: $primary` rule above wins in the
+    // cascade and makes the X invisible (primary-on-primary).
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background: #fff;
+    }
+
     .hamburger-inner::after {
       width: inherit;
       right: unset;
